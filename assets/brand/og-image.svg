@@ -1,49 +1,47 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
   <rect width="1200" height="630" fill="#0D0F14"/>
-  <!-- Subtle grid -->
+  <ellipse cx="600" cy="280" rx="560" ry="220" fill="#00C2A8" fill-opacity="0.05"/>
   <line x1="0" y1="315" x2="1200" y2="315" stroke="#252A35" stroke-width="1"/>
   <line x1="600" y1="0" x2="600" y2="630" stroke="#252A35" stroke-width="1"/>
-  <!-- Glow -->
-  <ellipse cx="600" cy="250" rx="500" ry="200" fill="#00C2A8" opacity="0.05"/>
 
-  <!-- Logo FEEXIO — centered, large -->
+  <!-- FEEXIO centrado — escala ~2.1x del viewBox original 540x92 -->
+  <!-- FEE #EEF0F5 -->
   <!-- F -->
-  <path d="M172 215h72v18H208v30h48v18H208v66H172V215Z" fill="#EEF0F5"/>
+  <path d="M137 157 L137 262 L165 262 L165 214 L254 214 L254 193 L165 193 L165 169 L262 169 L262 157 Z" fill="#EEF0F5"/>
   <!-- E1 -->
-  <path d="M264 215h72v18H300v30h48v18H300v48h54v18H264V215Z" fill="#EEF0F5"/>
+  <path d="M274 157 L274 262 L422 262 L422 241 L302 241 L302 214 L415 214 L415 193 L302 193 L302 169 L422 169 L422 157 Z" fill="#EEF0F5"/>
   <!-- E2 -->
-  <path d="M360 215h72v18H396v30h48v18H396v48h54v18H360V215Z" fill="#EEF0F5"/>
-  <!-- X -->
-  <path d="M456 220L540 412" stroke="#00C2A8" stroke-width="28" stroke-linecap="round"/>
-  <path d="M540 220L456 412" stroke="#00C2A8" stroke-width="28" stroke-linecap="round"/>
-  <path d="M456 220L432 196" stroke="#00C2A8" stroke-width="14" stroke-linecap="round"/>
-  <path d="M540 220L564 196" stroke="#00C2A8" stroke-width="14" stroke-linecap="round"/>
-  <path d="M456 412L432 436" stroke="#00C2A8" stroke-width="14" stroke-linecap="round"/>
-  <path d="M540 412L564 436" stroke="#00C2A8" stroke-width="14" stroke-linecap="round"/>
-  <circle cx="498" cy="316" r="14" fill="#0D0F14"/>
-  <circle cx="498" cy="316" r="8"  fill="#00C2A8"/>
-  <line x1="498" y1="284" x2="498" y2="278" stroke="#0D0F14" stroke-width="6" stroke-linecap="round"/>
-  <line x1="498" y1="348" x2="498" y2="354" stroke="#0D0F14" stroke-width="6" stroke-linecap="round"/>
-  <line x1="466" y1="316" x2="460" y2="316" stroke="#0D0F14" stroke-width="6" stroke-linecap="round"/>
-  <line x1="530" y1="316" x2="536" y2="316" stroke="#0D0F14" stroke-width="6" stroke-linecap="round"/>
-  <!-- I -->
-  <rect x="578" y="215" width="22" height="132" rx="11" fill="#00C2A8"/>
-  <!-- O -->
-  <circle cx="680" cy="281" r="66" fill="none" stroke="#00C2A8" stroke-width="22"/>
-  <path d="M680 233 A48 48 0 1 1 633 307" fill="none" stroke="#EEF0F5" stroke-width="16" stroke-linecap="round"/>
-  <path d="M633 307 A24 24 0 0 1 680 257" fill="none" stroke="#EEF0F5" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M432 157 L432 262 L580 262 L580 241 L460 241 L460 214 L573 214 L573 193 L460 193 L460 169 L580 169 L580 157 Z" fill="#EEF0F5"/>
 
-  <!-- Tagline -->
-  <text x="600" y="490" text-anchor="middle"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-        font-size="28" font-weight="400" fill="#8B95A8" letter-spacing="1">
+  <!-- X #00C2A8 — escala 2.1x -->
+  <path d="M591 136 L641 136 L851 252 L851 269 L800 269 L591 153 Z" fill="#00C2A8"/>
+  <path d="M800 136 L851 136 L851 153 L641 269 L591 269 L591 252 Z" fill="#00C2A8"/>
+  <!-- spikes -->
+  <path d="M591 136 L566 115 L595 133 Z" fill="#00C2A8"/>
+  <path d="M851 136 L876 115 L847 133 Z" fill="#00C2A8"/>
+  <path d="M591 269 L566 289 L595 272 Z" fill="#00C2A8"/>
+  <path d="M851 269 L876 289 L847 272 Z" fill="#00C2A8"/>
+  <!-- starburst -->
+  <polygon points="715,186 721,163 727,186 721,181" fill="white" opacity="0.97"/>
+  <polygon points="715,218 721,241 727,218 721,223" fill="white" opacity="0.97"/>
+  <polygon points="698,198 675,204 698,210 693,204" fill="white" opacity="0.97"/>
+  <polygon points="744,198 767,204 744,210 749,204" fill="white" opacity="0.97"/>
+  <circle cx="721" cy="204" r="7" fill="white"/>
+
+  <!-- IO #009E88 -->
+  <rect x="862" y="157" width="30" height="105" fill="#009E88"/>
+  <ellipse cx="1040" cy="209" rx="148" ry="58" fill="none" stroke="#009E88" stroke-width="22"/>
+  <path d="M1040 152 A50 42 0 1 1 991 228" fill="none" stroke="#009E88" stroke-width="10" stroke-linecap="square" opacity="0.4"/>
+
+  <!-- tagline -->
+  <text x="600" y="360" text-anchor="middle"
+    font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+    font-size="26" fill="#8B95A8" letter-spacing="2">
     Calculate Fees, Profit &amp; Rates Instantly
   </text>
-  <!-- URL -->
-  <text x="600" y="540" text-anchor="middle"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-        font-size="18" font-weight="400" fill="#4A5568" letter-spacing="2">
+  <text x="600" y="400" text-anchor="middle"
+    font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+    font-size="18" fill="#3D4A5C" letter-spacing="3">
     feexio.com
   </text>
 </svg>

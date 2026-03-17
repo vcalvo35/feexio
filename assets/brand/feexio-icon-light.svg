@@ -1,15 +1,17 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="14" fill="#F7F8FA"/>
-  <path d="M16 14L48 50" stroke="#00C2A8" stroke-width="7" stroke-linecap="round"/>
-  <path d="M48 14L16 50" stroke="#00C2A8" stroke-width="7" stroke-linecap="round"/>
-  <path d="M16 14L10 8"   stroke="#00C2A8" stroke-width="3" stroke-linecap="round"/>
-  <path d="M48 14L54 8"   stroke="#00C2A8" stroke-width="3" stroke-linecap="round"/>
-  <path d="M16 50L10 56"  stroke="#00C2A8" stroke-width="3" stroke-linecap="round"/>
-  <path d="M48 50L54 56"  stroke="#00C2A8" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="32" cy="32" r="5" fill="#F7F8FA"/>
-  <circle cx="32" cy="32" r="3" fill="#00C2A8"/>
-  <line x1="32" y1="23" x2="32" y2="21" stroke="white" stroke-width="2" stroke-linecap="round"/>
-  <line x1="32" y1="41" x2="32" y2="43" stroke="white" stroke-width="2" stroke-linecap="round"/>
-  <line x1="23" y1="32" x2="21" y2="32" stroke="white" stroke-width="2" stroke-linecap="round"/>
-  <line x1="41" y1="32" x2="43" y2="32" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="80" height="80" rx="16" fill="#F7F8FA"/>
+  <!-- X centrada, trazo grueso, spikes en las 4 esquinas -->
+  <path d="M12 10 L28 10 L68 66 L68 72 L52 72 L12 16 Z" fill="#00C2A8"/>
+  <path d="M52 10 L68 10 L68 16 L28 72 L12 72 L12 66 Z" fill="#00C2A8"/>
+  <!-- spikes -->
+  <path d="M12 10 L4  2  L14 9  Z" fill="#00C2A8"/>
+  <path d="M68 10 L76 2  L66 9  Z" fill="#00C2A8"/>
+  <path d="M12 72 L4  80 L14 71 Z" fill="#00C2A8"/>
+  <path d="M68 72 L76 80 L66 71 Z" fill="#00C2A8"/>
+  <!-- starburst -->
+  <polygon points="37,33 40,23 43,33 40,31" fill="white" opacity="0.97"/>
+  <polygon points="37,47 40,57 43,47 40,49" fill="white" opacity="0.97"/>
+  <polygon points="31,38 21,41 31,44 29,41" fill="white" opacity="0.97"/>
+  <polygon points="49,38 59,41 49,44 51,41" fill="white" opacity="0.97"/>
+  <circle cx="40" cy="41" r="3.5" fill="white"/>
 </svg>

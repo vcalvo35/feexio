@@ -8,8 +8,8 @@ const NAV_HTML = `
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="Feexio Home">
-        <img class="logo-img logo-img--light" src="assets/brand/feexio-logo-light.svg" alt="Feexio" width="130" height="30">
-        <img class="logo-img logo-img--dark"  src="assets/brand/feexio-logo-dark.svg"  alt="Feexio" width="130" height="30">
+        <img class="logo-img logo-img--light" src="assets/brand/feexio-logo-light.svg" alt="Feexio" width="188" height="32">
+        <img class="logo-img logo-img--dark"  src="assets/brand/feexio-logo-dark.svg"  alt="Feexio" width="188" height="32">
       </a>
       <div class="nav-links">
         <a href="index.html" data-i18n="nav_home">Home</a>
@@ -44,8 +44,8 @@ const FOOTER_HTML = `
     <div class="footer-top">
       <div class="footer-brand">
         <a href="index.html" aria-label="Feexio Home" style="display:inline-block;margin-bottom:10px;">
-          <img class="logo-img logo-img--light" src="assets/brand/feexio-logo-light.svg" alt="Feexio" width="110" height="26">
-          <img class="logo-img logo-img--dark"  src="assets/brand/feexio-logo-dark.svg"  alt="Feexio" width="110" height="26">
+          <img class="logo-img logo-img--light" src="assets/brand/feexio-logo-light.svg" alt="Feexio" width="152" height="26">
+          <img class="logo-img logo-img--dark"  src="assets/brand/feexio-logo-dark.svg"  alt="Feexio" width="152" height="26">
         </a>
         <p data-i18n="footer_tagline">Fast, free financial calculators for freelancers and entrepreneurs.</p>
       </div>

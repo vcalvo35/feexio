@@ -425,7 +425,7 @@ footer {
 
 /* ── Logo SVG switching (light / dark mode) ──────────────────── */
 .nav-logo { display: flex; align-items: center; text-decoration: none; }
-.logo-img { height: 30px; width: auto; display: block; transition: opacity var(--transition); }
+.logo-img { height: 32px; width: auto; display: block; transition: opacity var(--transition); }
 .logo-img--dark  { display: none; }
 .logo-img--light { display: block; }
 [data-theme="dark"] .logo-img--light { display: none; }
