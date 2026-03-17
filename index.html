@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feexio — Calculate Fees, Profit & Rates Instantly | Free Financial Calculators</title>
+  <meta name="description" content="Free PayPal fee calculator, Stripe fee calculator, Fiverr fee calculator, profit margin calculator and freelance rate calculator. Instant results, no sign-up required." />
+  <meta name="keywords" content="PayPal fee calculator, Stripe fee calculator, Fiverr fee calculator, profit margin calculator, freelance rate calculator, online fee calculator" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Feexio — Free Fee, Profit & Rate Calculators" />
+  <meta property="og:description" content="Instant financial calculators for freelancers, sellers and entrepreneurs. Calculate PayPal, Stripe, Fiverr fees and profit margins for free." />
+  <meta property="og:url" content="https://feexio.com/" />
+  <meta property="og:site_name" content="Feexio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Feexio — Free Financial Calculators" />
+  <meta name="twitter:description" content="Calculate fees, profit margins and freelance rates instantly. Free, no login required." />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Feexio",
+    "url": "https://feexio.com",
+    "description": "Free financial calculators: PayPal fees, Stripe fees, Fiverr fees, profit margins, freelance rates.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Nav injected by components.js -->
+  <div id="nav-placeholder"></div>
+
+  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <header class="hero" role="banner">
+    <div class="container">
+      <div class="hero-badge fade-up">
+        <span>⚡</span>
+        <span data-i18n="hero_badge">5 Free Calculators</span>
+      </div>
+      <h1 class="fade-up fade-up-d1">
+        <span data-i18n="hero_h1_a">Calculate Fees,</span><br>
+        <span class="accent" data-i18n="hero_h1_b">Profit &amp; Rates</span><br>
+        <span data-i18n="hero_h1_c">Instantly</span>
+      </h1>
+      <p class="fade-up fade-up-d2" data-i18n="hero_sub">
+        Free tools for freelancers, sellers &amp; entrepreneurs. No sign-up, no fluff — just fast, accurate results.
+      </p>
+      <div class="hero-btns fade-up fade-up-d3">
+        <button class="btn-primary" onclick="scrollToCalcs()">
+          ⚡ <span data-i18n="hero_cta">Start Calculating</span>
+        </button>
+        <a href="about.html" class="btn-secondary" data-i18n="hero_cta2">Learn More</a>
+      </div>
+      <div class="hero-stats fade-up fade-up-d3">
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-label" data-i18n="stat1">Calculators</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label" data-i18n="stat2">Free Forever</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">0</div>
+          <div class="stat-label" data-i18n="stat3">No Login</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Ad: Top ────────────────────────────────────────────── -->
+  <div class="section-sm" style="padding:24px 0;">
+    <div class="container text-center">
+      <div class="ad-placeholder ad-banner" role="complementary" aria-label="Advertisement">
+        <!-- Google AdSense: replace with real ad unit -->
+        <span data-i18n="ad_label">Advertisement</span> · 728×90
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Calculators ────────────────────────────────────────── -->
+  <main id="calculators">
+
+    <!-- Section 1: Fee Calculators -->
+    <section class="section" aria-labelledby="fee-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">💸 Fees</div>
+          <h2 id="fee-heading" data-i18n="section_fee">Fee Calculators</h2>
+          <p data-i18n="section_fee_sub">Find out exactly how much you keep after platform fees.</p>
+        </div>
+        <div class="calc-grid">
+
+          <!-- PayPal -->
+          <article class="calc-card" id="paypal" aria-labelledby="paypal-heading">
+            <div class="calc-icon">💳</div>
+            <h2 id="paypal-heading" data-i18n="calc_paypal_title">PayPal Fee Calculator</h2>
+            <p data-i18n="calc_paypal_desc">Calculate the exact fee PayPal charges and how much you'll receive after processing a payment.</p>
+            <div class="form-group">
+              <label for="pp-amount" data-i18n="calc_paypal_amount">Transaction Amount ($)</label>
+              <input type="number" id="pp-amount" placeholder="0.00" min="0" step="0.01" aria-label="Transaction Amount" />
+            </div>
+            <div class="calc-result" id="pp-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_paypal_fee">PayPal Fee</span>
+                <span class="result-value" id="pp-fee">$0.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_paypal_net">You Receive</span>
+                <span class="result-value accent" id="pp-net">$0.00</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stripe -->
+          <article class="calc-card" id="stripe" aria-labelledby="stripe-heading">
+            <div class="calc-icon">⚡</div>
+            <h2 id="stripe-heading" data-i18n="calc_stripe_title">Stripe Fee Calculator</h2>
+            <p data-i18n="calc_stripe_desc">Estimate Stripe processing fees instantly. Includes the standard 2.9% + $0.30 per transaction.</p>
+            <div class="form-group">
+              <label for="st-amount" data-i18n="calc_stripe_amount">Transaction Amount ($)</label>
+              <input type="number" id="st-amount" placeholder="0.00" min="0" step="0.01" aria-label="Transaction Amount" />
+            </div>
+            <div class="calc-result" id="st-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_stripe_fee">Stripe Fee</span>
+                <span class="result-value" id="st-fee">$0.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_stripe_net">You Receive</span>
+                <span class="result-value accent" id="st-net">$0.00</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fiverr -->
+          <article class="calc-card" id="fiverr" aria-labelledby="fiverr-heading">
+            <div class="calc-icon">🎯</div>
+            <h2 id="fiverr-heading" data-i18n="calc_fiverr_title">Fiverr Fee Calculator</h2>
+            <p data-i18n="calc_fiverr_desc">Fiverr takes 20% of every service. See what you actually earn after their service fee is deducted.</p>
+            <div class="form-group">
+              <label for="fv-price" data-i18n="calc_fiverr_price">Service Price ($)</label>
+              <input type="number" id="fv-price" placeholder="0.00" min="0" step="0.01" aria-label="Service Price" />
+            </div>
+            <div class="calc-result" id="fv-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_fiverr_fee">Fiverr Fee (20%)</span>
+                <span class="result-value" id="fv-fee">$0.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_fiverr_net">Your Earnings</span>
+                <span class="result-value accent" id="fv-net">$0.00</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad: Mid -->
+    <div style="padding:8px 0 32px;">
+      <div class="container text-center">
+        <div class="ad-placeholder ad-rectangle" style="margin:0 auto;" role="complementary">
+          <span data-i18n="ad_label">Advertisement</span> · 400×100
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Business & Profit -->
+    <section class="section" style="padding-top:0" aria-labelledby="profit-heading-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">📈 Business</div>
+          <h2 id="profit-heading-section" data-i18n="section_business">Business &amp; Profit</h2>
+          <p data-i18n="section_business_sub">Know your margins before you price anything.</p>
+        </div>
+        <div class="calc-grid" style="max-width:680px;">
+
+          <!-- Profit Margin -->
+          <article class="calc-card" id="profit" aria-labelledby="profit-heading">
+            <div class="calc-icon">📊</div>
+            <h2 id="profit-heading" data-i18n="calc_profit_title">Profit Margin Calculator</h2>
+            <p data-i18n="calc_profit_desc">Calculate gross profit and margin percentage from your cost and selling price.</p>
+            <div class="form-group">
+              <label for="pm-cost" data-i18n="calc_profit_cost">Cost Price ($)</label>
+              <input type="number" id="pm-cost" placeholder="0.00" min="0" step="0.01" aria-label="Cost Price" />
+            </div>
+            <div class="form-group">
+              <label for="pm-sell" data-i18n="calc_profit_sell">Selling Price ($)</label>
+              <input type="number" id="pm-sell" placeholder="0.00" min="0" step="0.01" aria-label="Selling Price" />
+            </div>
+            <div class="calc-result" id="pm-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_profit_profit">Profit</span>
+                <span class="result-value" id="pm-profit">$0.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_profit_margin">Margin %</span>
+                <span class="result-value accent" id="pm-margin">0%</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Freelance -->
+    <section class="section" style="padding-top:0" aria-labelledby="freelance-heading-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">🧑‍💻 Freelance</div>
+          <h2 id="freelance-heading-section" data-i18n="section_freelance">Freelance Tools</h2>
+          <p data-i18n="section_freelance_sub">Set rates that actually cover your life.</p>
+        </div>
+        <div class="calc-grid" style="max-width:680px;">
+
+          <!-- Freelance Rate -->
+          <article class="calc-card" id="freelance" aria-labelledby="freelance-heading">
+            <div class="calc-icon">💼</div>
+            <h2 id="freelance-heading" data-i18n="calc_rate_title">Freelance Rate Calculator</h2>
+            <p data-i18n="calc_rate_desc">Find the minimum hourly rate you need to charge to cover income goals and business expenses.</p>
+            <div class="form-group">
+              <label for="fr-income" data-i18n="calc_rate_income">Desired Monthly Income ($)</label>
+              <input type="number" id="fr-income" placeholder="0.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="fr-expenses" data-i18n="calc_rate_expenses">Monthly Expenses ($)</label>
+              <input type="number" id="fr-expenses" placeholder="0.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="fr-hours" data-i18n="calc_rate_hours">Billable Hours / Month</label>
+              <input type="number" id="fr-hours" placeholder="160" min="1" step="1" />
+            </div>
+            <div class="calc-result" id="fr-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_rate_result">Suggested Hourly Rate</span>
+                <span class="result-value accent" id="fr-rate">$0.00/hr</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── SEO Content ─────────────────────────────────────────── -->
+  <section class="section seo-section" aria-label="About Feexio">
+    <div class="container">
+      <div class="section-header text-center" style="max-width:640px;margin:0 auto 40px;">
+        <h2 data-i18n="seo_title">Your Free Financial Toolkit</h2>
+        <p data-i18n="seo_intro">Feexio is a lightweight, fast financial utility platform built for people who work with money every day.</p>
+      </div>
+      <div class="seo-grid">
+        <div class="seo-block">
+          <h3 data-i18n="seo_b1_title">PayPal &amp; Stripe Fee Calculators</h3>
+          <p data-i18n="seo_b1_text">Use our PayPal fee calculator and Stripe fee calculator to immediately see how much a payment processor takes from your transaction.</p>
+        </div>
+        <div class="seo-block">
+          <h3 data-i18n="seo_b2_title">Profit Margin Calculator</h3>
+          <p data-i18n="seo_b2_text">Our profit margin calculator helps you understand the relationship between cost, revenue and profitability.</p>
+        </div>
+        <div class="seo-block">
+          <h3 data-i18n="seo_b3_title">Freelance Rate Calculator</h3>
+          <p data-i18n="seo_b3_text">The freelance rate calculator is designed for independent workers who want to charge what they're actually worth.</p>
+        </div>
+        <div class="seo-block">
+          <h3 data-i18n="seo_b4_title">Fiverr Fee Calculator</h3>
+          <p data-i18n="seo_b4_text">Selling on Fiverr? Our Fiverr fee calculator shows you the real impact of the 20% service fee on your earnings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Ad: Pre-Footer ──────────────────────────────────────── -->
+  <div style="padding:32px 0;">
+    <div class="container text-center">
+      <div class="ad-placeholder ad-banner" style="margin:0 auto;" role="complementary">
+        <span data-i18n="ad_label">Advertisement</span> · 728×90
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer injected by components.js -->
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

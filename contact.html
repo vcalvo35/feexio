@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Feexio — Get in Touch</title>
+  <meta name="description" content="Contact the Feexio team. Questions, feedback, bug reports or partnership inquiries — we'd love to hear from you." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">✉️ Contact</div>
+      <h1>Get in Touch</h1>
+      <p>Questions, feedback, bug reports, or partnership ideas — we read every message.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info fade-up">
+          <h2>We'd Love to Hear From You</h2>
+          <p>Whether you've spotted a bug, have an idea for a new calculator, or want to discuss advertising or partnership opportunities — reach out. We're a small team and we respond to every message.</p>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📧</div>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              hello@feexio.com
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🐦</div>
+            <div class="contact-item-text">
+              <strong>Twitter / X</strong>
+              @feexio
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">⏱️</div>
+            <div class="contact-item-text">
+              <strong>Response Time</strong>
+              Usually within 24–48 hours on business days
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">💡</div>
+            <div class="contact-item-text">
+              <strong>Feature Requests</strong>
+              Have a calculator idea? We're always adding new tools based on user requests.
+            </div>
+          </div>
+
+          <!-- Ad -->
+          <div style="margin-top:32px;">
+            <div class="ad-placeholder ad-rectangle">
+              <span data-i18n="ad_label">Advertisement</span> · 400×100
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-up fade-up-d1">
+          <div class="contact-form">
+            <h3 style="font-family:var(--font-display);font-weight:700;font-size:1.2rem;color:var(--text);margin-bottom:24px;">Send a Message</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Name</label>
+                  <input type="text" id="contact-name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" placeholder="you@email.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <select id="contact-subject">
+                  <option value="">Select a topic...</option>
+                  <option value="bug">Bug Report</option>
+                  <option value="feature">Feature Request</option>
+                  <option value="advertising">Advertising / Partnerships</option>
+                  <option value="feedback">General Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" placeholder="Tell us what's on your mind..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+                Send Message ✉️
+              </button>
+              <div class="form-success" id="form-success">
+                ✅ Message sent! We'll get back to you within 24–48 hours.
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
