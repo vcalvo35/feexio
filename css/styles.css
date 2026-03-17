@@ -422,3 +422,15 @@ footer {
   .hero h1 { letter-spacing: -1px; }
   .hero-btns { flex-direction: column; align-items: center; }
 }
+
+/* ── Logo SVG switching (light / dark mode) ──────────────────── */
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.logo-img { height: 30px; width: auto; display: block; transition: opacity var(--transition); }
+.logo-img--dark  { display: none; }
+.logo-img--light { display: block; }
+[data-theme="dark"] .logo-img--light { display: none; }
+[data-theme="dark"] .logo-img--dark  { display: block; }
+.nav-logo:hover .logo-img { opacity: 0.82; }
+
+/* Footer logo sizing */
+footer .logo-img { height: 26px; }

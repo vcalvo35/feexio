@@ -7,7 +7,10 @@ const NAV_HTML = `
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Feexio Home">Fee<span>x</span>io</a>
+      <a href="index.html" class="nav-logo" aria-label="Feexio Home">
+        <img class="logo-img logo-img--light" src="assets/brand/feexio-logo-light.svg" alt="Feexio" width="130" height="30">
+        <img class="logo-img logo-img--dark"  src="assets/brand/feexio-logo-dark.svg"  alt="Feexio" width="130" height="30">
+      </a>
       <div class="nav-links">
         <a href="index.html" data-i18n="nav_home">Home</a>
         <a href="index.html#calculators" data-i18n="nav_calculators">Calculators</a>
@@ -40,7 +43,10 @@ const FOOTER_HTML = `
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="footer-logo">Fee<span>x</span>io</div>
+        <a href="index.html" aria-label="Feexio Home" style="display:inline-block;margin-bottom:10px;">
+          <img class="logo-img logo-img--light" src="assets/brand/feexio-logo-light.svg" alt="Feexio" width="110" height="26">
+          <img class="logo-img logo-img--dark"  src="assets/brand/feexio-logo-dark.svg"  alt="Feexio" width="110" height="26">
+        </a>
         <p data-i18n="footer_tagline">Fast, free financial calculators for freelancers and entrepreneurs.</p>
       </div>
       <div class="footer-col">
