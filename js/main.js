@@ -11,7 +11,7 @@ const i18n = {
     nav_blog: 'Blog',
     nav_about: 'About',
     nav_contact: 'Contact',
-    hero_badge: '5 Free Calculators',
+    hero_badge: '8 Free Calculators',
     hero_h1_a: 'Calculate Fees,',
     hero_h1_b: 'Profit & Rates',
     hero_h1_c: 'Instantly',
@@ -85,6 +85,71 @@ const i18n = {
     footer_legal: 'Legal',
     footer_copy: '© 2025 Feexio. All rights reserved.',
 
+
+    // Compound Interest
+    calc_compound_title: 'Compound Interest Calculator',
+    calc_compound_desc: 'Calculate how your investment grows over time with compound interest at different compounding frequencies.',
+    calc_compound_principal: 'Principal Amount ($)',
+    calc_compound_rate: 'Annual Interest Rate (%)',
+    calc_compound_years: 'Term (years)',
+    calc_compound_annual: 'Annual compounding',
+    calc_compound_monthly: 'Monthly compounding',
+    calc_compound_interest: 'Total Interest Earned',
+
+    // Cost per Unit Volume
+    calc_unitcost_title: 'Cost per Unit Volume',
+    calc_unitcost_desc: 'Compare the true cost of materials or products by calculating price per cubic unit — ideal for bulk buying decisions.',
+    calc_unitcost_length: 'Length',
+    calc_unitcost_width: 'Width',
+    calc_unitcost_height: 'Height',
+    calc_unitcost_cost: 'Total Cost ($)',
+    calc_unitcost_volume: 'Volume',
+    calc_unitcost_result: 'Cost per cubic unit',
+
+    // Project Quote
+    calc_quote_title: 'Project Quote Calculator',
+    calc_quote_desc: 'Estimate the total price for a client project based on your hourly rate, estimated hours, and an optional buffer for scope creep.',
+    calc_quote_rate: 'Your Hourly Rate ($)',
+    calc_quote_hours: 'Estimated Hours',
+    calc_quote_buffer: 'Scope Buffer (%)',
+    calc_quote_base: 'Base Price',
+    calc_quote_total: 'Total Quote (with buffer)',
+
+    // Savings Goal
+    calc_savings_title: 'Savings Goal Calculator',
+    calc_savings_desc: 'Find out how much you need to set aside each month to reach a financial goal — ideal for freelancers building an emergency fund or saving for equipment.',
+    calc_savings_goal: 'Savings Goal ($)',
+    calc_savings_saved: 'Already Saved ($)',
+    calc_savings_months: 'Months to Reach Goal',
+    calc_savings_remaining: 'Amount Remaining',
+    calc_savings_monthly: 'Monthly Amount Needed',
+
+    // About page
+    about_label: 'ℹ️ About',
+    about_hero_h1: 'Built for People Who Work for Themselves',
+    about_hero_sub: 'Feexio exists because freelancers and independent sellers deserve instant, accurate financial clarity — without spreadsheets or sign-ups.',
+    about_why_title: 'Why We Built Feexio',
+    about_why_p1: 'Every freelancer has had this moment: you\'ve just agreed on a $500 project, sent the invoice via PayPal, and a few days later you notice your account shows $485.20. Where did $14.80 go? You knew there were fees — but what exactly are they, and how do you price your next job to account for them?',
+    about_why_p2: 'That small moment of friction is exactly what Feexio was built to eliminate. We\'re a team of independent workers who got tired of opening spreadsheets or digging through help docs to answer simple money questions.',
+    about_why_p3: 'Our tools are deliberately simple. No accounts, no paywalls, no onboarding. You arrive, you calculate, you leave smarter than when you came.',
+    about_v1_title: 'Instant Results',
+    about_v1_text: 'Every calculator updates in real time as you type. No submit button.',
+    about_v2_title: 'Always Free',
+    about_v2_text: 'All tools are free, forever. We monetize through ads, not paywalls.',
+    about_v3_title: 'No Data Collected',
+    about_v3_text: 'We don\'t store your inputs. Your numbers stay on your device.',
+    about_v4_title: 'Bilingual',
+    about_v4_text: 'Available in English and Spanish for a global freelance community.',
+    about_tagline_visual: 'Calculate Fees, Profit & Rates Instantly',
+    about_stat1: 'Free Calculators',
+    about_stat2: 'Required Sign-ups',
+    about_stat3: 'Languages',
+    about_stat4: 'Free Calculations',
+    about_mission_label: 'Our Mission',
+    about_mission_title: 'Financial Clarity for Independent Workers',
+    about_mission_p1: 'The global freelance economy is massive — and growing. But too many independent workers make financial decisions based on guesswork. We believe every freelancer, seller, and entrepreneur deserves the same clarity that big companies have — instant access to accurate numbers, without needing a finance team.',
+    about_mission_p2: 'Feexio is our contribution to that world. Simple tools, accurate results, zero friction.',
+
     // Misc
     read_more: 'Read Article →',
     back_home: '← Back to Home',
@@ -97,7 +162,7 @@ const i18n = {
     nav_blog: 'Blog',
     nav_about: 'Acerca de',
     nav_contact: 'Contacto',
-    hero_badge: '5 Calculadoras Gratis',
+    hero_badge: '8 Calculadoras Gratis',
     hero_h1_a: 'Calcula Comisiones,',
     hero_h1_b: 'Ganancias y Tarifas',
     hero_h1_c: 'Al Instante',
@@ -163,6 +228,71 @@ const i18n = {
     footer_company: 'Empresa',
     footer_legal: 'Legal',
     footer_copy: '© 2025 Feexio. Todos los derechos reservados.',
+
+
+    // Interés Compuesto
+    calc_compound_title: 'Calculadora de Interés Compuesto',
+    calc_compound_desc: 'Calcula cómo crece tu inversión con el tiempo mediante interés compuesto en diferentes frecuencias de capitalización.',
+    calc_compound_principal: 'Capital Inicial ($)',
+    calc_compound_rate: 'Tasa de Interés Anual (%)',
+    calc_compound_years: 'Plazo (años)',
+    calc_compound_annual: 'Capitalización anual',
+    calc_compound_monthly: 'Capitalización mensual',
+    calc_compound_interest: 'Intereses Ganados',
+
+    // Costo por Unidad de Volumen
+    calc_unitcost_title: 'Costo por Unidad de Volumen',
+    calc_unitcost_desc: 'Compara el costo real de materiales o productos calculando el precio por unidad cúbica — ideal para decisiones de compra al por mayor.',
+    calc_unitcost_length: 'Largo',
+    calc_unitcost_width: 'Ancho',
+    calc_unitcost_height: 'Alto',
+    calc_unitcost_cost: 'Costo Total ($)',
+    calc_unitcost_volume: 'Volumen',
+    calc_unitcost_result: 'Costo por unidad cúbica',
+
+    // Cotización de Proyecto
+    calc_quote_title: 'Calculadora de Cotización',
+    calc_quote_desc: 'Estima el precio total de un proyecto para un cliente basado en tu tarifa, las horas estimadas y un margen de seguridad por cambios de alcance.',
+    calc_quote_rate: 'Tu Tarifa por Hora ($)',
+    calc_quote_hours: 'Horas Estimadas',
+    calc_quote_buffer: 'Margen de Seguridad (%)',
+    calc_quote_base: 'Precio Base',
+    calc_quote_total: 'Cotización Total (con margen)',
+
+    // Meta de Ahorro
+    calc_savings_title: 'Calculadora de Meta de Ahorro',
+    calc_savings_desc: 'Descubre cuánto debes ahorrar cada mes para alcanzar una meta financiera — ideal para freelancers que construyen un fondo de emergencia o ahorran para equipos.',
+    calc_savings_goal: 'Meta de Ahorro ($)',
+    calc_savings_saved: 'Ya Ahorrado ($)',
+    calc_savings_months: 'Meses para Alcanzar la Meta',
+    calc_savings_remaining: 'Monto Restante',
+    calc_savings_monthly: 'Monto Mensual Necesario',
+
+    // Página Acerca de
+    about_label: 'ℹ️ Acerca de',
+    about_hero_h1: 'Construido para Quienes Trabajan por su Cuenta',
+    about_hero_sub: 'Feexio existe porque los freelancers y vendedores independientes merecen claridad financiera instantánea y precisa — sin hojas de cálculo ni registros.',
+    about_why_title: '¿Por Qué Creamos Feexio?',
+    about_why_p1: 'Todo freelancer ha vivido este momento: acabas de acordar un proyecto de $500, enviaste la factura por PayPal, y días después ves que tu cuenta muestra $485.20. ¿A dónde fueron los $14.80? Sabías que había comisiones — pero ¿cuáles exactamente, y cómo debes ajustar tu próxima cotización?',
+    about_why_p2: 'Ese pequeño momento de fricción es exactamente lo que Feexio fue creado para eliminar. Somos un equipo de trabajadores independientes que se cansó de abrir hojas de cálculo o buscar en la documentación para responder preguntas simples sobre dinero.',
+    about_why_p3: 'Nuestras herramientas son deliberadamente simples. Sin cuentas, sin muros de pago, sin onboarding. Llegas, calculas y te vas con más claridad que cuando llegaste.',
+    about_v1_title: 'Resultados Instantáneos',
+    about_v1_text: 'Cada calculadora se actualiza en tiempo real mientras escribes. Sin botón de enviar.',
+    about_v2_title: 'Siempre Gratis',
+    about_v2_text: 'Todas las herramientas son gratuitas para siempre. Nos financiamos con publicidad, no con muros de pago.',
+    about_v3_title: 'Sin Recolección de Datos',
+    about_v3_text: 'No almacenamos tus datos. Tus números permanecen en tu dispositivo.',
+    about_v4_title: 'Bilingüe',
+    about_v4_text: 'Disponible en inglés y español para una comunidad freelance global.',
+    about_tagline_visual: 'Calcula Comisiones, Ganancias y Tarifas al Instante',
+    about_stat1: 'Calculadoras Gratis',
+    about_stat2: 'Registros Requeridos',
+    about_stat3: 'Idiomas',
+    about_stat4: 'Cálculos Gratis',
+    about_mission_label: 'Nuestra Misión',
+    about_mission_title: 'Claridad Financiera para Trabajadores Independientes',
+    about_mission_p1: 'La economía freelance global es masiva y sigue creciendo. Pero demasiados trabajadores independientes toman decisiones financieras basadas en suposiciones. Creemos que cada freelancer, vendedor y emprendedor merece la misma claridad que tienen las grandes empresas — acceso instantáneo a números precisos, sin necesitar un equipo de finanzas.',
+    about_mission_p2: 'Feexio es nuestra contribución a ese mundo. Herramientas simples, resultados precisos, cero fricción.',
 
     read_more: 'Leer Artículo →',
     back_home: '← Volver al Inicio',
@@ -267,6 +397,58 @@ function calcRate() {
   document.getElementById('fr-result').classList.add('visible');
 }
 
+
+function calcCompound() {
+  const P = parseFloat(document.getElementById('ci-principal').value) || 0;
+  const r = (parseFloat(document.getElementById('ci-rate').value) || 0) / 100;
+  const n = parseFloat(document.getElementById('ci-years').value) || 0;
+  if (P <= 0 || r <= 0 || n <= 0) return;
+  const annual   = P * Math.pow(1 + r, n);
+  const monthly  = P * Math.pow(1 + r/12, 12*n);
+  const interest = monthly - P;
+  document.getElementById('ci-annual').textContent   = fmt(annual);
+  document.getElementById('ci-monthly').textContent  = fmt(monthly);
+  document.getElementById('ci-interest').textContent = fmt(interest);
+  document.getElementById('ci-result').classList.add('visible');
+}
+
+function calcUnitCost() {
+  const L = parseFloat(document.getElementById('uv-length').value) || 0;
+  const W = parseFloat(document.getElementById('uv-width').value)  || 0;
+  const H = parseFloat(document.getElementById('uv-height').value) || 0;
+  const C = parseFloat(document.getElementById('uv-cost').value)   || 0;
+  if (L <= 0 || W <= 0 || H <= 0 || C <= 0) return;
+  const vol = L * W * H;
+  const cpv = C / vol;
+  document.getElementById('uv-volume').textContent = vol.toFixed(2);
+  document.getElementById('uv-cpv').textContent    = '$' + cpv.toFixed(4);
+  document.getElementById('uv-result').classList.add('visible');
+}
+
+function calcProjectQuote() {
+  const rate   = parseFloat(document.getElementById('pq-rate').value)   || 0;
+  const hours  = parseFloat(document.getElementById('pq-hours').value)  || 0;
+  const buffer = parseFloat(document.getElementById('pq-buffer').value) || 0;
+  if (rate <= 0 || hours <= 0) return;
+  const base  = rate * hours;
+  const total = base * (1 + buffer / 100);
+  document.getElementById('pq-base').textContent  = fmt(base);
+  document.getElementById('pq-total').textContent = fmt(total);
+  document.getElementById('pq-result').classList.add('visible');
+}
+
+function calcSavingsGoal() {
+  const goal   = parseFloat(document.getElementById('sg-goal').value)   || 0;
+  const saved  = parseFloat(document.getElementById('sg-saved').value)  || 0;
+  const months = parseFloat(document.getElementById('sg-months').value) || 0;
+  if (goal <= 0 || months <= 0) return;
+  const remaining = Math.max(0, goal - saved);
+  const monthly   = remaining / months;
+  document.getElementById('sg-remaining').textContent = fmt(remaining);
+  document.getElementById('sg-monthly').textContent   = fmt(monthly) + '/mo';
+  document.getElementById('sg-result').classList.add('visible');
+}
+
 // ── Mobile Nav ────────────────────────────────────────────────
 function initNav() {
   const hamburger = document.getElementById('hamburger');
@@ -314,6 +496,22 @@ document.addEventListener('DOMContentLoaded', () => {
   ['pm-cost','pm-sell'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('input', calcProfit);
+  });
+  ['ci-principal','ci-rate','ci-years'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', calcCompound);
+  });
+  ['uv-length','uv-width','uv-height','uv-cost'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', calcUnitCost);
+  });
+  ['pq-rate','pq-hours','pq-buffer'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', calcProjectQuote);
+  });
+  ['sg-goal','sg-saved','sg-months'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', calcSavingsGoal);
   });
   ['fr-income','fr-expenses','fr-hours'].forEach(id => {
     const el = document.getElementById(id);

@@ -198,7 +198,7 @@
           <h2 id="profit-heading-section" data-i18n="section_business">Business &amp; Profit</h2>
           <p data-i18n="section_business_sub">Know your margins before you price anything.</p>
         </div>
-        <div class="calc-grid" style="max-width:680px;">
+        <div class="calc-grid">
 
           <!-- Profit Margin -->
           <article class="calc-card" id="profit" aria-labelledby="profit-heading">
@@ -207,11 +207,11 @@
             <p data-i18n="calc_profit_desc">Calculate gross profit and margin percentage from your cost and selling price.</p>
             <div class="form-group">
               <label for="pm-cost" data-i18n="calc_profit_cost">Cost Price ($)</label>
-              <input type="number" id="pm-cost" placeholder="0.00" min="0" step="0.01" aria-label="Cost Price" />
+              <input type="number" id="pm-cost" placeholder="0.00" min="0" step="0.01" />
             </div>
             <div class="form-group">
               <label for="pm-sell" data-i18n="calc_profit_sell">Selling Price ($)</label>
-              <input type="number" id="pm-sell" placeholder="0.00" min="0" step="0.01" aria-label="Selling Price" />
+              <input type="number" id="pm-sell" placeholder="0.00" min="0" step="0.01" />
             </div>
             <div class="calc-result" id="pm-result" role="status" aria-live="polite">
               <div class="result-row">
@@ -225,9 +225,84 @@
             </div>
           </article>
 
+          <!-- Compound Interest -->
+          <article class="calc-card" id="compound" aria-labelledby="compound-heading">
+            <div class="calc-icon">📈</div>
+            <h2 id="compound-heading" data-i18n="calc_compound_title">Compound Interest Calculator</h2>
+            <p data-i18n="calc_compound_desc">Calculate how your investment grows over time with compound interest at different compounding frequencies.</p>
+            <div class="form-group">
+              <label for="ci-principal" data-i18n="calc_compound_principal">Principal Amount ($)</label>
+              <input type="number" id="ci-principal" placeholder="1000.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="ci-rate" data-i18n="calc_compound_rate">Annual Interest Rate (%)</label>
+              <input type="number" id="ci-rate" placeholder="5.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="ci-years" data-i18n="calc_compound_years">Term (years)</label>
+              <input type="number" id="ci-years" placeholder="10" min="1" step="1" />
+            </div>
+            <div class="calc-result" id="ci-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_compound_annual">Annual compounding</span>
+                <span class="result-value" id="ci-annual">$0.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_compound_monthly">Monthly compounding</span>
+                <span class="result-value" id="ci-monthly">$0.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_compound_interest">Total Interest Earned</span>
+                <span class="result-value accent" id="ci-interest">$0.00</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cost per Unit Volume -->
+          <article class="calc-card" id="unitcost" aria-labelledby="unitcost-heading">
+            <div class="calc-icon">📦</div>
+            <h2 id="unitcost-heading" data-i18n="calc_unitcost_title">Cost per Unit Volume</h2>
+            <p data-i18n="calc_unitcost_desc">Compare the true cost of materials or products by calculating price per cubic unit — ideal for bulk buying decisions.</p>
+            <div class="form-group">
+              <label for="uv-length" data-i18n="calc_unitcost_length">Length</label>
+              <input type="number" id="uv-length" placeholder="0.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="uv-width" data-i18n="calc_unitcost_width">Width</label>
+              <input type="number" id="uv-width" placeholder="0.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="uv-height" data-i18n="calc_unitcost_height">Height</label>
+              <input type="number" id="uv-height" placeholder="0.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="uv-cost" data-i18n="calc_unitcost_cost">Total Cost ($)</label>
+              <input type="number" id="uv-cost" placeholder="0.00" min="0" step="0.01" />
+            </div>
+            <div class="calc-result" id="uv-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_unitcost_volume">Volume</span>
+                <span class="result-value" id="uv-volume">0</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_unitcost_result">Cost per cubic unit</span>
+                <span class="result-value accent" id="uv-cpv">$0.00</span>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
+
+    <!-- Ad between sections -->
+    <div style="padding:8px 0 32px;">
+      <div class="container text-center">
+        <div class="ad-placeholder ad-rectangle" style="margin:0 auto;" role="complementary">
+          <span data-i18n="ad_label">Advertisement</span> · 400×100
+        </div>
+      </div>
+    </div>
 
     <!-- Section 3: Freelance -->
     <section class="section" style="padding-top:0" aria-labelledby="freelance-heading-section">
@@ -237,7 +312,7 @@
           <h2 id="freelance-heading-section" data-i18n="section_freelance">Freelance Tools</h2>
           <p data-i18n="section_freelance_sub">Set rates that actually cover your life.</p>
         </div>
-        <div class="calc-grid" style="max-width:680px;">
+        <div class="calc-grid">
 
           <!-- Freelance Rate -->
           <article class="calc-card" id="freelance" aria-labelledby="freelance-heading">
@@ -262,6 +337,63 @@
                 <span class="result-value accent" id="fr-rate">$0.00/hr</span>
               </div>
             </div>
+
+          <!-- Project Quote Calculator -->
+          <article class="calc-card" id="project-quote" aria-labelledby="pq-heading">
+            <div class="calc-icon">🧾</div>
+            <h2 id="pq-heading" data-i18n="calc_quote_title">Project Quote Calculator</h2>
+            <p data-i18n="calc_quote_desc">Estimate the total price for a client project based on your hourly rate, estimated hours, and an optional buffer for scope creep.</p>
+            <div class="form-group">
+              <label for="pq-rate" data-i18n="calc_quote_rate">Your Hourly Rate ($)</label>
+              <input type="number" id="pq-rate" placeholder="0.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="pq-hours" data-i18n="calc_quote_hours">Estimated Hours</label>
+              <input type="number" id="pq-hours" placeholder="0" min="0" step="1" />
+            </div>
+            <div class="form-group">
+              <label for="pq-buffer" data-i18n="calc_quote_buffer">Scope Buffer (%)</label>
+              <input type="number" id="pq-buffer" placeholder="20" min="0" max="100" step="1" />
+            </div>
+            <div class="calc-result" id="pq-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_quote_base">Base Price</span>
+                <span class="result-value" id="pq-base">$0.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_quote_total">Total Quote (with buffer)</span>
+                <span class="result-value accent" id="pq-total">$0.00</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Savings Goal Calculator -->
+          <article class="calc-card" id="savings-goal" aria-labelledby="sg-heading">
+            <div class="calc-icon">🎯</div>
+            <h2 id="sg-heading" data-i18n="calc_savings_title">Savings Goal Calculator</h2>
+            <p data-i18n="calc_savings_desc">Find out how much you need to set aside each month to reach a financial goal — ideal for freelancers building an emergency fund or saving for equipment.</p>
+            <div class="form-group">
+              <label for="sg-goal" data-i18n="calc_savings_goal">Savings Goal ($)</label>
+              <input type="number" id="sg-goal" placeholder="0.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="sg-saved" data-i18n="calc_savings_saved">Already Saved ($)</label>
+              <input type="number" id="sg-saved" placeholder="0.00" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="sg-months" data-i18n="calc_savings_months">Months to Reach Goal</label>
+              <input type="number" id="sg-months" placeholder="12" min="1" step="1" />
+            </div>
+            <div class="calc-result" id="sg-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_savings_remaining">Amount Remaining</span>
+                <span class="result-value" id="sg-remaining">$0.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_savings_monthly">Monthly Amount Needed</span>
+                <span class="result-value accent" id="sg-monthly">$0.00/mo</span>
+              </div>
+            </div>
           </article>
 
         </div>
@@ -269,6 +401,7 @@
     </section>
 
   </main>
+
 
   <!-- ── SEO Content ─────────────────────────────────────────── -->
   <section class="section seo-section" aria-label="About Feexio">
