@@ -84,7 +84,7 @@
       </div>
       <div class="hero-stats fade-up fade-up-d3">
         <div class="stat">
-          <div class="stat-num">5</div>
+          <div class="stat-num">12</div>
           <div class="stat-label" data-i18n="stat1">Calculators</div>
         </div>
         <div class="stat">
@@ -409,6 +409,141 @@
       </div>
     </section>
 
+
+    <!-- Ad between sections -->
+    <div style="padding:8px 0 32px;">
+      <div class="container text-center">
+        <div class="ad-placeholder ad-rectangle" style="margin:0 auto;" role="complementary">
+          <span data-i18n="ad_label">Advertisement</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Loans & Mortgages -->
+    <section class="section" style="padding-top:0" aria-labelledby="loans-heading-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">&#127970; Loans</div>
+          <h2 id="loans-heading-section" data-i18n="section_loans">Loans &amp; Mortgages</h2>
+          <p data-i18n="section_loans_sub">Plan your payments before you sign anything.</p>
+        </div>
+        <div class="calc-grid">
+
+          <!-- Mortgage Calculator -->
+          <article class="calc-card" id="mortgage" aria-labelledby="mortgage-heading">
+            <div class="calc-icon">&#127968;</div>
+            <h2 id="mortgage-heading" data-i18n="calc_mortgage_title">Mortgage Calculator</h2>
+            <p data-i18n="calc_mortgage_desc">Estimate your monthly mortgage payment based on home price, down payment, interest rate and loan term.</p>
+            <div class="form-group">
+              <label for="mo-price" data-i18n="calc_mortgage_price">Home Price ($)</label>
+              <input type="number" id="mo-price" placeholder="300000" min="0" step="1" />
+            </div>
+            <div class="form-group">
+              <label for="mo-down" data-i18n="calc_mortgage_down">Down Payment ($)</label>
+              <input type="number" id="mo-down" placeholder="60000" min="0" step="1" />
+            </div>
+            <div class="form-group">
+              <label for="mo-rate" data-i18n="calc_mortgage_rate">Annual Interest Rate (%)</label>
+              <input type="number" id="mo-rate" placeholder="6.5" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="mo-years" data-i18n="calc_mortgage_years">Loan Term (years)</label>
+              <input type="number" id="mo-years" placeholder="30" min="1" step="1" />
+            </div>
+            <div class="calc-result" id="mo-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_mortgage_monthly">Monthly Payment</span>
+                <span class="result-value accent" id="mo-monthly">  </main>.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_mortgage_interest">Total Interest</span>
+                <span class="result-value" id="mo-interest">  </main>.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_mortgage_total">Total Cost</span>
+                <span class="result-value" id="mo-total">  </main>.00</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Personal Loan Calculator -->
+          <article class="calc-card" id="personal-loan" aria-labelledby="pl-heading">
+            <div class="calc-icon">&#128179;</div>
+            <h2 id="pl-heading" data-i18n="calc_loan_title">Personal Loan Calculator</h2>
+            <p data-i18n="calc_loan_desc">Calculate monthly payments and total interest for any personal loan or auto loan.</p>
+            <div class="form-group">
+              <label for="pl-amount" data-i18n="calc_loan_amount">Loan Amount ($)</label>
+              <input type="number" id="pl-amount" placeholder="10000" min="0" step="1" />
+            </div>
+            <div class="form-group">
+              <label for="pl-rate" data-i18n="calc_loan_rate">Annual Interest Rate (%)</label>
+              <input type="number" id="pl-rate" placeholder="8.0" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="pl-months" data-i18n="calc_loan_months">Loan Term (months)</label>
+              <input type="number" id="pl-months" placeholder="36" min="1" step="1" />
+            </div>
+            <div class="calc-result" id="pl-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_loan_monthly">Monthly Payment</span>
+                <span class="result-value accent" id="pl-monthly">  </main>.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_loan_interest">Total Interest</span>
+                <span class="result-value" id="pl-interest">  </main>.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_loan_total">Total Paid</span>
+                <span class="result-value" id="pl-total">  </main>.00</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Amortization Schedule -->
+          <article class="calc-card" id="amortization" aria-labelledby="am-heading">
+            <div class="calc-icon">&#128202;</div>
+            <h2 id="am-heading" data-i18n="calc_amort_title">Amortization Schedule</h2>
+            <p data-i18n="calc_amort_desc">See how your loan balance decreases over time and the split between principal and interest each year.</p>
+            <div class="form-group">
+              <label for="am-amount" data-i18n="calc_amort_amount">Loan Amount ($)</label>
+              <input type="number" id="am-amount" placeholder="20000" min="0" step="1" />
+            </div>
+            <div class="form-group">
+              <label for="am-rate" data-i18n="calc_amort_rate">Annual Interest Rate (%)</label>
+              <input type="number" id="am-rate" placeholder="7.0" min="0" step="0.01" />
+            </div>
+            <div class="form-group">
+              <label for="am-months" data-i18n="calc_amort_months">Loan Term (months)</label>
+              <input type="number" id="am-months" placeholder="60" min="1" step="1" />
+            </div>
+            <div class="calc-result" id="am-result" role="status" aria-live="polite">
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_amort_payment">Monthly Payment</span>
+                <span class="result-value accent" id="am-payment">  </main>.00</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label" data-i18n="calc_amort_interest">Total Interest</span>
+                <span class="result-value" id="am-interest">  </main>.00</span>
+              </div>
+              <div id="am-table-wrap" style="margin-top:12px;overflow-x:auto;display:none;">
+                <table id="am-table" style="width:100%;font-size:0.78rem;border-collapse:collapse;">
+                  <thead>
+                    <tr>
+                      <th style="text-align:left;padding:4px 6px;opacity:0.6;" data-i18n="calc_amort_col_year">Year</th>
+                      <th style="text-align:right;padding:4px 6px;opacity:0.6;" data-i18n="calc_amort_col_principal">Principal</th>
+                      <th style="text-align:right;padding:4px 6px;opacity:0.6;" data-i18n="calc_amort_col_interest">Interest</th>
+                      <th style="text-align:right;padding:4px 6px;opacity:0.6;" data-i18n="calc_amort_col_balance">Balance</th>
+                    </tr>
+                  </thead>
+                  <tbody id="am-tbody"></tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
   </main>
 
 

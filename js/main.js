@@ -11,7 +11,7 @@ const i18n = {
     nav_blog: 'Blog',
     nav_about: 'About',
     nav_contact: 'Contact',
-    hero_badge: '8 Free Calculators',
+    hero_badge: '12 Free Calculators',
     hero_h1_a: 'Calculate Fees,',
     hero_h1_b: 'Profit & Rates',
     hero_h1_c: 'Instantly',
@@ -28,6 +28,8 @@ const i18n = {
     section_business_sub: 'Know your margins before you price anything.',
     section_freelance: 'Freelance Tools',
     section_freelance_sub: 'Set rates that actually cover your life.',
+    section_loans: 'Loans & Mortgages',
+    section_loans_sub: 'Plan your payments before you sign anything.',
 
     // PayPal
     calc_paypal_title: 'PayPal Fee Calculator',
@@ -65,26 +67,6 @@ const i18n = {
     calc_rate_expenses: 'Monthly Expenses ($)',
     calc_rate_hours: 'Billable Hours / Month',
     calc_rate_result: 'Suggested Hourly Rate',
-
-    // SEO Content
-    seo_title: 'Your Free Financial Toolkit',
-    seo_intro: 'Feexio is a lightweight, fast financial utility platform built for people who work with money every day — freelancers, online sellers, small business owners, and entrepreneurs. Every calculator on this site is completely free, requires no account, and delivers instant results.',
-    seo_b1_title: 'PayPal & Stripe Fee Calculators',
-    seo_b1_text: 'Use our PayPal fee calculator and Stripe fee calculator to immediately see how much a payment processor takes from your transaction. Enter any amount and get the net received in real time — no guessing, no spreadsheets.',
-    seo_b2_title: 'Profit Margin Calculator',
-    seo_b2_text: 'Our profit margin calculator helps you understand the relationship between cost, revenue and profitability. Whether you\'re pricing a product or evaluating a deal, knowing your margin is non-negotiable.',
-    seo_b3_title: 'Freelance Rate Calculator',
-    seo_b3_text: 'The freelance rate calculator is designed for independent workers who want to charge what they\'re actually worth. Input your income target and expenses to find a sustainable hourly rate.',
-    seo_b4_title: 'Fiverr Fee Calculator',
-    seo_b4_text: 'Selling on Fiverr? Our Fiverr fee calculator shows you the real impact of the 20% service fee on your earnings. Price your gigs confidently knowing exactly what you\'ll take home.',
-
-    // Footer
-    footer_tagline: 'Fast, free financial calculators for freelancers and entrepreneurs.',
-    footer_tools: 'Tools',
-    footer_company: 'Company',
-    footer_legal: 'Legal',
-    footer_copy: '© 2025 Feexio. All rights reserved.',
-
 
     // Compound Interest
     calc_compound_title: 'Compound Interest Calculator',
@@ -124,8 +106,61 @@ const i18n = {
     calc_savings_remaining: 'Amount Remaining',
     calc_savings_monthly: 'Monthly Amount Needed',
 
+    // Mortgage Calculator
+    calc_mortgage_title: 'Mortgage Calculator',
+    calc_mortgage_desc: 'Estimate your monthly mortgage payment based on home price, down payment, interest rate and loan term.',
+    calc_mortgage_price: 'Home Price ($)',
+    calc_mortgage_down: 'Down Payment ($)',
+    calc_mortgage_rate: 'Annual Interest Rate (%)',
+    calc_mortgage_years: 'Loan Term (years)',
+    calc_mortgage_monthly: 'Monthly Payment',
+    calc_mortgage_interest: 'Total Interest',
+    calc_mortgage_total: 'Total Cost',
+
+    // Personal Loan Calculator
+    calc_loan_title: 'Personal Loan Calculator',
+    calc_loan_desc: 'Calculate monthly payments and total interest for any personal loan or auto loan.',
+    calc_loan_amount: 'Loan Amount ($)',
+    calc_loan_rate: 'Annual Interest Rate (%)',
+    calc_loan_months: 'Loan Term (months)',
+    calc_loan_monthly: 'Monthly Payment',
+    calc_loan_interest: 'Total Interest',
+    calc_loan_total: 'Total Paid',
+
+    // Amortization Schedule
+    calc_amort_title: 'Amortization Schedule',
+    calc_amort_desc: 'See how your loan balance decreases over time and the split between principal and interest each year.',
+    calc_amort_amount: 'Loan Amount ($)',
+    calc_amort_rate: 'Annual Interest Rate (%)',
+    calc_amort_months: 'Loan Term (months)',
+    calc_amort_payment: 'Monthly Payment',
+    calc_amort_interest: 'Total Interest',
+    calc_amort_col_year: 'Year',
+    calc_amort_col_principal: 'Principal',
+    calc_amort_col_interest: 'Interest',
+    calc_amort_col_balance: 'Balance',
+
+    // SEO Content
+    seo_title: 'Your Free Financial Toolkit',
+    seo_intro: 'Feexio is a lightweight, fast financial utility platform built for people who work with money every day — freelancers, online sellers, small business owners, and entrepreneurs. Every calculator is completely free, requires no account, and delivers instant results.',
+    seo_b1_title: 'PayPal & Stripe Fee Calculators',
+    seo_b1_text: 'Use our PayPal fee calculator and Stripe fee calculator to immediately see how much a payment processor takes from your transaction. Enter any amount and get the net received in real time.',
+    seo_b2_title: 'Profit Margin Calculator',
+    seo_b2_text: 'Our profit margin calculator helps you understand the relationship between cost, revenue and profitability. Whether you\'re pricing a product or evaluating a deal, knowing your margin is non-negotiable.',
+    seo_b3_title: 'Freelance Rate Calculator',
+    seo_b3_text: 'The freelance rate calculator is designed for independent workers who want to charge what they\'re actually worth. Input your income target and expenses to find a sustainable hourly rate.',
+    seo_b4_title: 'Fiverr Fee Calculator',
+    seo_b4_text: 'Selling on Fiverr? Our Fiverr fee calculator shows you the real impact of the 20% service fee on your earnings. Price your gigs confidently knowing exactly what you\'ll take home.',
+
+    // Footer
+    footer_tagline: 'Fast, free financial calculators for freelancers and entrepreneurs.',
+    footer_tools: 'Tools',
+    footer_company: 'Company',
+    footer_legal: 'Legal',
+    footer_copy: '\u00a9 2025 Feexio. All rights reserved.',
+
     // About page
-    about_label: 'ℹ️ About',
+    about_label: 'About',
     about_hero_h1: 'Built for People Who Work for Themselves',
     about_hero_sub: 'Feexio exists because freelancers and independent sellers deserve instant, accurate financial clarity — without spreadsheets or sign-ups.',
     about_why_title: 'Why We Built Feexio',
@@ -151,8 +186,8 @@ const i18n = {
     about_mission_p2: 'Feexio is our contribution to that world. Simple tools, accurate results, zero friction.',
 
     // Misc
-    read_more: 'Read Article →',
-    back_home: '← Back to Home',
+    read_more: 'Read Article \u2192',
+    back_home: '\u2190 Back to Home',
     all_articles: 'All Articles',
   },
 
@@ -162,40 +197,42 @@ const i18n = {
     nav_blog: 'Blog',
     nav_about: 'Acerca de',
     nav_contact: 'Contacto',
-    hero_badge: '8 Calculadoras Gratis',
+    hero_badge: '12 Calculadoras Gratis',
     hero_h1_a: 'Calcula Comisiones,',
     hero_h1_b: 'Ganancias y Tarifas',
     hero_h1_c: 'Al Instante',
-    hero_sub: 'Herramientas gratis para freelancers, vendedores y emprendedores. Sin registro, sin rodeos — solo resultados rápidos y precisos.',
+    hero_sub: 'Herramientas gratis para freelancers, vendedores y emprendedores. Sin registro, sin rodeos — solo resultados r\u00e1pidos y precisos.',
     hero_cta: 'Empezar a Calcular',
-    hero_cta2: 'Saber Más',
+    hero_cta2: 'Saber M\u00e1s',
     stat1: 'Calculadoras',
     stat2: 'Siempre Gratis',
     stat3: 'Sin Login',
     ad_label: 'Publicidad',
     section_fee: 'Calculadoras de Comisiones',
-    section_fee_sub: 'Descubre exactamente cuánto te quedas después de las comisiones de la plataforma.',
+    section_fee_sub: 'Descubre exactamente cu\u00e1nto te quedas despu\u00e9s de las comisiones de la plataforma.',
     section_business: 'Negocio y Ganancias',
-    section_business_sub: 'Conoce tus márgenes antes de fijar cualquier precio.',
+    section_business_sub: 'Conoce tus m\u00e1rgenes antes de fijar cualquier precio.',
     section_freelance: 'Herramientas Freelance',
     section_freelance_sub: 'Establece tarifas que realmente cubran tu vida.',
+    section_loans: 'Pr\u00e9stamos e Hipotecas',
+    section_loans_sub: 'Planifica tus pagos antes de firmar cualquier cosa.',
 
-    calc_paypal_title: 'Calculadora de Comisión PayPal',
-    calc_paypal_desc: 'Calcula exactamente la comisión que cobra PayPal y cuánto recibirás después de procesar un pago.',
-    calc_paypal_amount: 'Monto de la Transacción ($)',
-    calc_paypal_fee: 'Comisión PayPal',
+    calc_paypal_title: 'Calculadora de Comisi\u00f3n PayPal',
+    calc_paypal_desc: 'Calcula exactamente la comisi\u00f3n que cobra PayPal y cu\u00e1nto recibir\u00e1s despu\u00e9s de procesar un pago.',
+    calc_paypal_amount: 'Monto de la Transacci\u00f3n ($)',
+    calc_paypal_fee: 'Comisi\u00f3n PayPal',
     calc_paypal_net: 'Recibes',
 
-    calc_stripe_title: 'Calculadora de Comisión Stripe',
-    calc_stripe_desc: 'Estima al instante las comisiones de Stripe. Incluye el estándar 2.9% + $0.30 por transacción.',
-    calc_stripe_amount: 'Monto de la Transacción ($)',
-    calc_stripe_fee: 'Comisión Stripe',
+    calc_stripe_title: 'Calculadora de Comisi\u00f3n Stripe',
+    calc_stripe_desc: 'Estima al instante las comisiones de Stripe. Incluye el est\u00e1ndar 2.9% + $0.30 por transacci\u00f3n.',
+    calc_stripe_amount: 'Monto de la Transacci\u00f3n ($)',
+    calc_stripe_fee: 'Comisi\u00f3n Stripe',
     calc_stripe_net: 'Recibes',
 
-    calc_fiverr_title: 'Calculadora de Comisión Fiverr',
-    calc_fiverr_desc: 'Fiverr toma el 20% de cada servicio. Ve lo que realmente ganas después de deducir su comisión.',
+    calc_fiverr_title: 'Calculadora de Comisi\u00f3n Fiverr',
+    calc_fiverr_desc: 'Fiverr toma el 20% de cada servicio. Ve lo que realmente ganas despu\u00e9s de deducir su comisi\u00f3n.',
     calc_fiverr_price: 'Precio del Servicio ($)',
-    calc_fiverr_fee: 'Comisión Fiverr (20%)',
+    calc_fiverr_fee: 'Comisi\u00f3n Fiverr (20%)',
     calc_fiverr_net: 'Tus Ganancias',
 
     calc_profit_title: 'Calculadora de Margen de Ganancia',
@@ -206,114 +243,139 @@ const i18n = {
     calc_profit_margin: 'Margen %',
 
     calc_rate_title: 'Calculadora de Tarifa Freelance',
-    calc_rate_desc: 'Encuentra la tarifa por hora mínima que necesitas cobrar para cubrir tus metas de ingresos y gastos.',
+    calc_rate_desc: 'Encuentra la tarifa por hora m\u00ednima que necesitas cobrar para cubrir tus metas de ingresos y gastos.',
     calc_rate_income: 'Ingreso Mensual Deseado ($)',
     calc_rate_expenses: 'Gastos Mensuales ($)',
     calc_rate_hours: 'Horas Facturables / Mes',
     calc_rate_result: 'Tarifa por Hora Sugerida',
 
-    seo_title: 'Tu Kit de Herramientas Financieras Gratis',
-    seo_intro: 'Feexio es una plataforma de utilidades financieras liviana y rápida creada para personas que trabajan con dinero todos los días — freelancers, vendedores en línea, pequeñas empresas y emprendedores. Cada calculadora es completamente gratis, no requiere cuenta y entrega resultados al instante.',
-    seo_b1_title: 'Calculadoras de Comisión PayPal y Stripe',
-    seo_b1_text: 'Usa nuestra calculadora de comisión PayPal y calculadora de comisión Stripe para ver inmediatamente cuánto te cobra un procesador de pagos. Ingresa cualquier monto y obtén el neto en tiempo real.',
-    seo_b2_title: 'Calculadora de Margen de Ganancia',
-    seo_b2_text: 'Nuestra calculadora de margen te ayuda a entender la relación entre costo, ingresos y rentabilidad. Ya sea que estés fijando el precio de un producto o evaluando un negocio, conocer tu margen es fundamental.',
-    seo_b3_title: 'Calculadora de Tarifa Freelance',
-    seo_b3_text: 'La calculadora de tarifa freelance está diseñada para trabajadores independientes que quieren cobrar lo que realmente valen. Ingresa tu meta de ingresos y gastos para encontrar una tarifa por hora sostenible.',
-    seo_b4_title: 'Calculadora de Comisión Fiverr',
-    seo_b4_text: '¿Vendes en Fiverr? Nuestra calculadora muestra el impacto real del 20% de comisión en tus ganancias. Fija el precio de tus gigs con confianza sabiendo exactamente cuánto te llevas a casa.',
-
-    footer_tagline: 'Calculadoras financieras rápidas y gratuitas para freelancers y emprendedores.',
-    footer_tools: 'Herramientas',
-    footer_company: 'Empresa',
-    footer_legal: 'Legal',
-    footer_copy: '© 2025 Feexio. Todos los derechos reservados.',
-
-
-    // Interés Compuesto
-    calc_compound_title: 'Calculadora de Interés Compuesto',
-    calc_compound_desc: 'Calcula cómo crece tu inversión con el tiempo mediante interés compuesto en diferentes frecuencias de capitalización.',
+    calc_compound_title: 'Calculadora de Inter\u00e9s Compuesto',
+    calc_compound_desc: 'Calcula c\u00f3mo crece tu inversi\u00f3n con el tiempo mediante inter\u00e9s compuesto en diferentes frecuencias de capitalizaci\u00f3n.',
     calc_compound_principal: 'Capital Inicial ($)',
-    calc_compound_rate: 'Tasa de Interés Anual (%)',
-    calc_compound_years: 'Plazo (años)',
-    calc_compound_annual: 'Capitalización anual',
-    calc_compound_monthly: 'Capitalización mensual',
+    calc_compound_rate: 'Tasa de Inter\u00e9s Anual (%)',
+    calc_compound_years: 'Plazo (a\u00f1os)',
+    calc_compound_annual: 'Capitalizaci\u00f3n anual',
+    calc_compound_monthly: 'Capitalizaci\u00f3n mensual',
     calc_compound_interest: 'Intereses Ganados',
 
-    // Costo por Unidad de Volumen
     calc_unitcost_title: 'Costo por Unidad de Volumen',
-    calc_unitcost_desc: 'Compara el costo real de materiales o productos calculando el precio por unidad cúbica — ideal para decisiones de compra al por mayor.',
+    calc_unitcost_desc: 'Compara el costo real de materiales o productos calculando el precio por unidad c\u00fabica — ideal para decisiones de compra al por mayor.',
     calc_unitcost_length: 'Largo',
     calc_unitcost_width: 'Ancho',
     calc_unitcost_height: 'Alto',
     calc_unitcost_cost: 'Costo Total ($)',
     calc_unitcost_volume: 'Volumen',
-    calc_unitcost_result: 'Costo por unidad cúbica',
+    calc_unitcost_result: 'Costo por unidad c\u00fabica',
 
-    // Cotización de Proyecto
-    calc_quote_title: 'Calculadora de Cotización',
+    calc_quote_title: 'Calculadora de Cotizaci\u00f3n',
     calc_quote_desc: 'Estima el precio total de un proyecto para un cliente basado en tu tarifa, las horas estimadas y un margen de seguridad por cambios de alcance.',
     calc_quote_rate: 'Tu Tarifa por Hora ($)',
     calc_quote_hours: 'Horas Estimadas',
     calc_quote_buffer: 'Margen de Seguridad (%)',
     calc_quote_base: 'Precio Base',
-    calc_quote_total: 'Cotización Total (con margen)',
+    calc_quote_total: 'Cotizaci\u00f3n Total (con margen)',
 
-    // Meta de Ahorro
     calc_savings_title: 'Calculadora de Meta de Ahorro',
-    calc_savings_desc: 'Descubre cuánto debes ahorrar cada mes para alcanzar una meta financiera — ideal para freelancers que construyen un fondo de emergencia o ahorran para equipos.',
+    calc_savings_desc: 'Descubre cu\u00e1nto debes ahorrar cada mes para alcanzar una meta financiera — ideal para freelancers que construyen un fondo de emergencia o ahorran para equipos.',
     calc_savings_goal: 'Meta de Ahorro ($)',
     calc_savings_saved: 'Ya Ahorrado ($)',
     calc_savings_months: 'Meses para Alcanzar la Meta',
     calc_savings_remaining: 'Monto Restante',
     calc_savings_monthly: 'Monto Mensual Necesario',
 
-    // Página Acerca de
-    about_label: 'ℹ️ Acerca de',
+    calc_mortgage_title: 'Calculadora de Hipoteca',
+    calc_mortgage_desc: 'Estima tu pago mensual de hipoteca seg\u00fan el precio del inmueble, el enganche, la tasa de inter\u00e9s y el plazo.',
+    calc_mortgage_price: 'Precio del Inmueble ($)',
+    calc_mortgage_down: 'Enganche ($)',
+    calc_mortgage_rate: 'Tasa de Inter\u00e9s Anual (%)',
+    calc_mortgage_years: 'Plazo del Pr\u00e9stamo (a\u00f1os)',
+    calc_mortgage_monthly: 'Pago Mensual',
+    calc_mortgage_interest: 'Intereses Totales',
+    calc_mortgage_total: 'Costo Total',
+
+    calc_loan_title: 'Calculadora de Pr\u00e9stamo Personal',
+    calc_loan_desc: 'Calcula los pagos mensuales y el inter\u00e9s total de cualquier pr\u00e9stamo personal o de auto.',
+    calc_loan_amount: 'Monto del Pr\u00e9stamo ($)',
+    calc_loan_rate: 'Tasa de Inter\u00e9s Anual (%)',
+    calc_loan_months: 'Plazo (meses)',
+    calc_loan_monthly: 'Pago Mensual',
+    calc_loan_interest: 'Intereses Totales',
+    calc_loan_total: 'Total a Pagar',
+
+    calc_amort_title: 'Tabla de Amortizaci\u00f3n',
+    calc_amort_desc: 'Ve c\u00f3mo disminuye el saldo de tu pr\u00e9stamo con el tiempo y la distribuci\u00f3n entre capital e intereses cada a\u00f1o.',
+    calc_amort_amount: 'Monto del Pr\u00e9stamo ($)',
+    calc_amort_rate: 'Tasa de Inter\u00e9s Anual (%)',
+    calc_amort_months: 'Plazo (meses)',
+    calc_amort_payment: 'Pago Mensual',
+    calc_amort_interest: 'Intereses Totales',
+    calc_amort_col_year: 'A\u00f1o',
+    calc_amort_col_principal: 'Capital',
+    calc_amort_col_interest: 'Inter\u00e9s',
+    calc_amort_col_balance: 'Saldo',
+
+    seo_title: 'Tu Kit de Herramientas Financieras Gratis',
+    seo_intro: 'Feexio es una plataforma de utilidades financieras liviana y r\u00e1pida creada para personas que trabajan con dinero todos los d\u00edas — freelancers, vendedores en l\u00ednea, peque\u00f1as empresas y emprendedores. Cada calculadora es completamente gratis, no requiere cuenta y entrega resultados al instante.',
+    seo_b1_title: 'Calculadoras de Comisi\u00f3n PayPal y Stripe',
+    seo_b1_text: 'Usa nuestra calculadora de comisi\u00f3n PayPal y calculadora de comisi\u00f3n Stripe para ver inmediatamente cu\u00e1nto te cobra un procesador de pagos. Ingresa cualquier monto y obt\u00e9n el neto en tiempo real.',
+    seo_b2_title: 'Calculadora de Margen de Ganancia',
+    seo_b2_text: 'Nuestra calculadora de margen te ayuda a entender la relaci\u00f3n entre costo, ingresos y rentabilidad. Ya sea que est\u00e9s fijando el precio de un producto o evaluando un negocio, conocer tu margen es fundamental.',
+    seo_b3_title: 'Calculadora de Tarifa Freelance',
+    seo_b3_text: 'La calculadora de tarifa freelance est\u00e1 dise\u00f1ada para trabajadores independientes que quieren cobrar lo que realmente valen.',
+    seo_b4_title: 'Calculadora de Comisi\u00f3n Fiverr',
+    seo_b4_text: '\u00bfVendes en Fiverr? Nuestra calculadora muestra el impacto real del 20% de comisi\u00f3n en tus ganancias. Fija el precio de tus gigs con confianza.',
+
+    footer_tagline: 'Calculadoras financieras r\u00e1pidas y gratuitas para freelancers y emprendedores.',
+    footer_tools: 'Herramientas',
+    footer_company: 'Empresa',
+    footer_legal: 'Legal',
+    footer_copy: '\u00a9 2025 Feexio. Todos los derechos reservados.',
+
+    about_label: 'Acerca de',
     about_hero_h1: 'Construido para Quienes Trabajan por su Cuenta',
-    about_hero_sub: 'Feexio existe porque los freelancers y vendedores independientes merecen claridad financiera instantánea y precisa — sin hojas de cálculo ni registros.',
-    about_why_title: '¿Por Qué Creamos Feexio?',
-    about_why_p1: 'Todo freelancer ha vivido este momento: acabas de acordar un proyecto de $500, enviaste la factura por PayPal, y días después ves que tu cuenta muestra $485.20. ¿A dónde fueron los $14.80? Sabías que había comisiones — pero ¿cuáles exactamente, y cómo debes ajustar tu próxima cotización?',
-    about_why_p2: 'Ese pequeño momento de fricción es exactamente lo que Feexio fue creado para eliminar. Somos un equipo de trabajadores independientes que se cansó de abrir hojas de cálculo o buscar en la documentación para responder preguntas simples sobre dinero.',
-    about_why_p3: 'Nuestras herramientas son deliberadamente simples. Sin cuentas, sin muros de pago, sin onboarding. Llegas, calculas y te vas con más claridad que cuando llegaste.',
-    about_v1_title: 'Resultados Instantáneos',
-    about_v1_text: 'Cada calculadora se actualiza en tiempo real mientras escribes. Sin botón de enviar.',
+    about_hero_sub: 'Feexio existe porque los freelancers y vendedores independientes merecen claridad financiera instant\u00e1nea y precisa — sin hojas de c\u00e1lculo ni registros.',
+    about_why_title: '\u00bfPor Qu\u00e9 Creamos Feexio?',
+    about_why_p1: 'Todo freelancer ha vivido este momento: acabas de acordar un proyecto de $500, enviaste la factura por PayPal, y d\u00edas despu\u00e9s ves que tu cuenta muestra $485.20.',
+    about_why_p2: 'Ese peque\u00f1o momento de fricci\u00f3n es exactamente lo que Feexio fue creado para eliminar. Somos un equipo de trabajadores independientes que se cans\u00f3 de abrir hojas de c\u00e1lculo.',
+    about_why_p3: 'Nuestras herramientas son deliberadamente simples. Sin cuentas, sin muros de pago, sin onboarding. Llegas, calculas y te vas con m\u00e1s claridad.',
+    about_v1_title: 'Resultados Instant\u00e1neos',
+    about_v1_text: 'Cada calculadora se actualiza en tiempo real mientras escribes. Sin bot\u00f3n de enviar.',
     about_v2_title: 'Siempre Gratis',
     about_v2_text: 'Todas las herramientas son gratuitas para siempre. Nos financiamos con publicidad, no con muros de pago.',
-    about_v3_title: 'Sin Recolección de Datos',
-    about_v3_text: 'No almacenamos tus datos. Tus números permanecen en tu dispositivo.',
-    about_v4_title: 'Bilingüe',
-    about_v4_text: 'Disponible en inglés y español para una comunidad freelance global.',
+    about_v3_title: 'Sin Recolecci\u00f3n de Datos',
+    about_v3_text: 'No almacenamos tus datos. Tus n\u00fameros permanecen en tu dispositivo.',
+    about_v4_title: 'Biling\u00fce',
+    about_v4_text: 'Disponible en ingl\u00e9s y espa\u00f1ol para una comunidad freelance global.',
     about_tagline_visual: 'Calcula Comisiones, Ganancias y Tarifas al Instante',
     about_stat1: 'Calculadoras Gratis',
     about_stat2: 'Registros Requeridos',
     about_stat3: 'Idiomas',
-    about_stat4: 'Cálculos Gratis',
-    about_mission_label: 'Nuestra Misión',
+    about_stat4: 'C\u00e1lculos Gratis',
+    about_mission_label: 'Nuestra Misi\u00f3n',
     about_mission_title: 'Claridad Financiera para Trabajadores Independientes',
-    about_mission_p1: 'La economía freelance global es masiva y sigue creciendo. Pero demasiados trabajadores independientes toman decisiones financieras basadas en suposiciones. Creemos que cada freelancer, vendedor y emprendedor merece la misma claridad que tienen las grandes empresas — acceso instantáneo a números precisos, sin necesitar un equipo de finanzas.',
-    about_mission_p2: 'Feexio es nuestra contribución a ese mundo. Herramientas simples, resultados precisos, cero fricción.',
+    about_mission_p1: 'La econom\u00eda freelance global es masiva y sigue creciendo. Pero demasiados trabajadores independientes toman decisiones financieras basadas en suposiciones.',
+    about_mission_p2: 'Feexio es nuestra contribuci\u00f3n a ese mundo. Herramientas simples, resultados precisos, cero fricci\u00f3n.',
 
-    read_more: 'Leer Artículo →',
-    back_home: '← Volver al Inicio',
-    all_articles: 'Todos los Artículos',
+    read_more: 'Leer Art\u00edculo \u2192',
+    back_home: '\u2190 Volver al Inicio',
+    all_articles: 'Todos los Art\u00edculos',
   }
 };
 
-// ── State ─────────────────────────────────────────────────────
+// ── State ──────────────────────────────────────────────────────
 let currentLang = localStorage.getItem('feexio_lang') || 'en';
 let currentTheme = localStorage.getItem('feexio_theme') || 'light';
 
-// ── Apply Theme ───────────────────────────────────────────────
+// ── Apply Theme ────────────────────────────────────────────────
 function applyTheme(theme) {
   currentTheme = theme;
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('feexio_theme', theme);
   const icon = document.getElementById('theme-icon');
-  if (icon) icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+  if (icon) icon.textContent = theme === 'dark' ? '\ud83c\udf19' : '\u2600\ufe0f';
 }
 
-// ── Apply Language ────────────────────────────────────────────
+// ── Apply Language ─────────────────────────────────────────────
 function applyLang(lang) {
   currentLang = lang;
   localStorage.setItem('feexio_lang', lang);
@@ -335,44 +397,36 @@ function applyLang(lang) {
   document.documentElement.lang = lang;
 }
 
-// ── Toggle helpers ────────────────────────────────────────────
-function toggleTheme() {
-  applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
-}
-function toggleLang() {
-  applyLang(currentLang === 'en' ? 'es' : 'en');
-}
+function toggleTheme() { applyTheme(currentTheme === 'dark' ? 'light' : 'dark'); }
+function toggleLang()  { applyLang(currentLang === 'en' ? 'es' : 'en'); }
 
-// ── Calculator Logic ──────────────────────────────────────────
+// ── Calculator Logic ───────────────────────────────────────────
 function fmt(n) { return '$' + parseFloat(n).toFixed(2); }
 
 function calcPaypal() {
   const amount = parseFloat(document.getElementById('pp-amount').value) || 0;
-  const fee = (amount * 0.029) + 0.30;
-  const net = amount - fee;
   if (amount <= 0) return;
+  const fee = (amount * 0.029) + 0.30;
   document.getElementById('pp-fee').textContent = fmt(fee);
-  document.getElementById('pp-net').textContent = fmt(net);
+  document.getElementById('pp-net').textContent = fmt(amount - fee);
   document.getElementById('pp-result').classList.add('visible');
 }
 
 function calcStripe() {
   const amount = parseFloat(document.getElementById('st-amount').value) || 0;
-  const fee = (amount * 0.029) + 0.30;
-  const net = amount - fee;
   if (amount <= 0) return;
+  const fee = (amount * 0.029) + 0.30;
   document.getElementById('st-fee').textContent = fmt(fee);
-  document.getElementById('st-net').textContent = fmt(net);
+  document.getElementById('st-net').textContent = fmt(amount - fee);
   document.getElementById('st-result').classList.add('visible');
 }
 
 function calcFiverr() {
   const price = parseFloat(document.getElementById('fv-price').value) || 0;
-  const fee = price * 0.20;
-  const net = price - fee;
   if (price <= 0) return;
+  const fee = price * 0.20;
   document.getElementById('fv-fee').textContent = fmt(fee);
-  document.getElementById('fv-net').textContent = fmt(net);
+  document.getElementById('fv-net').textContent = fmt(price - fee);
   document.getElementById('fv-result').classList.add('visible');
 }
 
@@ -381,34 +435,30 @@ function calcProfit() {
   const sell = parseFloat(document.getElementById('pm-sell').value) || 0;
   if (sell <= 0) return;
   const profit = sell - cost;
-  const margin = (profit / sell) * 100;
   document.getElementById('pm-profit').textContent = fmt(profit);
-  document.getElementById('pm-margin').textContent = margin.toFixed(1) + '%';
+  document.getElementById('pm-margin').textContent = ((profit / sell) * 100).toFixed(1) + '%';
   document.getElementById('pm-result').classList.add('visible');
 }
 
 function calcRate() {
-  const income = parseFloat(document.getElementById('fr-income').value) || 0;
+  const income   = parseFloat(document.getElementById('fr-income').value)   || 0;
   const expenses = parseFloat(document.getElementById('fr-expenses').value) || 0;
-  const hours = parseFloat(document.getElementById('fr-hours').value) || 0;
+  const hours    = parseFloat(document.getElementById('fr-hours').value)    || 0;
   if (hours <= 0) return;
-  const rate = (income + expenses) / hours;
-  document.getElementById('fr-rate').textContent = fmt(rate) + '/hr';
+  document.getElementById('fr-rate').textContent = fmt((income + expenses) / hours) + '/hr';
   document.getElementById('fr-result').classList.add('visible');
 }
-
 
 function calcCompound() {
   const P = parseFloat(document.getElementById('ci-principal').value) || 0;
   const r = (parseFloat(document.getElementById('ci-rate').value) || 0) / 100;
   const n = parseFloat(document.getElementById('ci-years').value) || 0;
   if (P <= 0 || r <= 0 || n <= 0) return;
-  const annual   = P * Math.pow(1 + r, n);
-  const monthly  = P * Math.pow(1 + r/12, 12*n);
-  const interest = monthly - P;
+  const annual  = P * Math.pow(1 + r, n);
+  const monthly = P * Math.pow(1 + r/12, 12*n);
   document.getElementById('ci-annual').textContent   = fmt(annual);
   document.getElementById('ci-monthly').textContent  = fmt(monthly);
-  document.getElementById('ci-interest').textContent = fmt(interest);
+  document.getElementById('ci-interest').textContent = fmt(monthly - P);
   document.getElementById('ci-result').classList.add('visible');
 }
 
@@ -419,9 +469,8 @@ function calcUnitCost() {
   const C = parseFloat(document.getElementById('uv-cost').value)   || 0;
   if (L <= 0 || W <= 0 || H <= 0 || C <= 0) return;
   const vol = L * W * H;
-  const cpv = C / vol;
   document.getElementById('uv-volume').textContent = vol.toFixed(2);
-  document.getElementById('uv-cpv').textContent    = '$' + cpv.toFixed(4);
+  document.getElementById('uv-cpv').textContent    = '$' + (C / vol).toFixed(4);
   document.getElementById('uv-result').classList.add('visible');
 }
 
@@ -430,10 +479,9 @@ function calcProjectQuote() {
   const hours  = parseFloat(document.getElementById('pq-hours').value)  || 0;
   const buffer = parseFloat(document.getElementById('pq-buffer').value) || 0;
   if (rate <= 0 || hours <= 0) return;
-  const base  = rate * hours;
-  const total = base * (1 + buffer / 100);
+  const base = rate * hours;
   document.getElementById('pq-base').textContent  = fmt(base);
-  document.getElementById('pq-total').textContent = fmt(total);
+  document.getElementById('pq-total').textContent = fmt(base * (1 + buffer / 100));
   document.getElementById('pq-result').classList.add('visible');
 }
 
@@ -443,85 +491,126 @@ function calcSavingsGoal() {
   const months = parseFloat(document.getElementById('sg-months').value) || 0;
   if (goal <= 0 || months <= 0) return;
   const remaining = Math.max(0, goal - saved);
-  const monthly   = remaining / months;
   document.getElementById('sg-remaining').textContent = fmt(remaining);
-  document.getElementById('sg-monthly').textContent   = fmt(monthly) + '/mo';
+  document.getElementById('sg-monthly').textContent   = fmt(remaining / months) + '/mo';
   document.getElementById('sg-result').classList.add('visible');
 }
 
-// ── Mobile Nav ────────────────────────────────────────────────
+function calcMortgage() {
+  const price = parseFloat(document.getElementById('mo-price').value) || 0;
+  const down  = parseFloat(document.getElementById('mo-down').value)  || 0;
+  const rate  = (parseFloat(document.getElementById('mo-rate').value) || 0) / 100 / 12;
+  const n     = (parseFloat(document.getElementById('mo-years').value) || 0) * 12;
+  const loan  = price - down;
+  if (loan <= 0 || rate <= 0 || n <= 0) return;
+  const monthly  = loan * rate * Math.pow(1 + rate, n) / (Math.pow(1 + rate, n) - 1);
+  const total    = monthly * n;
+  document.getElementById('mo-monthly').textContent  = fmt(monthly);
+  document.getElementById('mo-interest').textContent = fmt(total - loan);
+  document.getElementById('mo-total').textContent    = fmt(total);
+  document.getElementById('mo-result').classList.add('visible');
+}
+
+function calcPersonalLoan() {
+  const amount = parseFloat(document.getElementById('pl-amount').value) || 0;
+  const rate   = (parseFloat(document.getElementById('pl-rate').value) || 0) / 100 / 12;
+  const n      = parseFloat(document.getElementById('pl-months').value) || 0;
+  if (amount <= 0 || n <= 0) return;
+  const monthly = rate === 0 ? amount / n
+    : amount * rate * Math.pow(1 + rate, n) / (Math.pow(1 + rate, n) - 1);
+  const total = monthly * n;
+  document.getElementById('pl-monthly').textContent  = fmt(monthly);
+  document.getElementById('pl-interest').textContent = fmt(total - amount);
+  document.getElementById('pl-total').textContent    = fmt(total);
+  document.getElementById('pl-result').classList.add('visible');
+}
+
+function calcAmortization() {
+  const amount = parseFloat(document.getElementById('am-amount').value) || 0;
+  const rate   = (parseFloat(document.getElementById('am-rate').value) || 0) / 100 / 12;
+  const n      = parseFloat(document.getElementById('am-months').value) || 0;
+  if (amount <= 0 || n <= 0) return;
+  const monthly = rate === 0 ? amount / n
+    : amount * rate * Math.pow(1 + rate, n) / (Math.pow(1 + rate, n) - 1);
+  document.getElementById('am-payment').textContent  = fmt(monthly);
+  document.getElementById('am-interest').textContent = fmt((monthly * n) - amount);
+  document.getElementById('am-result').classList.add('visible');
+
+  // Build yearly amortization table
+  let balance = amount;
+  const tbody = document.getElementById('am-tbody');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+  let year = 1, yPrincipal = 0, yInterest = 0;
+  for (let m = 1; m <= n; m++) {
+    const iPmt = balance * rate;
+    const pPmt = monthly - iPmt;
+    balance   -= pPmt;
+    yPrincipal += pPmt;
+    yInterest  += iPmt;
+    if (m % 12 === 0 || m === n) {
+      const tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td style="padding:4px 6px;">' + year + '</td>' +
+        '<td style="text-align:right;padding:4px 6px;">' + fmt(yPrincipal) + '</td>' +
+        '<td style="text-align:right;padding:4px 6px;">' + fmt(yInterest) + '</td>' +
+        '<td style="text-align:right;padding:4px 6px;">' + fmt(Math.max(0, balance)) + '</td>';
+      tbody.appendChild(tr);
+      year++; yPrincipal = 0; yInterest = 0;
+    }
+  }
+  document.getElementById('am-table-wrap').style.display = 'block';
+}
+
+// ── Mobile Nav ─────────────────────────────────────────────────
 function initNav() {
-  const hamburger = document.getElementById('hamburger');
+  const hamburger  = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
   if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
-    });
+    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
   }
 }
 
-// ── Scroll CTA ────────────────────────────────────────────────
+// ── Scroll CTA ─────────────────────────────────────────────────
 function scrollToCalcs() {
   const el = document.getElementById('calculators');
   if (el) el.scrollIntoView({ behavior: 'smooth' });
 }
 
-// ── Init ──────────────────────────────────────────────────────
+// ── Init ───────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   applyTheme(currentTheme);
   applyLang(currentLang);
   initNav();
 
-  // Bind theme toggle
   const themeBtn = document.getElementById('theme-toggle');
   if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
-
-  // Bind lang toggle
   const langBtn = document.getElementById('lang-btn');
   if (langBtn) langBtn.addEventListener('click', toggleLang);
 
   // Real-time calculator bindings
-  ['pp-amount'].forEach(id => {
+  const bind = (ids, fn) => ids.forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.addEventListener('input', calcPaypal);
+    if (el) el.addEventListener('input', fn);
   });
-  ['st-amount'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', calcStripe);
-  });
-  ['fv-price'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', calcFiverr);
-  });
-  ['pm-cost','pm-sell'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', calcProfit);
-  });
-  ['ci-principal','ci-rate','ci-years'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', calcCompound);
-  });
-  ['uv-length','uv-width','uv-height','uv-cost'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', calcUnitCost);
-  });
-  ['pq-rate','pq-hours','pq-buffer'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', calcProjectQuote);
-  });
-  ['sg-goal','sg-saved','sg-months'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', calcSavingsGoal);
-  });
-  ['fr-income','fr-expenses','fr-hours'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', calcRate);
-  });
+
+  bind(['pp-amount'], calcPaypal);
+  bind(['st-amount'], calcStripe);
+  bind(['fv-price'],  calcFiverr);
+  bind(['pm-cost','pm-sell'], calcProfit);
+  bind(['fr-income','fr-expenses','fr-hours'], calcRate);
+  bind(['ci-principal','ci-rate','ci-years'], calcCompound);
+  bind(['uv-length','uv-width','uv-height','uv-cost'], calcUnitCost);
+  bind(['pq-rate','pq-hours','pq-buffer'], calcProjectQuote);
+  bind(['sg-goal','sg-saved','sg-months'], calcSavingsGoal);
+  bind(['mo-price','mo-down','mo-rate','mo-years'], calcMortgage);
+  bind(['pl-amount','pl-rate','pl-months'], calcPersonalLoan);
+  bind(['am-amount','am-rate','am-months'], calcAmortization);
 
   // Contact form
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', e => {
       e.preventDefault();
       document.getElementById('form-success').classList.add('visible');
       contactForm.reset();
