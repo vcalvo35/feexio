@@ -189,6 +189,20 @@ const i18n = {
     read_more: 'Read Article \u2192',
     back_home: '\u2190 Back to Home',
     all_articles: 'All Articles',
+
+    // FAQ Section
+    faq_title: 'Frequently Asked Questions',
+    faq_subtitle: 'Answers to common questions about fees, rates and financial calculations.',
+    faq_q1: 'How does PayPal calculate its fees in 2025?',
+    faq_a1: 'PayPal charges a standard rate of 3.49% + $0.49 per transaction for goods and services payments. For merchants using PayPal Checkout, the rate is typically 3.49% + $0.49 per transaction. Always verify with PayPal\'s official pricing page for your specific account type and country.',
+    faq_q2: 'What is the difference between profit margin and markup?',
+    faq_a2: 'Profit margin is calculated as (Profit ÷ Selling Price) × 100, while markup is calculated as (Profit ÷ Cost Price) × 100. For example, if an item costs $60 and sells for $100, the profit margin is 40% but the markup is 66.7%. Margin is always lower than markup for the same transaction.',
+    faq_q3: 'How much does Fiverr take from sellers in 2025?',
+    faq_a3: 'Fiverr charges sellers a flat 20% service fee on every order, regardless of the order value. This applies to the base order amount, tips, and gig extras. There is no tiered system — the rate stays at 20% for all earnings.',
+    faq_q4: 'How do I calculate a fair freelance hourly rate?',
+    faq_a4: 'Add your desired monthly income to your monthly business expenses, then divide by your billable hours per month. For example, $5,000 income + $500 expenses divided by 80 billable hours equals a $68.75 minimum hourly rate. Use our Freelance Rate Calculator to run this instantly.',
+    faq_q5: 'What is Stripe\'s processing fee and how is it applied?',
+    faq_a5: 'Stripe\'s standard fee is 2.9% + $0.30 per successful card charge in the US. Manually entered cards are 3.4% + $0.30. International cards add 1.5%. Stripe has no monthly fees or minimums. The fee is deducted automatically before deposit.',
   },
 
   es: {
@@ -359,6 +373,20 @@ const i18n = {
     read_more: 'Leer Art\u00edculo \u2192',
     back_home: '\u2190 Volver al Inicio',
     all_articles: 'Todos los Art\u00edculos',
+
+    // FAQ Section
+    faq_title: 'Preguntas Frecuentes',
+    faq_subtitle: 'Respuestas a preguntas comunes sobre comisiones, tarifas y cálculos financieros.',
+    faq_q1: '¿Cómo calcula PayPal sus comisiones en 2025?',
+    faq_a1: 'PayPal cobra una tarifa estándar de 3.49% + $0.49 por transacción para pagos de bienes y servicios. Para comerciantes que usan PayPal Checkout, la tarifa es típicamente 3.49% + $0.49 por transacción. Verifica siempre la página oficial de precios de PayPal según tu tipo de cuenta y país.',
+    faq_q2: '¿Cuál es la diferencia entre margen de ganancia y markup?',
+    faq_a2: 'El margen de ganancia se calcula como (Ganancia ÷ Precio de Venta) × 100, mientras que el markup se calcula como (Ganancia ÷ Costo) × 100. Por ejemplo, si un artículo cuesta $60 y se vende en $100, el margen es 40% pero el markup es 66.7%. El margen siempre es menor que el markup para la misma transacción.',
+    faq_q3: '¿Cuánto cobra Fiverr a los vendedores en 2025?',
+    faq_a3: 'Fiverr cobra a los vendedores una comisión fija del 20% sobre cada pedido, sin importar el monto. Esto aplica al valor base, propinas y extras del gig. No hay sistema escalonado — la tarifa se mantiene en 20% para todas las ganancias.',
+    faq_q4: '¿Cómo calculo una tarifa horaria justa como freelancer?',
+    faq_a4: 'Suma tu ingreso mensual deseado a tus gastos mensuales de negocio y divide entre tus horas facturables por mes. Por ejemplo, $5,000 de ingreso + $500 de gastos dividido entre 80 horas facturables equivale a una tarifa mínima de $68.75/hora. Usa nuestra Calculadora de Tarifa Freelance para obtenerlo al instante.',
+    faq_q5: '¿Cuál es la comisión de Stripe y cómo se aplica?',
+    faq_a5: 'La tarifa estándar de Stripe es 2.9% + $0.30 por cargo exitoso con tarjeta en EE.UU. Las tarjetas ingresadas manualmente son 3.4% + $0.30. Las tarjetas internacionales añaden 1.5%. Stripe no tiene cuotas mensuales ni mínimos. La comisión se deduce automáticamente antes del depósito.',
   }
 };
 
