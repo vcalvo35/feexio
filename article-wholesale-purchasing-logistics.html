@@ -100,6 +100,24 @@
   </div>
   <div id="footer-placeholder"></div>
   <script src="js/components.js"></script><script src="js/main.js"></script>
-  <script>(function(){function a(l){document.documentElement.lang=l;}new MutationObserver(function(m){m.forEach(function(x){if(x.attributeName==='lang')a(document.documentElement.lang);});}).observe(document.documentElement,{attributes:true});a(localStorage.getItem('feexio_lang')||'en');})();</script>
+  <script>(function(){
+  // Apply lang to html element and trigger i18n
+  function applyArticleLang(lang) {
+    document.documentElement.lang = lang;
+  }
+  // Apply on load from saved preference
+  applyArticleLang(localStorage.getItem('feexio_lang') || 'en');
+  // Hook into the existing lang button after components.js injects the nav
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('lang-btn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        setTimeout(function() {
+          applyArticleLang(document.documentElement.lang);
+        }, 50);
+      });
+    }
+  });
+})();</script>
 </body>
 </html>

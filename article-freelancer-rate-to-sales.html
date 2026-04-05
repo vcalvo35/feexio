@@ -191,23 +191,25 @@
   <script src="js/main.js"></script>
   <script>
     // Sync article language with site language toggle
-    (function() {
-      function applyArticleLang(lang) {
-        document.documentElement.lang = lang;
-      }
-      // Watch for lang changes triggered by the site's existing toggle
-      const observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(m) {
-          if (m.attributeName === 'lang') {
-            applyArticleLang(document.documentElement.lang);
-          }
-        });
+    (function(){
+  // Apply lang to html element and trigger i18n
+  function applyArticleLang(lang) {
+    document.documentElement.lang = lang;
+  }
+  // Apply on load from saved preference
+  applyArticleLang(localStorage.getItem('feexio_lang') || 'en');
+  // Hook into the existing lang button after components.js injects the nav
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('lang-btn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        setTimeout(function() {
+          applyArticleLang(document.documentElement.lang);
+        }, 50);
       });
-      observer.observe(document.documentElement, { attributes: true });
-      // Apply saved lang on load
-      const saved = localStorage.getItem('sch-lang') || localStorage.getItem('feexio_lang') || 'en';
-      applyArticleLang(saved);
-    })();
+    }
+  });
+})();
   </script>
 </body>
 </html>
