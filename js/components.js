@@ -3,6 +3,14 @@
    Injected into every page
    ============================================================ */
 
+const NETWORK_BAR_HTML = `
+<div style="background:#1a1a2e;color:#a0a8c8;font-size:12px;text-align:center;padding:6px 16px;letter-spacing:0.02em;">
+  More free tools:&nbsp;
+  <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">InstantLinkHub</a>·
+  <a href="https://swiftconverthub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">SwiftConvertHub</a>·
+  <a href="https://feexio.com" target="_blank" rel="noopener" style="color:#c8d0e8;text-decoration:none;margin:0 6px;font-weight:600;">Feexio</a>
+</div>`;
+
 const NAV_HTML = `
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container">
@@ -79,7 +87,7 @@ const FOOTER_HTML = `
 function injectSharedComponents() {
   const navPlaceholder = document.getElementById('nav-placeholder');
   const footerPlaceholder = document.getElementById('footer-placeholder');
-  if (navPlaceholder) navPlaceholder.outerHTML = NAV_HTML;
+  if (navPlaceholder) navPlaceholder.outerHTML = NETWORK_BAR_HTML + NAV_HTML;
   if (footerPlaceholder) footerPlaceholder.outerHTML = FOOTER_HTML;
 }
 
