@@ -190,6 +190,10 @@ const i18n = {
     back_home: '\u2190 Back to Home',
     all_articles: 'All Articles',
 
+    // Jump Points
+    jp_paypal_to_ilh: 'Ready to share your payment details?',
+    jp_paypal_to_ilh_link: 'Generate a WhatsApp link to send it instantly',
+
     // FAQ Section
     faq_title: 'Frequently Asked Questions',
     faq_subtitle: 'Answers to common questions about fees, rates and financial calculations.',
@@ -373,6 +377,10 @@ const i18n = {
     read_more: 'Leer Art\u00edculo \u2192',
     back_home: '\u2190 Volver al Inicio',
     all_articles: 'Todos los Art\u00edculos',
+
+    // Jump Points
+    jp_paypal_to_ilh: '¿Listo para compartir los datos del pago?',
+    jp_paypal_to_ilh_link: 'Genera un enlace de WhatsApp para enviarlo al instante',
 
     // FAQ Section
     faq_title: 'Preguntas Frecuentes',
