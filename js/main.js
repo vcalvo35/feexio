@@ -193,6 +193,8 @@ const i18n = {
     // Jump Points
     jp_paypal_to_ilh: 'Ready to share your payment details?',
     jp_paypal_to_ilh_link: 'Generate a WhatsApp link to send it instantly',
+    jp_freelance_to_ilh: 'Ready to reach your next client?',
+    jp_freelance_to_ilh_link: 'Generate a WhatsApp or mailto link instantly',
 
     // FAQ Section
     faq_title: 'Frequently Asked Questions',
@@ -381,6 +383,8 @@ const i18n = {
     // Jump Points
     jp_paypal_to_ilh: '¿Listo para compartir los datos del pago?',
     jp_paypal_to_ilh_link: 'Genera un enlace de WhatsApp para enviarlo al instante',
+    jp_freelance_to_ilh: '¿Listo para contactar a tu próximo cliente?',
+    jp_freelance_to_ilh_link: 'Genera un enlace de WhatsApp o mailto al instante',
 
     // FAQ Section
     faq_title: 'Preguntas Frecuentes',
