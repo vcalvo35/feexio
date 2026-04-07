@@ -1,0 +1,23 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.feexio.com" }],
+      "destination": "https://feexio.com/$1",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.html",
+      "headers": [{"key": "Cache-Control", "value": "public, max-age=0, must-revalidate"}]
+    },
+    {
+      "source": "/ads\\.txt",
+      "headers": [
+        {"key": "Cache-Control", "value": "public, max-age=3600"},
+        {"key": "Content-Type", "value": "text/plain; charset=utf-8"}
+      ]
+    }
+  ]
+}
