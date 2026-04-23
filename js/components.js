@@ -87,6 +87,11 @@ const FOOTER_HTML = `
       <span class="footer-copy" data-i18n="footer_copy">© 2026 Feexio. All rights reserved.</span>
       <span style="font-size:0.8rem;color:var(--text-muted);">Made with ♥ for freelancers</span>
     </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.07);margin-top:16px;padding-top:14px;text-align:center;font-size:0.8rem;color:var(--text-muted);">
+      Part of the <span style="color:var(--text);font-weight:600;">Tool Synergy Lab</span> free tool network &mdash;
+      <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;margin:0 4px;">InstantLinkHub</a>&middot;
+      <a href="https://swiftconverthub.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;margin:0 4px;">SwiftConvertHub</a>
+    </div>
   </div>
 </footer>`;
 
