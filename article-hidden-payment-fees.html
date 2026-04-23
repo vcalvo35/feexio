@@ -22,7 +22,7 @@
     "@type": "Article",
     "headline": "Hidden Fees in Online Payments You're Probably Ignoring",
     "description": "Beyond the headline rate, payment platforms charge fees that are easy to overlook. Discover the hidden costs and how to minimize them.",
-    "author": { "@type": "Organization", "name": "Feexio" },
+    "author": { "@type": "Person", "name": "Marcus Reid", "url": "https://feexio.com/about.html" },
     "publisher": { "@type": "Organization", "name": "Feexio", "url": "https://feexio.com" },
     "datePublished": "2026-03-12",
     "dateModified": "2026-03-12"
@@ -38,6 +38,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="nav-placeholder"></div>
@@ -53,8 +56,9 @@
       <div class="article-meta">
         <span>📅 March 12, 2026</span>
         <span>⏱️ 5 min read</span>
-        <span>✏️ Feexio Team</span>
+        <span>✍️ <a href="about.html" style="color:inherit;text-decoration:none;">Marcus Reid</a></span>
       </div>
+      <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;padding:0 0 0;">Last updated: April 2026 &nbsp;|&nbsp; <a href="disclaimer.html" style="color:var(--text-muted);">Disclaimer</a></div>
     </div>
   </div>
   <div class="container">
@@ -102,6 +106,40 @@
       <h2>The Real Effective Rate</h2>
       <p>To understand your true processing cost, divide your total fees paid (including all of the above) by your total revenue processed. This effective rate is what you actually pay — and it's almost always higher than the headline rate suggests.</p>
       <p>Use our <a href="index.html#paypal"><strong>PayPal Fee Calculator</strong></a> and <a href="index.html#stripe"><strong>Stripe Fee Calculator</strong></a> to understand your headline costs — then layer in these additional fees for a complete picture of your payment processing economics.</p>
+    
+  <div style="margin:40px auto 0;max-width:720px;">
+    <div style="border-top:1px solid var(--border);padding-top:32px;margin-bottom:8px;">
+      <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.3rem;color:var(--text);margin-bottom:24px;">Frequently Asked Questions</h2>
+      <div style="margin-bottom:24px;">
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--text);margin-bottom:8px;">What are the most commonly missed payment fees?</h3>
+        <p style="color:var(--text-muted);line-height:1.7;margin:0;">Sellers most often miss: refund transaction fees (Stripe keeps the processing fee on refunds; PayPal returns the fixed fee but not the percentage), instant payout fees (Stripe charges 1.5% for same-day transfers), international currency conversion spreads (3–4% on PayPal, 1% on Stripe), and chargeback fees ($15–$25 per dispute regardless of outcome). These can easily add 0.5–2% to your effective rate.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--text);margin-bottom:8px;">Does PayPal keep fees when a customer asks for a refund?</h3>
+        <p style="color:var(--text-muted);line-height:1.7;margin:0;">PayPal's policy as of April 2026 (last verified): for standard transactions, PayPal returns the fixed fee ($0.30) but keeps the percentage fee when you issue a refund. On a $100 refund where you paid $3.20 in fees, you get back $0.30 but lose $2.90. Stripe's policy is similar — they return the fixed portion but not the percentage. Always factor potential refunds into your pricing.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--text);margin-bottom:8px;">Are there lower-fee alternatives to PayPal and Stripe for freelancers?</h3>
+        <p style="color:var(--text-muted);line-height:1.7;margin:0;">For bank-to-bank US transfers, Stripe ACH costs 0.8% (capped at $5) vs card rates of 2.9%+ — a massive saving on invoices above $500. Wise (formerly TransferWise) often beats PayPal on international transfers. For invoicing-only workflows, some freelancers use Zelle or bank ACH for domestic clients to avoid card fees entirely. Each option has trade-offs in speed, buyer protection, and setup complexity.</p>
+      </div>
+    </div>
+  </div>
+  <div style="margin:32px auto;padding:28px 32px;background:linear-gradient(135deg,var(--accent-soft,rgba(99,102,241,0.08)),transparent);border:1px solid var(--accent,#6366f1);border-radius:var(--radius);max-width:720px;text-align:center;">
+    <p style="font-size:1rem;color:var(--text-muted);margin:0 0 16px;">Calculate your real effective fee rate including hidden charges</p>
+    <a href="index.html#paypal" class="btn-primary" style="text-decoration:none;">⚡ PayPal / Stripe Fee Calculator — Free on Feexio</a>
+    <p style="font-size:0.8rem;color:var(--text-muted);margin:12px 0 0;">No sign-up required. Instant results.</p>
+  </div>
+  <div style="margin:32px auto 0;padding:16px 20px;background:var(--bg-card);border-left:3px solid var(--border);border-radius:0 var(--radius) var(--radius) 0;max-width:720px;">
+    <p style="font-size:0.85rem;color:var(--text-muted);margin:0;line-height:1.6;"><strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute financial advice. Fee percentages are verified periodically — see "Last verified" dates for currency. Always consult official platform documentation or a licensed financial advisor before making binding financial decisions. <a href="disclaimer.html" style="color:var(--accent);">Full disclaimer →</a></p>
+  </div>
+  <div style="margin:40px 0 0;padding:24px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);max-width:720px;margin-left:auto;margin-right:auto;display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;">
+    <div style="width:52px;height:52px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">👤</div>
+    <div style="flex:1;min-width:200px;">
+      <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Written by</div>
+      <div style="font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--text);margin-bottom:6px;"><a href="about.html" style="color:inherit;text-decoration:none;">Marcus Reid</a></div>
+      <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.6;margin:0;">Freelance finance writer and independent business consultant. Marcus covers fee structures, pricing strategy, and freelance economics at Feexio. <a href="about.html" style="color:var(--accent);">Learn more →</a></p>
+    </div>
+  </div>
     </article>
     <div style="padding:0 0 40px;text-align:center;max-width:720px;margin:0 auto;">
       <div class="ad-placeholder ad-banner" style="margin:0 auto;">

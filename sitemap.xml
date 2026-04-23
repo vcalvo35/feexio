@@ -151,4 +151,22 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://feexio.com/disclaimer.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://feexio.com/article-paypal-gs-vs-ff.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://feexio.com/article-mortgage-vs-personal-loan.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

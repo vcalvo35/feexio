@@ -53,6 +53,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -101,8 +104,7 @@
   <div class="section-sm" style="padding:24px 0;">
     <div class="container text-center">
       <div class="ad-placeholder ad-banner" role="complementary" aria-label="Advertisement">
-        <!-- Google AdSense: replace with real ad unit -->
-        <span data-i18n="ad_label">Advertisement</span> · 728×90
+        
       </div>
     </div>
   </div>
@@ -555,31 +557,112 @@
   </main>
 
 
-  <!-- ── SEO Content ─────────────────────────────────────────── -->
-  <section class="section seo-section" aria-label="About Feexio">
-    <div class="container">
-      <div class="section-header text-center" style="max-width:640px;margin:0 auto 40px;">
-        <h2 data-i18n="seo_title">Your Free Financial Toolkit</h2>
-        <p data-i18n="seo_intro">Feexio is a lightweight, fast financial utility platform built for people who work with money every day.</p>
+  <!-- ── Calculator Descriptions (SEO) ──────────────────────── -->
+  <section class="section seo-section" aria-label="About Our Calculators" style="background:var(--bg-card);border-top:1px solid var(--border);">
+    <div class="container" style="max-width:880px;margin:0 auto;">
+      <div class="section-header text-center" style="max-width:640px;margin:0 auto 48px;">
+        <div class="section-label">📖 About Our Tools</div>
+        <h2>All 12 Free Calculators — What They Do &amp; When to Use Them</h2>
+        <p style="color:var(--text-muted);">Every tool on Feexio is real-time, client-side, and free. No sign-up, no data stored. Here's what each one does and when to reach for it. <em>Fee data last verified: April 2026.</em></p>
       </div>
-      <div class="seo-grid">
-        <div class="seo-block">
-          <h3 data-i18n="seo_b1_title">PayPal &amp; Stripe Fee Calculators</h3>
-          <p data-i18n="seo_b1_text">Use our PayPal fee calculator and Stripe fee calculator to immediately see how much a payment processor takes from your transaction.</p>
+
+      <div style="display:grid;gap:32px;">
+
+        <!-- Fee Calculators -->
+        <div>
+          <h3 style="font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--accent);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border);">💳 Fee Calculators</h3>
+          <div style="display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#paypal" style="color:inherit;text-decoration:none;">PayPal Fee Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The PayPal Fee Calculator shows you exactly how much PayPal deducts from any transaction, and how much you'll receive after fees. PayPal charges 3.49% + $0.49 for standard goods &amp; services payments in the US (last verified: April 2026). <strong>Who needs it:</strong> freelancers sending invoices via PayPal, sellers accepting PayPal checkout, and anyone pricing their work to cover transaction costs. <strong>How to use it:</strong> enter the transaction amount, and the calculator instantly shows the fee and net amount. <strong>Example:</strong> a $250 invoice costs $9.21 in PayPal fees, leaving you with $240.79. Always add fees to your invoice total or bake them into your pricing.</p>
+            </div>
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#stripe" style="color:inherit;text-decoration:none;">Stripe Fee Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">Stripe charges 2.9% + $0.30 per card transaction in the US (last verified: April 2026). The Stripe Fee Calculator tells you the exact fee for any amount and shows what lands in your account. <strong>Who needs it:</strong> developers and business owners using Stripe Checkout or payment links, SaaS companies billing monthly, and freelancers comparing payment processors. <strong>How to use it:</strong> type in the transaction amount and read off the fee and net instantly. <strong>Example:</strong> a $500 Stripe payment costs $14.80 in fees, netting $485.20. For high-volume sellers, the savings from Stripe's ACH option (0.8%, capped at $5) can be substantial on large invoices.</p>
+            </div>
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#fiverr" style="color:inherit;text-decoration:none;">Fiverr Fee Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">Fiverr takes a flat 20% service fee from every order, regardless of seller level or order size (last verified: April 2026). The Fiverr Fee Calculator shows your exact net earnings for any gig price in seconds. <strong>Who needs it:</strong> Fiverr sellers setting gig prices, anyone verifying take-home pay before accepting an order, and sellers comparing Fiverr earnings to other platforms. <strong>How to use it:</strong> enter your gig or order price and see the 20% deduction and your net earnings immediately. <strong>Example:</strong> a $150 Fiverr order results in $30 taken by Fiverr, leaving you $120. Use this to price your gigs so your take-home rate is sustainable after the fee.</p>
+            </div>
+
+          </div>
         </div>
-        <div class="seo-block">
-          <h3 data-i18n="seo_b2_title">Profit Margin Calculator</h3>
-          <p data-i18n="seo_b2_text">Our profit margin calculator helps you understand the relationship between cost, revenue and profitability.</p>
+
+        <!-- Business & Profit -->
+        <div>
+          <h3 style="font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--accent);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border);">📈 Business &amp; Profit</h3>
+          <div style="display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#profit" style="color:inherit;text-decoration:none;">Profit Margin Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The Profit Margin Calculator converts your cost and selling price into gross profit and margin percentage instantly. Margin = (Selling Price − Cost) / Selling Price × 100. <strong>Who needs it:</strong> product sellers, freelancers pricing projects, e-commerce merchants, and anyone reviewing whether their pricing is sustainable. <strong>How to use it:</strong> enter your cost and your selling price; the calculator shows profit in dollars and margin percentage. <strong>Example:</strong> a product costing $18 sold for $45 yields $27 profit and a 60% margin. If your margin is below 30%, you likely have thin coverage for overhead, returns, and payment fees.</p>
+            </div>
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#compound" style="color:inherit;text-decoration:none;">Compound Interest Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The Compound Interest Calculator shows how an investment grows at different compounding frequencies (annual vs monthly). Formula: A = P × (1 + r/n)^(nt). <strong>Who needs it:</strong> freelancers and entrepreneurs building savings, anyone comparing savings account yields, or those planning for long-term goals. <strong>How to use it:</strong> enter principal, annual rate, and time in years; the calculator shows results for both annual and monthly compounding. <strong>Example:</strong> $5,000 at 5% annual interest for 10 years grows to $8,144 with annual compounding and $8,235 with monthly compounding — a $91 difference that compounds further over longer periods.</p>
+            </div>
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#unitcost" style="color:inherit;text-decoration:none;">Cost per Unit Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The Cost per Unit Volume Calculator finds the price per cubic unit of any product, making it easy to compare bulk quantities from different suppliers. Formula: Cost ÷ (Length × Width × Height). <strong>Who needs it:</strong> wholesale buyers, e-commerce merchants sourcing from multiple suppliers, and business owners comparing bulk vs unit pricing. <strong>How to use it:</strong> enter dimensions (L×W×H) and the total cost; the calculator returns cost per cubic unit for direct comparison. <strong>Example:</strong> 100 units at $2 each occupying 2 cubic inches each = $1.00 per cubic inch. A competing product at $1.80 each in 1.5 cubic inches = $1.20/cubic inch — the first supplier is cheaper per unit of volume.</p>
+            </div>
+
+          </div>
         </div>
-        <div class="seo-block">
-          <h3 data-i18n="seo_b3_title">Freelance Rate Calculator</h3>
-          <p data-i18n="seo_b3_text">The freelance rate calculator is designed for independent workers who want to charge what they're actually worth.</p>
+
+        <!-- Freelance Tools -->
+        <div>
+          <h3 style="font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--accent);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border);">🧑‍💻 Freelance Tools</h3>
+          <div style="display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#freelance" style="color:inherit;text-decoration:none;">Freelance Rate Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The Freelance Rate Calculator computes your minimum viable hourly rate from your income goals, monthly expenses, and billable hours. Formula: (Monthly Income + Expenses) ÷ Billable Hours/Month. <strong>Who needs it:</strong> new freelancers setting initial rates, experienced freelancers reviewing whether current rates still cover costs, and anyone switching from full-time employment. <strong>How to use it:</strong> enter your desired monthly income, total monthly expenses, and estimated billable hours; the result is your minimum hourly rate. <strong>Example:</strong> $4,000 income goal + $800 expenses ÷ 80 billable hours = $60/hr minimum rate. Add 20–30% above this minimum to build profit and cover slow months.</p>
+            </div>
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#project-quote" style="color:inherit;text-decoration:none;">Project Quote Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The Project Quote Calculator builds a complete project price from your hourly rate, estimated hours, and a scope buffer percentage. Formula: (Rate × Hours) × (1 + Buffer%). <strong>Who needs it:</strong> freelancers writing proposals, agencies quoting projects, and anyone who wants to include a systematic buffer for scope creep. <strong>How to use it:</strong> enter your hourly rate, estimated hours, and your preferred buffer (20% is standard); the calculator shows both the base price and the buffered total. <strong>Example:</strong> $75/hr × 12 hours × 1.2 buffer = $1,080 total quote. The buffer means if the project runs 20% over estimate, you still hit your target rate without renegotiating.</p>
+            </div>
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#savings-goal" style="color:inherit;text-decoration:none;">Savings Goal Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The Savings Goal Calculator tells you exactly how much to set aside each month to reach a target amount in a given time frame. Formula: (Goal − Already Saved) ÷ Months. <strong>Who needs it:</strong> freelancers building an emergency fund, business owners saving for equipment or expansion, and anyone on variable income who needs concrete monthly savings targets. <strong>How to use it:</strong> enter your goal amount, what you've already saved, and your target timeline in months; the result is your required monthly contribution. <strong>Example:</strong> $6,000 emergency fund goal, $1,200 already saved, 12 months → need to save $400/month. Pair this with a high-yield savings account to make your existing balance work harder.</p>
+            </div>
+
+          </div>
         </div>
-        <div class="seo-block">
-          <h3 data-i18n="seo_b4_title">Fiverr Fee Calculator</h3>
-          <p data-i18n="seo_b4_text">Selling on Fiverr? Our Fiverr fee calculator shows you the real impact of the 20% service fee on your earnings.</p>
+
+        <!-- Loans & Mortgages -->
+        <div>
+          <h3 style="font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--accent);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border);">🏦 Loans &amp; Mortgages</h3>
+          <div style="display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#mortgage" style="color:inherit;text-decoration:none;">Mortgage Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The Mortgage Calculator estimates your monthly principal and interest payment, total interest paid, and total cost of a home loan. Formula: M = P[r(1+r)^n]/[(1+r)^n−1]. <strong>Who needs it:</strong> prospective homebuyers comparing loan scenarios, real estate professionals showing clients payment estimates, and anyone evaluating 15 vs 30-year terms. <strong>How to use it:</strong> enter home price, down payment, interest rate, and loan term; the calculator shows monthly payment, total interest, and total cost instantly. <strong>Example:</strong> $350,000 home, 10% down ($35K), 6.5% rate, 30 years → $2,022/month P&amp;I, $387,922 in total interest. Note: taxes, insurance, and PMI are not included.</p>
+            </div>
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#personal-loan" style="color:inherit;text-decoration:none;">Personal Loan Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The Personal Loan Calculator computes your fixed monthly payment and total interest for any loan amount, rate, and term combination. <strong>Who needs it:</strong> anyone comparing personal loan offers, consolidating debt, or evaluating the true cost of financing a large purchase. <strong>How to use it:</strong> enter loan amount, annual interest rate, and term in months; the calculator shows the fixed monthly payment and total interest. <strong>Example:</strong> $10,000 loan at 12% APR over 36 months = $332/month and $1,957 in total interest. Extending the term to 60 months reduces the payment to $222/month but increases total interest to $3,347 — always compare both scenarios.</p>
+            </div>
+
+            <div class="seo-block">
+              <h4 style="font-family:var(--font-display);font-weight:700;color:var(--text);margin-bottom:10px;"><a href="#amortization" style="color:inherit;text-decoration:none;">Amortization Schedule Calculator</a></h4>
+              <p style="color:var(--text-muted);font-size:0.92rem;line-height:1.7;">The Amortization Schedule Calculator shows how each loan payment splits between principal and interest over the full repayment period, year by year. <strong>Who needs it:</strong> anyone with a loan who wants to understand why early payments go mostly to interest, or who is considering making extra principal payments. <strong>How to use it:</strong> enter the loan amount, rate, and term in months; the full amortization table is generated showing principal, interest, and remaining balance for each year. <strong>Example:</strong> a $20,000 loan at 7% over 60 months — in month 1, $117 goes to interest and $216 to principal. By month 60, $3 goes to interest and $330 to principal. Making one extra $500 payment in year 1 cuts roughly 2 months off the loan term.</p>
+            </div>
+
+          </div>
         </div>
+
       </div>
+
+      <p style="text-align:center;font-size:0.85rem;color:var(--text-muted);margin-top:40px;padding-top:24px;border-top:1px solid var(--border);">All calculators are for estimation purposes only and do not constitute financial advice. Fee data is verified periodically. <a href="disclaimer.html" style="color:var(--accent);">Read full disclaimer →</a></p>
     </div>
   </section>
 
@@ -602,28 +685,78 @@
       <div style="display:flex;flex-direction:column;gap:14px;">
 
         <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
-          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);" data-i18n="faq_q1">How does PayPal calculate its fees in 2025?</summary>
-          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);" data-i18n="faq_a1">PayPal charges a standard rate of 3.49% + $0.49 per transaction for goods and services payments.</p>
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">How does PayPal calculate its fees in 2026?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">PayPal charges 3.49% + $0.49 per transaction for standard goods and services payments in the US as of April 2026 (last verified). For PayPal Checkout integrations, the rate is 2.9% + $0.30. International transactions carry an additional 1.5–2% cross-border fee, and currency conversion adds a 3–4% spread. Always check PayPal's official fee schedule for your account type and country, as rates vary significantly.</p>
         </details>
 
         <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
-          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);" data-i18n="faq_q2">What is the difference between profit margin and markup?</summary>
-          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);" data-i18n="faq_a2">Profit margin is (Profit ÷ Selling Price) × 100. Markup is (Profit ÷ Cost Price) × 100. Margin is always lower than markup for the same transaction.</p>
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">What is the difference between profit margin and markup?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">Profit margin = (Profit ÷ Selling Price) × 100. Markup = (Profit ÷ Cost Price) × 100. For the same transaction, margin is always a lower percentage than markup. Example: a product costing $10 sold for $15 has a 33.3% margin but a 50% markup. Confusing them leads to systematic underpricing — if you need a 40% margin and accidentally calculate 40% markup, your actual margin is only 28.6%.</p>
         </details>
 
         <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
-          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);" data-i18n="faq_q3">How much does Fiverr take from sellers in 2025?</summary>
-          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);" data-i18n="faq_a3">Fiverr charges a flat 20% service fee on every order. No tiered system — 20% applies to all earnings including tips and extras.</p>
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">How much does Fiverr take from sellers in 2026?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">Fiverr charges sellers a flat 20% service fee on every completed order as of April 2026 (last verified). This applies equally to all seller levels — new sellers, Level 1, Level 2, and Top Rated Sellers all pay 20%. The fee also applies to tips and order extras. There is no volume-based discount tier. Use the Fiverr Fee Calculator to see your exact net earnings for any gig price.</p>
         </details>
 
         <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
-          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);" data-i18n="faq_q4">How do I calculate a fair freelance hourly rate?</summary>
-          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);" data-i18n="faq_a4">Add desired monthly income to business expenses, then divide by billable hours per month. Use our Freelance Rate Calculator to run this instantly.</p>
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">How do I calculate a fair freelance hourly rate?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">The formula: (Desired Monthly Income + Monthly Business Expenses) ÷ Billable Hours per Month = Minimum Hourly Rate. Example: $4,000 income + $600 expenses ÷ 80 hours = $57.50/hr minimum. Add 20–30% above this minimum to build in profit margin and cover slow months. Most freelancers working full-time bill 15–25 hours per week, not 40 — use a realistic billable hours estimate, not a theoretical maximum.</p>
         </details>
 
         <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
-          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);" data-i18n="faq_q5">What is Stripe's processing fee and how is it applied?</summary>
-          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);" data-i18n="faq_a5">Stripe's standard fee is 2.9% + $0.30 per card charge in the US. No monthly fees. The fee is deducted automatically before deposit.</p>
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">What is Stripe's processing fee and how is it applied?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">Stripe's standard fee is 2.9% + $0.30 per card charge in the US (last verified: April 2026). No monthly fees or setup costs. The fee is deducted automatically before the payout. For US bank transfers (ACH), Stripe charges 0.8% capped at $5.00 — a major saving on large invoices. International cards add 1.5%, and currency conversion adds 1%. Stripe's pricing is transparent and well-documented at stripe.com/pricing.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">How much does PayPal charge for international payments?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">For cross-border transactions, PayPal adds a 1.5% international fee on top of the standard rate, plus a 3–4% currency conversion spread if payment is in a different currency. Total effective rate for an international payment can reach 6–7%. By comparison, Stripe adds 1.5% for international cards and only 1% for currency conversion, making Stripe cheaper for cross-border work. Last verified: April 2026.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">What percentage does Upwork take from freelancers?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">Upwork uses a tiered service fee structure. As of April 2026 (last verified): 20% on the first $500 billed to a client, 10% on earnings $500.01–$10,000 with the same client, and 5% on earnings above $10,000 with that client. Fees reset per client, not overall. A new client relationship always starts at 20%. Feexio does not currently have an Upwork-specific calculator, but the Freelance Rate Calculator helps you verify your baseline rate covers the platform fee regardless of tier.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">How do I calculate profit margin in Excel?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">In Excel, the profit margin formula is =(B1-A1)/B1*100, where A1 is your cost and B1 is your selling price. This gives you gross margin as a percentage. For net margin, subtract all additional costs (platform fees, shipping, overhead allocation) from B1 before dividing. Alternatively, use Feexio's Profit Margin Calculator to get the answer instantly without any formulas — just enter cost and selling price.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">What is a good profit margin for a small business?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">Benchmarks vary by industry: retail typically runs 2–10% net margin; professional services and consulting aim for 20–40%; software and SaaS can reach 60–80%. For freelancers and solo operators, a gross margin of 40–60% is sustainable once all direct costs (platform fees, tools, subcontractors) are included. The most important metric is your trend — a steadily rising margin means your business is getting more efficient, even if the number starts low.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">How do I set a freelance rate as a beginner?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">Start with the income formula: (Monthly Expenses + Desired Income) ÷ Realistic Billable Hours = Minimum Rate. Research market rates for your skill on platforms like LinkedIn, Upwork, and industry salary surveys — your rate should be within range of the market, not below it. Many beginners undercharge significantly; being 20–30% below market is acceptable for your first 3–6 months while building your portfolio, but you should have a clear plan to reach market rates after that. Never price below your cost-of-living floor.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">What is compound interest and why does starting early matter so much?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">Compound interest means you earn interest on your interest — your balance grows exponentially, not linearly. Starting at 25 vs 35 with $200/month at 7% annual return produces $525,000 vs $243,000 by retirement. The extra decade costs only $24,000 in additional contributions but generates $282,000 more in final wealth. The lesson for freelancers: even small, consistent savings started early dramatically outperform larger savings started later. Use the Compound Interest Calculator to model your own scenario.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">What is the difference between PayPal Goods &amp; Services and Friends &amp; Family fees?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">PayPal Goods &amp; Services (G&amp;S) charges 3.49% + $0.49 per transaction but includes buyer and seller protection — use this for all commercial transactions. Friends &amp; Family (F&amp;F) has no fee when funded from a bank account or PayPal balance, but offers zero buyer or seller protection and is explicitly prohibited for business payments under PayPal's terms of service. Using F&amp;F for client payments risks account suspension and disqualifies you from dispute resolution. Always use G&amp;S for invoicing. Last verified: April 2026.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">How much should I save each month as a freelancer?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">Use percentage-based savings rather than fixed amounts: set aside 25–30% of every payment for taxes, 15–20% for an emergency fund (target 3–6 months of expenses), and at least 5–10% for retirement. This approach scales automatically with your income — in good months you save more; in slow months the obligation is proportionally smaller. Keep these in separate accounts so tax reserves don't get spent on living expenses. The Savings Goal Calculator helps you find your monthly target for any specific savings goal.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">How do loan amortization schedules work?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">An amortization schedule shows how every loan payment splits between interest and principal repayment. In the early months, most of your payment covers interest because the outstanding balance — and thus the interest charge — is at its highest. As you pay down principal, the interest portion shrinks and more of each payment reduces the balance. This is why making extra principal payments early in a loan saves disproportionately more interest. Use the Amortization Schedule Calculator to see the full breakdown for any loan in seconds.</p>
+        </details>
+
+        <details style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 22px;transition:box-shadow var(--transition);">
+          <summary style="font-weight:600;cursor:pointer;font-size:1rem;list-style:none;color:var(--text);">How do I compare personal loan offers side by side?</summary>
+          <p style="margin-top:12px;line-height:1.7;color:var(--text-muted);">Always compare APR (Annual Percentage Rate), not just the advertised interest rate. APR includes origination fees, which can add 1–6% to the effective cost. Also check: total repayment amount (not just monthly payment), whether the rate is fixed or variable, and whether there are prepayment penalties. A 9% APR loan with no origination fee can cost less than an 8% rate loan with a 3% origination fee on a short-term borrowing. Use the Personal Loan Calculator to compare any two scenarios in seconds.</p>
         </details>
 
       </div>
@@ -638,10 +771,10 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How does PayPal calculate its fees in 2025?",
+        "name": "How does PayPal calculate its fees in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "PayPal charges a standard rate of 3.49% + $0.49 per transaction for goods and services payments. For merchants using PayPal Checkout, the rate is typically 3.49% + $0.49 per transaction. Always verify with PayPal's official pricing page for your specific account type and country."
+          "text": "PayPal charges 3.49% + $0.49 per transaction for standard goods and services payments in the US (last verified April 2026). For PayPal Checkout integrations, the rate is 2.9% + $0.30. International transactions add 1.5-2% plus a 3-4% currency conversion spread."
         }
       },
       {
@@ -649,15 +782,15 @@
         "name": "What is the difference between profit margin and markup?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Profit margin is calculated as (Profit / Selling Price) x 100, while markup is calculated as (Profit / Cost Price) x 100. Margin is always lower than markup for the same transaction. Businesses use margin to evaluate profitability and markup to set prices."
+          "text": "Profit margin = (Profit / Selling Price) x 100. Markup = (Profit / Cost Price) x 100. Margin is always lower than markup for the same transaction. A product costing $10 sold for $15 has a 33.3% margin but a 50% markup."
         }
       },
       {
         "@type": "Question",
-        "name": "How much does Fiverr take from sellers in 2025?",
+        "name": "How much does Fiverr take from sellers in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Fiverr charges sellers a flat 20% service fee on every order, regardless of the order value. This applies to the base order amount, tips, and any gig extras. There is no tiered system — the rate stays at 20% for all earnings."
+          "text": "Fiverr charges sellers a flat 20% service fee on every completed order (last verified April 2026). This applies to all seller levels, tips, and gig extras. There is no volume discount tier."
         }
       },
       {
@@ -665,7 +798,7 @@
         "name": "How do I calculate a fair freelance hourly rate?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Add your desired monthly income to your monthly business expenses, then divide by your billable hours per month. For example, $5,000 income + $500 expenses divided by 80 billable hours = $68.75 minimum hourly rate."
+          "text": "Formula: (Desired Monthly Income + Monthly Business Expenses) divided by Billable Hours per Month = Minimum Hourly Rate. Example: $4,000 income + $600 expenses divided by 80 hours = $57.50/hr minimum. Add 20-30% above this for profit margin."
         }
       },
       {
@@ -673,7 +806,31 @@
         "name": "What is Stripe's processing fee and how is it applied?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Stripe's standard fee is 2.9% + $0.30 per successful card charge in the US. Manually entered cards are 3.4% + $0.30. International cards add 1.5%. Stripe has no monthly fees or minimums. The fee is deducted automatically before deposit."
+          "text": "Stripe charges 2.9% + $0.30 per card transaction in the US (last verified April 2026). ACH bank transfers cost 0.8% capped at $5. No monthly fees. The fee is deducted before deposit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does PayPal charge for international payments?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PayPal adds 1.5-2% cross-border fee plus a 3-4% currency conversion spread for international transactions. Total effective rate can reach 6-7%. Stripe charges 1.5% for international cards and 1% for currency conversion, making it cheaper for cross-border payments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a good profit margin for a small business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Retail typically runs 2-10% net margin. Professional services and consulting aim for 20-40%. SaaS and software can reach 60-80%. For freelancers, a gross margin of 40-60% is sustainable after accounting for platform fees, tools, and direct costs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between PayPal Goods and Services vs Friends and Family?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PayPal Goods and Services charges 3.49% + $0.49 but includes buyer and seller protection. Friends and Family has no fee from a bank account but offers zero buyer/seller protection and is prohibited for business transactions under PayPal terms of service."
         }
       }
     ]

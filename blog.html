@@ -38,6 +38,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="nav-placeholder"></div>
@@ -45,25 +48,47 @@
   <div class="page-hero">
     <div class="container">
       <div class="section-label">📝 Blog</div>
-      <h1>Guides &amp; Resources</h1>
-      <p>Practical articles to help freelancers, sellers and entrepreneurs understand fees, pricing and profit.</p>
+      <h1>Feexio Blog — Guides on Fees, Rates &amp; Profit</h1>
+      <p>Practical, numbers-first guides for freelancers, online sellers, and entrepreneurs. Learn how payment fees really work, how to set rates that cover your costs, and how to read your margins before problems hit. No filler — just the math and what it means for your business.</p>
     </div>
   </div>
 
   <main class="section">
     <div class="container">
 
+      <!-- Category Filters -->
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px;justify-content:center;">
+        <button onclick="filterArticles('all')" class="filter-btn filter-btn--active" data-filter="all" style="padding:8px 20px;border-radius:9999px;border:1px solid var(--border);background:var(--accent,#6366f1);color:#fff;font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.2s;">All Articles</button>
+        <button onclick="filterArticles('fees')" class="filter-btn" data-filter="fees" style="padding:8px 20px;border-radius:9999px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-muted);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.2s;">💳 Fee Calculators</button>
+        <button onclick="filterArticles('freelance')" class="filter-btn" data-filter="freelance" style="padding:8px 20px;border-radius:9999px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-muted);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.2s;">🧑‍💻 Freelance</button>
+        <button onclick="filterArticles('business')" class="filter-btn" data-filter="business" style="padding:8px 20px;border-radius:9999px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-muted);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.2s;">📈 Business &amp; Profit</button>
+        <button onclick="filterArticles('loans')" class="filter-btn" data-filter="loans" style="padding:8px 20px;border-radius:9999px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-muted);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.2s;">🏦 Loans &amp; Mortgages</button>
+      </div>
+      <script>
+      function filterArticles(cat) {
+        document.querySelectorAll('.blog-card').forEach(function(card) {
+          var c = card.getAttribute('data-category') || 'all';
+          card.style.display = (cat === 'all' || c === cat) ? '' : 'none';
+        });
+        document.querySelectorAll('.filter-btn').forEach(function(btn) {
+          var isActive = btn.getAttribute('data-filter') === cat;
+          btn.style.background = isActive ? 'var(--accent,#6366f1)' : 'var(--bg-card)';
+          btn.style.color = isActive ? '#fff' : 'var(--text-muted)';
+          btn.style.borderColor = isActive ? 'var(--accent,#6366f1)' : 'var(--border)';
+        });
+      }
+      </script>
+
       <!-- Ad Top -->
       <div style="margin-bottom:40px;text-align:center;">
-        <div class="ad-placeholder ad-banner" style="margin:0 auto;">
-          <span data-i18n="ad_label">Advertisement</span> · 728×90
-        </div>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
 
       <div class="blog-grid">
 
         <!-- Article 1 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="fees" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">💳</div>
           <div class="blog-card-body">
             <span class="blog-tag">Payment Fees</span>
@@ -75,7 +100,7 @@
         </article>
 
         <!-- Article 2 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="business" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">💰</div>
           <div class="blog-card-body">
             <span class="blog-tag">Profit &amp; Pricing</span>
@@ -87,7 +112,7 @@
         </article>
 
         <!-- Article 3 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="freelance" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🧑‍💻</div>
           <div class="blog-card-body">
             <span class="blog-tag">Freelancing</span>
@@ -99,7 +124,7 @@
         </article>
 
         <!-- Article 4 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="fees" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🟢</div>
           <div class="blog-card-body">
             <span class="blog-tag">Payment Fees</span>
@@ -111,7 +136,7 @@
         </article>
 
         <!-- Article 5 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="business" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">📊</div>
           <div class="blog-card-body">
             <span class="blog-tag">Profit &amp; Pricing</span>
@@ -123,7 +148,7 @@
         </article>
 
         <!-- Article 6 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="fees" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">💳</div>
           <div class="blog-card-body">
             <span class="blog-tag">Payment Fees</span>
@@ -138,15 +163,14 @@
 
       <!-- Ad Mid -->
       <div style="margin:48px 0;text-align:center;">
-        <div class="ad-placeholder ad-banner" style="margin:0 auto;">
-          <span data-i18n="ad_label">Advertisement</span> · 728×90
-        </div>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
 
       <div class="blog-grid">
 
         <!-- Article 7 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="business" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">📉</div>
           <div class="blog-card-body">
             <span class="blog-tag">Profit &amp; Pricing</span>
@@ -158,7 +182,7 @@
         </article>
 
         <!-- Article 8 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="freelance" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">📈</div>
           <div class="blog-card-body">
             <span class="blog-tag">Freelancing</span>
@@ -170,7 +194,7 @@
         </article>
 
         <!-- Article 9 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="business" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">📈</div>
           <div class="blog-card-body">
             <span class="blog-tag">Finance Basics</span>
@@ -182,7 +206,7 @@
         </article>
 
         <!-- Article 10 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="fees" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🌍</div>
           <div class="blog-card-body">
             <span class="blog-tag">Payment Fees</span>
@@ -194,7 +218,7 @@
         </article>
 
         <!-- Article 11 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="freelance" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">📋</div>
           <div class="blog-card-body">
             <span class="blog-tag">Freelancing</span>
@@ -206,7 +230,7 @@
         </article>
 
         <!-- Article 12 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="fees" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🔍</div>
           <div class="blog-card-body">
             <span class="blog-tag">Payment Fees</span>
@@ -218,7 +242,7 @@
         </article>
 
         <!-- Article 13 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="freelance" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🧾</div>
           <div class="blog-card-body">
             <span class="blog-tag">Freelancing</span>
@@ -230,7 +254,7 @@
         </article>
 
         <!-- Article 14 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="business" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🎯</div>
           <div class="blog-card-body">
             <span class="blog-tag">Finance Basics</span>
@@ -242,7 +266,7 @@
         </article>
 
         <!-- Article 15 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="business" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">📦</div>
           <div class="blog-card-body">
             <span class="blog-tag">Business</span>
@@ -255,7 +279,7 @@
 
 
         <!-- Article 16 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="loans" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">&#127968;</div>
           <div class="blog-card-body">
             <span class="blog-tag">Loans &amp; Mortgages</span>
@@ -267,7 +291,7 @@
         </article>
 
         <!-- Article 17 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="loans" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">&#128179;</div>
           <div class="blog-card-body">
             <span class="blog-tag">Loans &amp; Mortgages</span>
@@ -279,7 +303,7 @@
         </article>
 
         <!-- Article 18 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="loans" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">&#128202;</div>
           <div class="blog-card-body">
             <span class="blog-tag">Loans &amp; Mortgages</span>
@@ -295,7 +319,7 @@
       <!-- New Articles — SUN Network -->
       <div class="blog-grid" style="margin-top:0;">
 
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="freelance" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🔗</div>
           <div class="blog-card-body">
             <span class="blog-tag">Freelancing</span>
@@ -306,7 +330,7 @@
           </div>
         </article>
 
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="business" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🍽️</div>
           <div class="blog-card-body">
             <span class="blog-tag">Business</span>
@@ -317,7 +341,7 @@
           </div>
         </article>
 
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="loans" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🏠</div>
           <div class="blog-card-body">
             <span class="blog-tag">Real Estate</span>
@@ -328,7 +352,7 @@
           </div>
         </article>
 
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="business" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">📦</div>
           <div class="blog-card-body">
             <span class="blog-tag">Business</span>
@@ -339,7 +363,7 @@
           </div>
         </article>
 
-        <article class="blog-card" itemscope itemtype="https://schema.org/Article">
+        <article class="blog-card" data-category="fees" itemscope itemtype="https://schema.org/Article">
           <div class="blog-card-img" aria-hidden="true">🟢</div>
           <div class="blog-card-body">
             <span class="blog-tag">Freelancing</span>
@@ -350,13 +374,35 @@
           </div>
         </article>
 
+
+        <article class="blog-card" data-category="fees" itemscope itemtype="https://schema.org/Article">
+          <div class="blog-card-img" aria-hidden="true">💳</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Payment Fees</span>
+            <h2 itemprop="headline"><a href="article-paypal-gs-vs-ff.html" style="color:inherit;text-decoration:none;">PayPal Goods &amp; Services vs Friends &amp; Family: Fee Difference Explained</a></h2>
+            <p itemprop="description">G&S charges fees but includes buyer and seller protection. F&F looks free but is prohibited for business use and leaves you with zero protection. Learn the real difference before your next invoice.</p>
+            <div class="blog-meta"><span>📅 Apr 2026</span><span>⏱️ 6 min read</span></div>
+            <div style="margin-top:14px;"><a href="article-paypal-gs-vs-ff.html" class="read-more">Read Article →</a></div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="loans" itemscope itemtype="https://schema.org/Article">
+          <div class="blog-card-img" aria-hidden="true">🏦</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Loans &amp; Mortgages</span>
+            <h2 itemprop="headline"><a href="article-mortgage-vs-personal-loan.html" style="color:inherit;text-decoration:none;">Mortgage vs Personal Loan: How to Compare the Real Cost</a></h2>
+            <p itemprop="description">Same amount borrowed, very different total cost. Learn how to compare APR, monthly payments, and total interest so you choose the loan that actually costs less for your situation.</p>
+            <div class="blog-meta"><span>📅 Apr 2026</span><span>⏱️ 7 min read</span></div>
+            <div style="margin-top:14px;"><a href="article-mortgage-vs-personal-loan.html" class="read-more">Read Article →</a></div>
+          </div>
+        </article>
+
       </div>
 
       <!-- Ad Bottom -->
       <div style="margin-top:48px;text-align:center;">
-        <div class="ad-placeholder ad-banner" style="margin:0 auto;">
-          <span data-i18n="ad_label">Advertisement</span> · 728×90
-        </div>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
 
     </div>
