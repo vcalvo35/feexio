@@ -59,11 +59,11 @@ const FOOTER_HTML = `
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer_tools">Tools</h4>
-        <a href="index.html#paypal">PayPal Calculator</a>
-        <a href="index.html#stripe">Stripe Calculator</a>
-        <a href="index.html#fiverr">Fiverr Calculator</a>
-        <a href="index.html#profit">Profit Margin</a>
-        <a href="index.html#freelance">Freelance Rate</a>
+        <a href="paypal-fee-calculator.html">PayPal Calculator</a>
+        <a href="stripe-fee-calculator.html">Stripe Calculator</a>
+        <a href="fiverr-fee-calculator.html">Fiverr Calculator</a>
+        <a href="profit-margin-calculator.html">Profit Margin</a>
+        <a href="freelance-rate-calculator.html">Freelance Rate</a>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer_company">Company</h4>
