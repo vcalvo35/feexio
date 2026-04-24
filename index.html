@@ -100,12 +100,16 @@
     </div>
   </header>
 
-  <!-- ── Ad: Top ────────────────────────────────────────────── -->
-  <div class="section-sm" style="padding:24px 0;">
+  <!-- Ad: Top -->
+  <div style="padding:24px 0;">
     <div class="container text-center">
-      <div class="ad-placeholder ad-banner" role="complementary" aria-label="Advertisement">
-        
+      <div style="margin:0 0 40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
+    </div>
+  </div>
+
     </div>
   </div>
 
@@ -121,97 +125,44 @@
           <p data-i18n="section_fee_sub">Find out exactly how much you keep after platform fees.</p>
         </div>
         <div class="calc-grid">
-
-          <!-- PayPal -->
           <article class="calc-card" id="paypal" aria-labelledby="paypal-heading">
             <div class="calc-icon">💳</div>
             <h2 id="paypal-heading" data-i18n="calc_paypal_title">PayPal Fee Calculator</h2>
             <p data-i18n="calc_paypal_desc">Calculate the exact fee PayPal charges and how much you'll receive after processing a payment.</p>
-            <div class="form-group">
-              <label for="pp-amount" data-i18n="calc_paypal_amount">Transaction Amount ($)</label>
-              <input type="number" id="pp-amount" placeholder="0.00" min="0" step="0.01" aria-label="Transaction Amount" />
-            </div>
-            <div class="calc-result" id="pp-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_paypal_fee">PayPal Fee</span>
-                <span class="result-value" id="pp-fee">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_paypal_net">You Receive</span>
-                <span class="result-value accent" id="pp-net">$0.00</span>
-              </div>
-            </div>
-            <!-- Jump Point → InstantLinkHub -->
-            <div style="margin-top:16px;padding:12px 16px;background:var(--accent-glow);border:1px solid var(--accent);border-radius:var(--radius-sm);font-size:0.875rem;">
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Standard rate: <strong>2.9% + $0.30</strong> per transaction</div>
+                      <div style="margin-top:16px;padding:12px 16px;background:var(--accent-glow);border:1px solid var(--accent);border-radius:var(--radius-sm);font-size:0.875rem;">
               💬 <span data-i18n="jp_paypal_to_ilh">Ready to share your payment details?</span>
               <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;margin-left:4px;" data-i18n="jp_paypal_to_ilh_link">Generate a WhatsApp link to send it instantly</a> →
             </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="paypal-fee-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <a href="paypal-fee-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
-          <!-- Stripe -->
           <article class="calc-card" id="stripe" aria-labelledby="stripe-heading">
             <div class="calc-icon">⚡</div>
             <h2 id="stripe-heading" data-i18n="calc_stripe_title">Stripe Fee Calculator</h2>
             <p data-i18n="calc_stripe_desc">Estimate Stripe processing fees instantly. Includes the standard 2.9% + $0.30 per transaction.</p>
-            <div class="form-group">
-              <label for="st-amount" data-i18n="calc_stripe_amount">Transaction Amount ($)</label>
-              <input type="number" id="st-amount" placeholder="0.00" min="0" step="0.01" aria-label="Transaction Amount" />
-            </div>
-            <div class="calc-result" id="st-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_stripe_fee">Stripe Fee</span>
-                <span class="result-value" id="st-fee">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_stripe_net">You Receive</span>
-                <span class="result-value accent" id="st-net">$0.00</span>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="stripe-fee-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Standard rate: <strong>2.9% + $0.30</strong> per transaction</div>
+            
+            <a href="stripe-fee-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
-          <!-- Fiverr -->
           <article class="calc-card" id="fiverr" aria-labelledby="fiverr-heading">
             <div class="calc-icon">🎯</div>
             <h2 id="fiverr-heading" data-i18n="calc_fiverr_title">Fiverr Fee Calculator</h2>
             <p data-i18n="calc_fiverr_desc">Fiverr takes 20% of every service. See what you actually earn after their service fee is deducted.</p>
-            <div class="form-group">
-              <label for="fv-price" data-i18n="calc_fiverr_price">Service Price ($)</label>
-              <input type="number" id="fv-price" placeholder="0.00" min="0" step="0.01" aria-label="Service Price" />
-            </div>
-            <div class="calc-result" id="fv-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_fiverr_fee">Fiverr Fee (20%)</span>
-                <span class="result-value" id="fv-fee">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_fiverr_net">Your Earnings</span>
-                <span class="result-value accent" id="fv-net">$0.00</span>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="fiverr-fee-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Flat <strong>20%</strong> service fee on all orders</div>
+            
+            <a href="fiverr-fee-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- Ad: Mid -->
+    <!-- Ad: Mid 1 -->
     <div style="padding:8px 0 32px;">
       <div class="container text-center">
-        <div class="ad-placeholder ad-rectangle" style="margin:0 auto;" role="complementary">
-          <span data-i18n="ad_label">Advertisement</span> · 400×100
-        </div>
+      <div style="margin:0 0 40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
       </div>
     </div>
 
@@ -224,120 +175,41 @@
           <p data-i18n="section_business_sub">Know your margins before you price anything.</p>
         </div>
         <div class="calc-grid">
-
-          <!-- Profit Margin -->
           <article class="calc-card" id="profit" aria-labelledby="profit-heading">
             <div class="calc-icon">📊</div>
             <h2 id="profit-heading" data-i18n="calc_profit_title">Profit Margin Calculator</h2>
             <p data-i18n="calc_profit_desc">Calculate gross profit and margin percentage from your cost and selling price.</p>
-            <div class="form-group">
-              <label for="pm-cost" data-i18n="calc_profit_cost">Cost Price ($)</label>
-              <input type="number" id="pm-cost" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="pm-sell" data-i18n="calc_profit_sell">Selling Price ($)</label>
-              <input type="number" id="pm-sell" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="calc-result" id="pm-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_profit_profit">Profit</span>
-                <span class="result-value" id="pm-profit">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_profit_margin">Margin %</span>
-                <span class="result-value accent" id="pm-margin">0%</span>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="profit-margin-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Shows gross <strong>profit &amp; margin %</strong> instantly</div>
+            
+            <a href="profit-margin-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
-          <!-- Compound Interest -->
           <article class="calc-card" id="compound" aria-labelledby="compound-heading">
             <div class="calc-icon">📈</div>
             <h2 id="compound-heading" data-i18n="calc_compound_title">Compound Interest Calculator</h2>
             <p data-i18n="calc_compound_desc">Calculate how your investment grows over time with compound interest at different compounding frequencies.</p>
-            <div class="form-group">
-              <label for="ci-principal" data-i18n="calc_compound_principal">Principal Amount ($)</label>
-              <input type="number" id="ci-principal" placeholder="1000.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="ci-rate" data-i18n="calc_compound_rate">Annual Interest Rate (%)</label>
-              <input type="number" id="ci-rate" placeholder="5.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="ci-years" data-i18n="calc_compound_years">Term (years)</label>
-              <input type="number" id="ci-years" placeholder="10" min="1" step="1" />
-            </div>
-            <div class="calc-result" id="ci-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_compound_annual">Annual compounding</span>
-                <span class="result-value" id="ci-annual">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_compound_monthly">Monthly compounding</span>
-                <span class="result-value" id="ci-monthly">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_compound_interest">Total Interest Earned</span>
-                <span class="result-value accent" id="ci-interest">$0.00</span>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="compound-interest-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Annual vs <strong>monthly compounding</strong> side by side</div>
+            
+            <a href="compound-interest-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
-          <!-- Cost per Unit Volume -->
           <article class="calc-card" id="unitcost" aria-labelledby="unitcost-heading">
             <div class="calc-icon">📦</div>
-            <h2 id="unitcost-heading" data-i18n="calc_unitcost_title">Cost per Unit Volume</h2>
-            <p data-i18n="calc_unitcost_desc">Compare the true cost of materials or products by calculating price per cubic unit — ideal for bulk buying decisions.</p>
-            <div class="form-group">
-              <label for="uv-length" data-i18n="calc_unitcost_length">Length</label>
-              <input type="number" id="uv-length" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="uv-width" data-i18n="calc_unitcost_width">Width</label>
-              <input type="number" id="uv-width" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="uv-height" data-i18n="calc_unitcost_height">Height</label>
-              <input type="number" id="uv-height" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="uv-cost" data-i18n="calc_unitcost_cost">Total Cost ($)</label>
-              <input type="number" id="uv-cost" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="calc-result" id="uv-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_unitcost_volume">Volume</span>
-                <span class="result-value" id="uv-volume">0</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_unitcost_result">Cost per cubic unit</span>
-                <span class="result-value accent" id="uv-cpv">$0.00</span>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="cost-per-unit-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <h2 id="unitcost-heading" data-i18n="calc_unitcost_title">Cost per Unit Calculator</h2>
+            <p data-i18n="calc_unitcost_desc">Compare the true cost of materials or products by calculating price per cubic unit.</p>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);"><strong>Price per cubic unit</strong> — compare bulk suppliers</div>
+            
+            <a href="cost-per-unit-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- Ad between sections -->
+    <!-- Ad: Mid 2 -->
     <div style="padding:8px 0 32px;">
       <div class="container text-center">
-        <div class="ad-placeholder ad-rectangle" style="margin:0 auto;" role="complementary">
-          <span data-i18n="ad_label">Advertisement</span> · 400×100
-        </div>
+      <div style="margin:0 0 40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
       </div>
     </div>
 
@@ -350,118 +222,44 @@
           <p data-i18n="section_freelance_sub">Set rates that actually cover your life.</p>
         </div>
         <div class="calc-grid">
-
-          <!-- Freelance Rate -->
           <article class="calc-card" id="freelance" aria-labelledby="freelance-heading">
             <div class="calc-icon">💼</div>
             <h2 id="freelance-heading" data-i18n="calc_rate_title">Freelance Rate Calculator</h2>
             <p data-i18n="calc_rate_desc">Find the minimum hourly rate you need to charge to cover income goals and business expenses.</p>
-            <div class="form-group">
-              <label for="fr-income" data-i18n="calc_rate_income">Desired Monthly Income ($)</label>
-              <input type="number" id="fr-income" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="fr-expenses" data-i18n="calc_rate_expenses">Monthly Expenses ($)</label>
-              <input type="number" id="fr-expenses" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="fr-hours" data-i18n="calc_rate_hours">Billable Hours / Month</label>
-              <input type="number" id="fr-hours" placeholder="160" min="1" step="1" />
-            </div>
-            <div class="calc-result" id="fr-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_rate_result">Suggested Hourly Rate</span>
-                <span class="result-value accent" id="fr-rate">$0.00/hr</span>
-              </div>
-            </div>
-            <!-- Jump Point → InstantLinkHub -->
-            <div style="margin-top:16px;padding:12px 16px;background:var(--accent-glow);border:1px solid var(--accent);border-radius:var(--radius-sm);font-size:0.875rem;">
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Minimum rate from <strong>income + expenses ÷ hours</strong></div>
+                      <div style="margin-top:16px;padding:12px 16px;background:var(--accent-glow);border:1px solid var(--accent);border-radius:var(--radius-sm);font-size:0.875rem;">
               🔗 <span data-i18n="jp_freelance_to_ilh">Ready to reach your next client?</span>
               <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;margin-left:4px;" data-i18n="jp_freelance_to_ilh_link">Generate a WhatsApp or mailto link instantly</a> →
             </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="freelance-rate-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <a href="freelance-rate-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
-          <!-- Project Quote Calculator -->
           <article class="calc-card" id="project-quote" aria-labelledby="pq-heading">
             <div class="calc-icon">🧾</div>
             <h2 id="pq-heading" data-i18n="calc_quote_title">Project Quote Calculator</h2>
-            <p data-i18n="calc_quote_desc">Estimate the total price for a client project based on your hourly rate, estimated hours, and an optional buffer for scope creep.</p>
-            <div class="form-group">
-              <label for="pq-rate" data-i18n="calc_quote_rate">Your Hourly Rate ($)</label>
-              <input type="number" id="pq-rate" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="pq-hours" data-i18n="calc_quote_hours">Estimated Hours</label>
-              <input type="number" id="pq-hours" placeholder="0" min="0" step="1" />
-            </div>
-            <div class="form-group">
-              <label for="pq-buffer" data-i18n="calc_quote_buffer">Scope Buffer (%)</label>
-              <input type="number" id="pq-buffer" placeholder="20" min="0" max="100" step="1" />
-            </div>
-            <div class="calc-result" id="pq-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_quote_base">Base Price</span>
-                <span class="result-value" id="pq-base">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_quote_total">Total Quote (with buffer)</span>
-                <span class="result-value accent" id="pq-total">$0.00</span>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="project-quote-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <p data-i18n="calc_quote_desc">Estimate the total price for a client project based on your hourly rate, estimated hours, and scope buffer.</p>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Rate × Hours + <strong>scope creep buffer</strong></div>
+            
+            <a href="project-quote-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
-          <!-- Savings Goal Calculator -->
           <article class="calc-card" id="savings-goal" aria-labelledby="sg-heading">
             <div class="calc-icon">🎯</div>
             <h2 id="sg-heading" data-i18n="calc_savings_title">Savings Goal Calculator</h2>
-            <p data-i18n="calc_savings_desc">Find out how much you need to set aside each month to reach a financial goal — ideal for freelancers building an emergency fund or saving for equipment.</p>
-            <div class="form-group">
-              <label for="sg-goal" data-i18n="calc_savings_goal">Savings Goal ($)</label>
-              <input type="number" id="sg-goal" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="sg-saved" data-i18n="calc_savings_saved">Already Saved ($)</label>
-              <input type="number" id="sg-saved" placeholder="0.00" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="sg-months" data-i18n="calc_savings_months">Months to Reach Goal</label>
-              <input type="number" id="sg-months" placeholder="12" min="1" step="1" />
-            </div>
-            <div class="calc-result" id="sg-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_savings_remaining">Amount Remaining</span>
-                <span class="result-value" id="sg-remaining">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_savings_monthly">Monthly Amount Needed</span>
-                <span class="result-value accent" id="sg-monthly">$0.00/mo</span>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="savings-goal-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <p data-i18n="calc_savings_desc">Find out how much you need to set aside each month to reach a financial goal.</p>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Monthly savings to <strong>hit any target</strong> in any timeline</div>
+            
+            <a href="savings-goal-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
         </div>
       </div>
     </section>
 
-
-    <!-- Ad between sections -->
+    <!-- Ad: Mid 3 -->
     <div style="padding:8px 0 32px;">
       <div class="container text-center">
-        <div class="ad-placeholder ad-rectangle" style="margin:0 auto;" role="complementary">
-          <span data-i18n="ad_label">Advertisement</span>
-        </div>
+      <div style="margin:0 0 40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
       </div>
     </div>
 
@@ -474,131 +272,30 @@
           <p data-i18n="section_loans_sub">Plan your payments before you sign anything.</p>
         </div>
         <div class="calc-grid">
-
-          <!-- Mortgage Calculator -->
           <article class="calc-card" id="mortgage" aria-labelledby="mortgage-heading">
-            <div class="calc-icon">&#127968;</div>
+            <div class="calc-icon">🏠</div>
             <h2 id="mortgage-heading" data-i18n="calc_mortgage_title">Mortgage Calculator</h2>
             <p data-i18n="calc_mortgage_desc">Estimate your monthly mortgage payment based on home price, down payment, interest rate and loan term.</p>
-            <div class="form-group">
-              <label for="mo-price" data-i18n="calc_mortgage_price">Home Price ($)</label>
-              <input type="number" id="mo-price" placeholder="300000" min="0" step="1" />
-            </div>
-            <div class="form-group">
-              <label for="mo-down" data-i18n="calc_mortgage_down">Down Payment ($)</label>
-              <input type="number" id="mo-down" placeholder="60000" min="0" step="1" />
-            </div>
-            <div class="form-group">
-              <label for="mo-rate" data-i18n="calc_mortgage_rate">Annual Interest Rate (%)</label>
-              <input type="number" id="mo-rate" placeholder="6.5" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="mo-years" data-i18n="calc_mortgage_years">Loan Term (years)</label>
-              <input type="number" id="mo-years" placeholder="30" min="1" step="1" />
-            </div>
-            <div class="calc-result" id="mo-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_mortgage_monthly">Monthly Payment</span>
-                <span class="result-value accent" id="mo-monthly">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_mortgage_interest">Total Interest</span>
-                <span class="result-value" id="mo-interest">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_mortgage_total">Total Cost</span>
-                <span class="result-value" id="mo-total">$0.00</span>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="mortgage-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Monthly payment + <strong>total interest</strong> for any home loan</div>
+            
+            <a href="mortgage-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
-          <!-- Personal Loan Calculator -->
           <article class="calc-card" id="personal-loan" aria-labelledby="pl-heading">
-            <div class="calc-icon">&#128179;</div>
+            <div class="calc-icon">💵</div>
             <h2 id="pl-heading" data-i18n="calc_loan_title">Personal Loan Calculator</h2>
             <p data-i18n="calc_loan_desc">Calculate monthly payments and total interest for any personal loan or auto loan.</p>
-            <div class="form-group">
-              <label for="pl-amount" data-i18n="calc_loan_amount">Loan Amount ($)</label>
-              <input type="number" id="pl-amount" placeholder="10000" min="0" step="1" />
-            </div>
-            <div class="form-group">
-              <label for="pl-rate" data-i18n="calc_loan_rate">Annual Interest Rate (%)</label>
-              <input type="number" id="pl-rate" placeholder="8.0" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="pl-months" data-i18n="calc_loan_months">Loan Term (months)</label>
-              <input type="number" id="pl-months" placeholder="36" min="1" step="1" />
-            </div>
-            <div class="calc-result" id="pl-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_loan_monthly">Monthly Payment</span>
-                <span class="result-value accent" id="pl-monthly">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_loan_interest">Total Interest</span>
-                <span class="result-value" id="pl-interest">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_loan_total">Total Paid</span>
-                <span class="result-value" id="pl-total">$0.00</span>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="personal-loan-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Fixed payments + <strong>total cost</strong> of borrowing</div>
+            
+            <a href="personal-loan-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
-          <!-- Amortization Schedule -->
           <article class="calc-card" id="amortization" aria-labelledby="am-heading">
-            <div class="calc-icon">&#128202;</div>
+            <div class="calc-icon">📊</div>
             <h2 id="am-heading" data-i18n="calc_amort_title">Amortization Schedule</h2>
             <p data-i18n="calc_amort_desc">See how your loan balance decreases over time and the split between principal and interest each year.</p>
-            <div class="form-group">
-              <label for="am-amount" data-i18n="calc_amort_amount">Loan Amount ($)</label>
-              <input type="number" id="am-amount" placeholder="20000" min="0" step="1" />
-            </div>
-            <div class="form-group">
-              <label for="am-rate" data-i18n="calc_amort_rate">Annual Interest Rate (%)</label>
-              <input type="number" id="am-rate" placeholder="7.0" min="0" step="0.01" />
-            </div>
-            <div class="form-group">
-              <label for="am-months" data-i18n="calc_amort_months">Loan Term (months)</label>
-              <input type="number" id="am-months" placeholder="60" min="1" step="1" />
-            </div>
-            <div class="calc-result" id="am-result" role="status" aria-live="polite">
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_amort_payment">Monthly Payment</span>
-                <span class="result-value accent" id="am-payment">$0.00</span>
-              </div>
-              <div class="result-row">
-                <span class="result-label" data-i18n="calc_amort_interest">Total Interest</span>
-                <span class="result-value" id="am-interest">$0.00</span>
-              </div>
-              <div id="am-table-wrap" style="margin-top:12px;overflow-x:auto;display:none;">
-                <table id="am-table" style="width:100%;font-size:0.78rem;border-collapse:collapse;">
-                  <thead>
-                    <tr>
-                      <th style="text-align:left;padding:4px 6px;opacity:0.6;" data-i18n="calc_amort_col_year">Year</th>
-                      <th style="text-align:right;padding:4px 6px;opacity:0.6;" data-i18n="calc_amort_col_principal">Principal</th>
-                      <th style="text-align:right;padding:4px 6px;opacity:0.6;" data-i18n="calc_amort_col_interest">Interest</th>
-                      <th style="text-align:right;padding:4px 6px;opacity:0.6;" data-i18n="calc_amort_col_balance">Balance</th>
-                    </tr>
-                  </thead>
-                  <tbody id="am-tbody"></tbody>
-                </table>
-              </div>
-            </div>
-          
-            <div style="margin-top:14px;text-align:right;">
-              <a href="amortization-calculator.html" style="font-size:0.875rem;font-weight:600;color:var(--accent);text-decoration:none;">Open Full Calculator →</a>
-            </div>
+            <div style="margin:14px 0;padding:10px 14px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-muted);">Full <strong>year-by-year</strong> principal / interest breakdown</div>
+            
+            <a href="amortization-calculator.html" style="display:block;margin-top:18px;padding:11px 20px;background:var(--accent);color:#fff;border-radius:var(--radius-sm);text-align:center;font-weight:700;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">Calculate Now →</a>
           </article>
-
         </div>
       </div>
     </section>
@@ -714,12 +411,16 @@
     </div>
   </section>
 
-  <!-- ── Ad: Pre-Footer ──────────────────────────────────────── -->
+  <!-- Ad: Pre-Footer -->
   <div style="padding:32px 0;">
     <div class="container text-center">
-      <div class="ad-placeholder ad-banner" style="margin:0 auto;" role="complementary">
-        <span data-i18n="ad_label">Advertisement</span> · 728×90
+      <div style="margin:0 0 40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
+    </div>
+  </div>
+
     </div>
   </div>
 
