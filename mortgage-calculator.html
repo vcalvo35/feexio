@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mortgage Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free mortgage calculator. Enter home price, down payment, interest rate, and loan term to calculate monthly payments and total interest cost. Instant results." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/mortgage-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mortgage Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="Calculate your monthly mortgage payment and total interest cost instantly. Enter home price, down payment, rate, and term — free." />
+  <meta property="og:url" content="https://feexio.com/mortgage-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mortgage Calculator" />
+  <meta name="twitter:description" content="Calculate your monthly mortgage payment and total interest cost instantly. Enter home price, down payment, rate, and term — free." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Mortgage Calculator",
+        "url": "https://feexio.com/mortgage-calculator.html",
+        "description": "Calculate monthly mortgage payments, total interest, and total cost based on home price, down payment, interest rate, and loan term.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"How is a monthly mortgage payment calculated?","acceptedAnswer":{"@type":"Answer","text":"Using the amortization formula: M = P × [r(1+r)^n] ÷ [(1+r)^n - 1], where P is loan principal, r is monthly interest rate (annual ÷ 12), and n is number of monthly payments (years × 12)."}},
+    {"@type":"Question","name":"Does this calculator include property taxes and insurance?","acceptedAnswer":{"@type":"Answer","text":"No — this calculator shows principal and interest only. Your actual monthly housing cost (PITI) also includes Property taxes, Insurance (homeowners), and potentially PMI (if down payment < 20%). Add $300-800/month for these costs depending on your location and home value."}},
+    {"@type":"Question","name":"What is PMI and when is it required?","acceptedAnswer":{"@type":"Answer","text":"Private Mortgage Insurance (PMI) is required when your down payment is less than 20% of the home price. It typically costs 0.5-1% of the loan amount annually, added to your monthly payment. PMI is removed once your equity reaches 20%."}},
+    {"@type":"Question","name":"Should I choose a 15-year or 30-year mortgage?","acceptedAnswer":{"@type":"Answer","text":"A 30-year mortgage has lower payments but far higher total interest. A 15-year mortgage costs more per month but saves tens of thousands in interest. Choose 30-year if cash flow is tight; choose 15-year if you can handle higher payments and want to build equity faster."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>Mortgage Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">Enter home price, down payment, interest rate, and loan term to see your monthly payment and total cost before you sign anything.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="mortgage" aria-labelledby="mortgage-heading">
+          <div class="calc-icon">&#x1F3E0;</div>
+          <h2 id="mortgage-heading" data-i18n="calc_mortgage_title">Mortgage Calculator</h2>
+          <p data-i18n="calc_mortgage_desc">Estimate your monthly mortgage payment based on home price, down payment, interest rate and loan term.</p>
+          <div class="form-group">
+            <label for="mo-price" data-i18n="calc_mortgage_price">Home Price ($)</label>
+            <input type="number" id="mo-price" placeholder="300000" min="0" step="1" />
+          </div>
+          <div class="form-group">
+            <label for="mo-down" data-i18n="calc_mortgage_down">Down Payment ($)</label>
+            <input type="number" id="mo-down" placeholder="60000" min="0" step="1" />
+          </div>
+          <div class="form-group">
+            <label for="mo-rate" data-i18n="calc_mortgage_rate">Annual Interest Rate (%)</label>
+            <input type="number" id="mo-rate" placeholder="6.5" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="mo-years" data-i18n="calc_mortgage_years">Loan Term (years)</label>
+            <input type="number" id="mo-years" placeholder="30" min="1" step="1" />
+          </div>
+          <div class="calc-result" id="mo-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_mortgage_monthly">Monthly Payment</span>
+              <span class="result-value accent" id="mo-monthly">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_mortgage_interest">Total Interest</span>
+              <span class="result-value" id="mo-interest">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_mortgage_total">Total Cost</span>
+              <span class="result-value" id="mo-total">$0.00</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">The Mortgage Payment Formula</h2>
+        <p>Monthly mortgage payments are calculated using the standard amortization formula: <strong>M = P × [r(1+r)^n] ÷ [(1+r)^n − 1]</strong>, where M is monthly payment, P is loan amount (home price minus down payment), r is monthly interest rate (annual rate ÷ 12), and n is total payments (years × 12).</p>
+        <p>For a $300,000 home with a $60,000 down payment (20%), 6.5% annual rate, and 30-year term: P = $240,000, r = 0.065/12 = 0.00542, n = 360. Monthly payment = <strong>$1,517.86</strong>. Total paid over 30 years = $546,428 — meaning you pay $306,428 in interest on a $240,000 loan.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">How Down Payment Affects Your Monthly Cost</h2>
+        <p>A larger down payment reduces both your loan amount and your monthly payment. It also eliminates Private Mortgage Insurance (PMI), which lenders require when your down payment is under 20% (typically 0.5–1% of the loan amount annually). On a $300,000 home, PMI can add $100–200/month to your payment — a cost not included in basic mortgage calculators.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">15-Year vs 30-Year Mortgage</h2>
+        <p>A 15-year mortgage has higher monthly payments but dramatically lower total interest. On the same $240,000 loan at 6.0%: 30-year = $1,439/month, $277,993 total interest. 15-year = $2,026/month, $124,631 total interest. The 15-year saves $153,362 in interest but costs $587 more per month. Run both scenarios to find which fits your cash flow. <a href="article-mortgage-calculator-guide.html" style="color:var(--accent);">Read the mortgage calculator guide →</a></p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How is a monthly mortgage payment calculated?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Using the amortization formula: M = P × [r(1+r)^n] ÷ [(1+r)^n - 1], where P is loan principal, r is monthly interest rate (annual ÷ 12), and n is number of monthly payments (years × 12).</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Does this calculator include property taxes and insurance?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">No — this calculator shows principal and interest only. Your actual monthly housing cost (PITI) also includes Property taxes, Insurance (homeowners), and potentially PMI (if down payment < 20%). Add $300-800/month for these costs depending on your location and home value.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is PMI and when is it required?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Private Mortgage Insurance (PMI) is required when your down payment is less than 20% of the home price. It typically costs 0.5-1% of the loan amount annually, added to your monthly payment. PMI is removed once your equity reaches 20%.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Should I choose a 15-year or 30-year mortgage?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">A 30-year mortgage has lower payments but far higher total interest. A 15-year mortgage costs more per month but saves tens of thousands in interest. Choose 30-year if cash flow is tight; choose 15-year if you can handle higher payments and want to build equity faster.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="personal-loan-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4B3;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Personal Loan Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Monthly payments & interest</div>
+        </a>
+        <a href="amortization-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4CA;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Amortization Schedule</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Year-by-year loan breakdown</div>
+        </a>
+        <a href="compound-interest-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4C8;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Compound Interest</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Watch your investment grow</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

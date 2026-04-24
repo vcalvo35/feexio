@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cost per Unit Volume Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free cost per unit volume calculator. Enter dimensions and total cost to calculate price per cubic unit — ideal for comparing bulk purchases and material costs." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/cost-per-unit-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cost per Unit Volume Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="Calculate cost per cubic unit for any product or material. Compare bulk options instantly — free, no sign-up." />
+  <meta property="og:url" content="https://feexio.com/cost-per-unit-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cost per Unit Volume Calculator" />
+  <meta name="twitter:description" content="Calculate cost per cubic unit for any product or material. Compare bulk options instantly — free, no sign-up." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Cost per Unit Volume Calculator",
+        "url": "https://feexio.com/cost-per-unit-calculator.html",
+        "description": "Calculate the cost per cubic unit of any product by entering its dimensions and total cost.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"How do I calculate cost per unit volume?","acceptedAnswer":{"@type":"Answer","text":"Multiply length × width × height to get the total volume in cubic units. Then divide the total cost by that volume. Example: a box measuring 10×8×6 inches at $24 total cost has a volume of 480 cubic inches and a cost of $0.05 per cubic inch."}},
+    {"@type":"Question","name":"What units should I use for dimensions?","acceptedAnswer":{"@type":"Answer","text":"Use consistent units — all centimeters, all inches, or all feet. The calculator works with any unit system; just ensure all three dimensions are in the same unit. The cost result will be per cubic unit of that system."}},
+    {"@type":"Question","name":"How does this differ from cost per unit weight?","acceptedAnswer":{"@type":"Answer","text":"Cost per unit volume uses the three-dimensional space the product occupies. Cost per unit weight uses the product's mass (kg or lb). For dense materials like metal, cost per unit weight is more relevant. For light, bulky items like packaging materials, cost per unit volume is more informative."}},
+    {"@type":"Question","name":"Can I use this to compare product pricing between suppliers?","acceptedAnswer":{"@type":"Answer","text":"Yes — this is one of the primary use cases. If Supplier A offers a 15×10×8 unit at $30 and Supplier B offers a 12×9×7 unit at $22, calculating cost per cubic unit reveals which is genuinely cheaper per unit of product."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>Cost per Unit Volume Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">Compare the real cost of materials and products by calculating price per cubic unit. Essential for bulk buying decisions.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="unitcost" aria-labelledby="unitcost-heading">
+          <div class="calc-icon">&#x1F4E6;</div>
+          <h2 id="unitcost-heading" data-i18n="calc_unitcost_title">Cost per Unit Volume</h2>
+          <p data-i18n="calc_unitcost_desc">Compare the true cost of materials or products by calculating price per cubic unit.</p>
+          <div class="form-group">
+            <label for="uv-length" data-i18n="calc_unitcost_length">Length</label>
+            <input type="number" id="uv-length" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="uv-width" data-i18n="calc_unitcost_width">Width</label>
+            <input type="number" id="uv-width" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="uv-height" data-i18n="calc_unitcost_height">Height</label>
+            <input type="number" id="uv-height" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="uv-cost" data-i18n="calc_unitcost_cost">Total Cost ($)</label>
+            <input type="number" id="uv-cost" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="calc-result" id="uv-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_unitcost_volume">Volume</span>
+              <span class="result-value" id="uv-volume">0</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_unitcost_result">Cost per cubic unit</span>
+              <span class="result-value accent" id="uv-cpv">$0.00</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">What Is Cost per Unit Volume?</h2>
+        <p>Cost per unit volume measures how much you pay for each cubic unit (cm³, in³, ft³, etc.) of a product or material. It lets you compare items of different sizes or quantities on a level playing field — a large container at a high price might actually be cheaper per unit volume than a small container at a lower price.</p>
+        <p>The formula is: <strong>Cost per cubic unit = Total Cost ÷ (Length × Width × Height)</strong>. The units you use for dimensions must be consistent — all centimeters, all inches, etc. The result will be in cost per cubic unit of the same measurement system.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">When to Use This Calculator</h2>
+        <p>This calculator is most useful for: comparing two container sizes of the same product (is the larger size actually a better deal?), evaluating bulk material purchases, and estimating per-unit shipping costs based on dimensional weight. It is particularly valuable for e-commerce sellers comparing supplier options where products come in different pack sizes or dimensions.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Dimensional Weight in Shipping</h2>
+        <p>Carriers like UPS, FedEx, and DHL use "dimensional weight" (also called DIM weight) to determine shipping costs for large, light packages. DIM weight = (Length × Width × Height) ÷ DIM factor (typically 139 for domestic US). If DIM weight exceeds actual weight, you're billed on the larger value. Understanding your products' cubic volume helps you optimize packaging to minimize shipping costs.</p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How do I calculate cost per unit volume?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Multiply length × width × height to get the total volume in cubic units. Then divide the total cost by that volume. Example: a box measuring 10×8×6 inches at $24 total cost has a volume of 480 cubic inches and a cost of $0.05 per cubic inch.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What units should I use for dimensions?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Use consistent units — all centimeters, all inches, or all feet. The calculator works with any unit system; just ensure all three dimensions are in the same unit. The cost result will be per cubic unit of that system.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How does this differ from cost per unit weight?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Cost per unit volume uses the three-dimensional space the product occupies. Cost per unit weight uses the product's mass (kg or lb). For dense materials like metal, cost per unit weight is more relevant. For light, bulky items like packaging materials, cost per unit volume is more informative.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Can I use this to compare product pricing between suppliers?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Yes — this is one of the primary use cases. If Supplier A offers a 15×10×8 unit at $30 and Supplier B offers a 12×9×7 unit at $22, calculating cost per cubic unit reveals which is genuinely cheaper per unit of product.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="profit-margin-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4CA;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Profit Margin Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Gross margin from cost & price</div>
+        </a>
+        <a href="freelance-rate-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4BC;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Freelance Rate Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Your minimum hourly rate</div>
+        </a>
+        <a href="project-quote-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F9FE;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Project Quote Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Quote with scope buffer</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

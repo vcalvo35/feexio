@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Amortization Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free loan amortization calculator. Enter loan amount, rate, and term to see your monthly payment and a full year-by-year amortization schedule with principal and interest breakdown." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/amortization-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Loan Amortization Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="See exactly how your loan balance decreases over time with a full amortization schedule. Monthly payment plus year-by-year breakdown — free." />
+  <meta property="og:url" content="https://feexio.com/amortization-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Loan Amortization Calculator" />
+  <meta name="twitter:description" content="See exactly how your loan balance decreases over time with a full amortization schedule. Monthly payment plus year-by-year breakdown — free." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Loan Amortization Calculator",
+        "url": "https://feexio.com/amortization-calculator.html",
+        "description": "Calculate loan monthly payments and generate a year-by-year amortization schedule showing principal and interest breakdown.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"What is an amortization schedule?","acceptedAnswer":{"@type":"Answer","text":"An amortization schedule is a table showing each payment broken down into principal and interest, along with the remaining loan balance after each payment. It reveals how slowly the balance decreases early in the loan and how rapidly it falls near the end."}},
+    {"@type":"Question","name":"Why does so much of my early payment go to interest?","acceptedAnswer":{"@type":"Answer","text":"Because interest is calculated on the outstanding principal balance. Early in the loan, the balance is high, so the interest portion of each payment is high. As you pay down principal, less interest accrues, and more of each payment goes to principal."}},
+    {"@type":"Question","name":"How much do I save by making extra payments?","acceptedAnswer":{"@type":"Answer","text":"Extra payments reduce principal immediately, which reduces interest accrued for all remaining months. On a 30-year mortgage, an extra $100/month from day one can shorten the loan by 4-6 years and save tens of thousands in interest — the earlier you start, the larger the effect."}},
+    {"@type":"Question","name":"Is amortization the same for all loans?","acceptedAnswer":{"@type":"Answer","text":"Most installment loans (mortgages, personal loans, auto loans, student loans) use standard amortization. Credit cards are different — they use minimum payments based on balance, not a fixed amortization schedule, which is why balances can grow despite making payments."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>Loan Amortization Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">See your monthly payment and a full year-by-year breakdown of principal vs interest. Know exactly where every dollar goes.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="amortization" aria-labelledby="am-heading">
+          <div class="calc-icon">&#x1F4CA;</div>
+          <h2 id="am-heading" data-i18n="calc_amort_title">Amortization Schedule</h2>
+          <p data-i18n="calc_amort_desc">See how your loan balance decreases over time and the split between principal and interest each year.</p>
+          <div class="form-group">
+            <label for="am-amount" data-i18n="calc_amort_amount">Loan Amount ($)</label>
+            <input type="number" id="am-amount" placeholder="20000" min="0" step="1" />
+          </div>
+          <div class="form-group">
+            <label for="am-rate" data-i18n="calc_amort_rate">Annual Interest Rate (%)</label>
+            <input type="number" id="am-rate" placeholder="7.0" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="am-months" data-i18n="calc_amort_months">Loan Term (months)</label>
+            <input type="number" id="am-months" placeholder="60" min="1" step="1" />
+          </div>
+          <div class="calc-result" id="am-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_amort_payment">Monthly Payment</span>
+              <span class="result-value accent" id="am-payment">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_amort_interest">Total Interest</span>
+              <span class="result-value" id="am-interest">$0.00</span>
+            </div>
+            <div id="am-table-wrap" style="margin-top:12px;overflow-x:auto;display:none;">
+              <table id="am-table" style="width:100%;font-size:0.78rem;border-collapse:collapse;">
+                <thead><tr>
+                  <th style="text-align:left;padding:4px 6px;opacity:0.6;">Year</th>
+                  <th style="text-align:right;padding:4px 6px;opacity:0.6;">Principal</th>
+                  <th style="text-align:right;padding:4px 6px;opacity:0.6;">Interest</th>
+                  <th style="text-align:right;padding:4px 6px;opacity:0.6;">Balance</th>
+                </tr></thead>
+                <tbody id="am-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">What Is Loan Amortization?</h2>
+        <p>Amortization is the process of paying off a loan through regular fixed payments over time. Each payment covers both interest (the cost of borrowing) and principal (reducing the outstanding balance). Early in the loan, most of each payment is interest. As the balance decreases, more of each payment goes to principal.</p>
+        <p>This is why making extra payments early in a loan saves a disproportionately large amount of interest. An extra $100/month in year 1 of a 30-year mortgage saves far more total interest than the same $100 extra in year 25 — because it reduces the principal balance that interest accrues on for the remaining 29 years.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Reading the Amortization Table</h2>
+        <p>The table shows, for each year: total principal paid, total interest paid, and remaining balance. In early years of a 30-year mortgage, you'll see the balance declining very slowly — this is normal. By year 20, principal payments accelerate significantly. The table makes this progression visible in a way that a single monthly payment figure never could.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">How Extra Payments Change the Schedule</h2>
+        <p>If you pay an extra $200/month on a $200,000 loan at 7% for 30 years, you shorten the loan by roughly 8 years and save over $80,000 in interest. The amortization table doesn't simulate extra payments directly, but you can use it to see your baseline — then compare to a scenario with a higher monthly payment to understand the impact. <a href="article-loan-amortization-explained.html" style="color:var(--accent);">Read the amortization guide →</a></p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is an amortization schedule?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">An amortization schedule is a table showing each payment broken down into principal and interest, along with the remaining loan balance after each payment. It reveals how slowly the balance decreases early in the loan and how rapidly it falls near the end.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Why does so much of my early payment go to interest?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Because interest is calculated on the outstanding principal balance. Early in the loan, the balance is high, so the interest portion of each payment is high. As you pay down principal, less interest accrues, and more of each payment goes to principal.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How much do I save by making extra payments?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Extra payments reduce principal immediately, which reduces interest accrued for all remaining months. On a 30-year mortgage, an extra $100/month from day one can shorten the loan by 4-6 years and save tens of thousands in interest — the earlier you start, the larger the effect.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Is amortization the same for all loans?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Most installment loans (mortgages, personal loans, auto loans, student loans) use standard amortization. Credit cards are different — they use minimum payments based on balance, not a fixed amortization schedule, which is why balances can grow despite making payments.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="mortgage-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F3E0;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Mortgage Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Monthly payments & total cost</div>
+        </a>
+        <a href="personal-loan-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4B3;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Personal Loan Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Monthly payments & interest</div>
+        </a>
+        <a href="compound-interest-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4C8;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Compound Interest</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Watch your investment grow</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

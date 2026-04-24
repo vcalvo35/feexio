@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Quote Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free project quote calculator. Enter your hourly rate, estimated hours, and scope buffer to calculate your project price. Stop underquoting freelance projects." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/project-quote-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Project Quote Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="Calculate freelance project quotes with a scope buffer. Enter your rate, hours, and buffer — get your project price instantly." />
+  <meta property="og:url" content="https://feexio.com/project-quote-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Project Quote Calculator" />
+  <meta name="twitter:description" content="Calculate freelance project quotes with a scope buffer. Enter your rate, hours, and buffer — get your project price instantly." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Project Quote Calculator",
+        "url": "https://feexio.com/project-quote-calculator.html",
+        "description": "Calculate the total price for a freelance project based on hourly rate, estimated hours, and a scope creep buffer percentage.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"What is a scope buffer in a project quote?","acceptedAnswer":{"@type":"Answer","text":"A scope buffer is a percentage added to your base project price to cover unexpected work, client revisions, or unclear requirements. A 20% buffer on a $1,500 base estimate produces a $1,800 quote, giving you 4 extra hours of cushion at $75/hour."}},
+    {"@type":"Question","name":"Should I show clients my hourly rate and hours?","acceptedAnswer":{"@type":"Answer","text":"Generally no. Presenting a flat project price is more effective — it focuses discussion on value and deliverables rather than time tracking. Clients negotiating on hourly rate or estimated hours is a race to the bottom."}},
+    {"@type":"Question","name":"What happens if the project goes over my estimate?","acceptedAnswer":{"@type":"Answer","text":"If the extra work was caused by scope creep (client-requested additions), issue a change order for additional compensation. If you underestimated, the buffer absorbs it. If the buffer is also exhausted, this is a learning experience for future quoting."}},
+    {"@type":"Question","name":"How do I estimate hours accurately?","acceptedAnswer":{"@type":"Answer","text":"Break the project into tasks, estimate each task individually, then sum them. Apply a factor of 1.3-1.5x to your raw estimate to account for meetings, revisions, and coordination overhead. Review past projects of similar size to calibrate your estimates over time."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>Project Quote Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">Calculate a solid project price by entering your hourly rate, estimated hours, and a buffer for scope changes. Never underquote again.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="project-quote" aria-labelledby="pq-heading">
+          <div class="calc-icon">&#x1F9FE;</div>
+          <h2 id="pq-heading" data-i18n="calc_quote_title">Project Quote Calculator</h2>
+          <p data-i18n="calc_quote_desc">Estimate the total price for a client project based on your hourly rate, estimated hours, and a buffer for scope creep.</p>
+          <div class="form-group">
+            <label for="pq-rate" data-i18n="calc_quote_rate">Your Hourly Rate ($)</label>
+            <input type="number" id="pq-rate" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="pq-hours" data-i18n="calc_quote_hours">Estimated Hours</label>
+            <input type="number" id="pq-hours" placeholder="0" min="0" step="1" />
+          </div>
+          <div class="form-group">
+            <label for="pq-buffer" data-i18n="calc_quote_buffer">Scope Buffer (%)</label>
+            <input type="number" id="pq-buffer" placeholder="20" min="0" max="100" step="1" />
+          </div>
+          <div class="calc-result" id="pq-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_quote_base">Base Price</span>
+              <span class="result-value" id="pq-base">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_quote_total">Total Quote (with buffer)</span>
+              <span class="result-value accent" id="pq-total">$0.00</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">How the Project Quote Formula Works</h2>
+        <p>The formula is: <strong>Total Quote = (Hourly Rate × Estimated Hours) × (1 + Buffer%/100)</strong>. The base price is your rate multiplied by your time estimate. The buffer multiplies that base to protect against scope creep — work that wasn't in the original specification but needs to be done.</p>
+        <p>Example: $75/hour × 20 hours = $1,500 base. With a 20% buffer: $1,500 × 1.20 = <strong>$1,800 total quote</strong>. If the project stays in scope, you've earned a 20% premium on efficiency. If scope expands, the buffer absorbs the extra time.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">How Much Buffer Should You Add?</h2>
+        <p>A 20% buffer is the industry standard for well-defined projects. Use 30–40% for vague briefs, new client relationships, or projects involving stakeholders who frequently change their minds. Use 10–15% for repeat clients with very clear specs. Never use 0% — there is always some unexpected work on any project.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Presenting the Quote to Clients</h2>
+        <p>Don't reveal your breakdown to clients (hourly rate × hours). Instead, present the total as a flat project price. This prevents clients from trying to negotiate on your rate or hours independently, and frames the conversation around value rather than time. Always specify what's included and define what would trigger a change order. <a href="article-project-quote-guide.html" style="color:var(--accent);">Read the full project quoting guide →</a></p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is a scope buffer in a project quote?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">A scope buffer is a percentage added to your base project price to cover unexpected work, client revisions, or unclear requirements. A 20% buffer on a $1,500 base estimate produces a $1,800 quote, giving you 4 extra hours of cushion at $75/hour.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Should I show clients my hourly rate and hours?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Generally no. Presenting a flat project price is more effective — it focuses discussion on value and deliverables rather than time tracking. Clients negotiating on hourly rate or estimated hours is a race to the bottom.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What happens if the project goes over my estimate?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">If the extra work was caused by scope creep (client-requested additions), issue a change order for additional compensation. If you underestimated, the buffer absorbs it. If the buffer is also exhausted, this is a learning experience for future quoting.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How do I estimate hours accurately?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Break the project into tasks, estimate each task individually, then sum them. Apply a factor of 1.3-1.5x to your raw estimate to account for meetings, revisions, and coordination overhead. Review past projects of similar size to calibrate your estimates over time.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="freelance-rate-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4BC;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Freelance Rate Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Your minimum hourly rate</div>
+        </a>
+        <a href="profit-margin-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4CA;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Profit Margin Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Gross margin from cost & price</div>
+        </a>
+        <a href="savings-goal-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F3AF;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Savings Goal Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Monthly savings needed</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

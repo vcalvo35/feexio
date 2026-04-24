@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freelance Rate Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free freelance rate calculator. Enter your income goal, expenses, and billable hours to find your minimum hourly rate. Stop undercharging — know your number." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/freelance-rate-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Freelance Rate Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="Calculate your minimum freelance hourly rate based on income goals and expenses. Free, instant, no sign-up." />
+  <meta property="og:url" content="https://feexio.com/freelance-rate-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Freelance Rate Calculator" />
+  <meta name="twitter:description" content="Calculate your minimum freelance hourly rate based on income goals and expenses. Free, instant, no sign-up." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Freelance Rate Calculator",
+        "url": "https://feexio.com/freelance-rate-calculator.html",
+        "description": "Calculate the minimum hourly freelance rate needed based on desired monthly income, expenses, and billable hours.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"How do I calculate my freelance hourly rate?","acceptedAnswer":{"@type":"Answer","text":"Add your desired monthly income to your monthly business expenses, then divide by your billable hours per month. Example: ($5,000 income + $500 expenses) ÷ 80 billable hours = $68.75/hour minimum rate."}},
+    {"@type":"Question","name":"How many billable hours should I include?","acceptedAnswer":{"@type":"Answer","text":"Most full-time freelancers realistically bill 70-100 hours per month. Of 160 working hours, 30-40% typically goes to non-billable work (admin, prospecting, etc.). Using 160 billable hours will produce an unrealistically low minimum rate."}},
+    {"@type":"Question","name":"Should I charge by the hour or by the project?","acceptedAnswer":{"@type":"Answer","text":"Project-based pricing is generally more profitable if you work efficiently. Once your hourly rate is calculated, use it as a baseline for project quotes — multiply estimated hours by your rate, then add a 15-25% scope buffer for unexpected work."}},
+    {"@type":"Question","name":"How often should I raise my freelance rates?","acceptedAnswer":{"@type":"Answer","text":"Review your rates annually at minimum. Raise when your expenses increase, when your skill level or client quality improves, or when you're consistently booked. A 10-20% annual increase is normal for growing freelancers."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>Freelance Rate Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">Stop guessing your rate. Enter your income goal, monthly expenses, and billable hours to find the minimum you need to charge.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="freelance" aria-labelledby="freelance-heading">
+          <div class="calc-icon">&#x1F4BC;</div>
+          <h2 id="freelance-heading" data-i18n="calc_rate_title">Freelance Rate Calculator</h2>
+          <p data-i18n="calc_rate_desc">Find the minimum hourly rate you need to charge to cover income goals and business expenses.</p>
+          <div class="form-group">
+            <label for="fr-income" data-i18n="calc_rate_income">Desired Monthly Income ($)</label>
+            <input type="number" id="fr-income" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="fr-expenses" data-i18n="calc_rate_expenses">Monthly Expenses ($)</label>
+            <input type="number" id="fr-expenses" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="fr-hours" data-i18n="calc_rate_hours">Billable Hours / Month</label>
+            <input type="number" id="fr-hours" placeholder="160" min="1" step="1" />
+          </div>
+          <div class="calc-result" id="fr-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_rate_result">Suggested Hourly Rate</span>
+              <span class="result-value accent" id="fr-rate">$0.00/hr</span>
+            </div>
+          </div>
+          <div style="margin-top:16px;padding:12px 16px;background:var(--accent-glow);border:1px solid var(--accent);border-radius:var(--radius-sm);font-size:0.875rem;">
+            &#x1F517; Ready to reach your next client?
+            <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;margin-left:4px;">Generate a WhatsApp or mailto link instantly</a> &#x2192;
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">The Freelance Rate Formula</h2>
+        <p>The formula is: <strong>Hourly Rate = (Monthly Income Goal + Monthly Expenses) ÷ Billable Hours per Month</strong>. For example: $5,000 income target + $500 expenses = $5,500 total needed. Divided by 80 billable hours = <strong>$68.75/hour minimum rate</strong>.</p>
+        <p>This is a floor, not a ceiling. The result is the minimum you must charge to break even on your income goals — your actual rate should be higher to account for income tax, retirement savings, health insurance, and unpaid business development time.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">How Many Billable Hours Can You Realistically Bill?</h2>
+        <p>Many new freelancers overestimate billable hours. Of 160 working hours per month, typically 30–40% goes to non-billable work: prospecting, invoicing, admin, learning, and buffer for slow periods. A realistic billable target for full-time freelancers is 80–100 hours per month. Entering 160 billable hours will produce an unrealistically low rate.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Building Tax and Benefits into Your Rate</h2>
+        <p>Self-employed workers pay self-employment tax (15.3% in the US on top of income tax), have no employer-sponsored health insurance, and receive no paid leave. Add at least 25–30% to your calculated minimum rate to cover these costs. A $68.75/hour floor rate should become at least $85–90/hour before you accept work. <a href="article-freelance-rate.html" style="color:var(--accent);">Read the complete freelance rate guide →</a></p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How do I calculate my freelance hourly rate?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Add your desired monthly income to your monthly business expenses, then divide by your billable hours per month. Example: ($5,000 income + $500 expenses) ÷ 80 billable hours = $68.75/hour minimum rate.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How many billable hours should I include?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Most full-time freelancers realistically bill 70-100 hours per month. Of 160 working hours, 30-40% typically goes to non-billable work (admin, prospecting, etc.). Using 160 billable hours will produce an unrealistically low minimum rate.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Should I charge by the hour or by the project?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Project-based pricing is generally more profitable if you work efficiently. Once your hourly rate is calculated, use it as a baseline for project quotes — multiply estimated hours by your rate, then add a 15-25% scope buffer for unexpected work.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How often should I raise my freelance rates?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Review your rates annually at minimum. Raise when your expenses increase, when your skill level or client quality improves, or when you're consistently booked. A 10-20% annual increase is normal for growing freelancers.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="project-quote-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F9FE;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Project Quote Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Quote with scope buffer</div>
+        </a>
+        <a href="savings-goal-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F3AF;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Savings Goal Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Monthly savings needed</div>
+        </a>
+        <a href="fiverr-fee-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F7E2;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Fiverr Fee Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">20% commission on every order</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

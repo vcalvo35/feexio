@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stripe Fee Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free Stripe fee calculator. Instantly calculate Stripe's 2.9% + $0.30 processing fee and your net payout for any transaction amount. No sign-up required." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/stripe-fee-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Stripe Fee Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="Calculate Stripe processing fees instantly. See the exact fee and net amount for any transaction — free, real-time." />
+  <meta property="og:url" content="https://feexio.com/stripe-fee-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stripe Fee Calculator" />
+  <meta name="twitter:description" content="Calculate Stripe processing fees instantly. See the exact fee and net amount for any transaction — free, real-time." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Stripe Fee Calculator",
+        "url": "https://feexio.com/stripe-fee-calculator.html",
+        "description": "Calculate Stripe processing fees and net payout instantly. Uses the standard 2.9% + $0.30 per transaction rate.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"What is Stripe's fee per transaction?","acceptedAnswer":{"@type":"Answer","text":"Stripe's standard rate is 2.9% + $0.30 per successful card charge in the US. Manually entered cards are 3.4% + $0.30. International cards add 1.5%. There are no monthly fees or minimums."}},
+    {"@type":"Question","name":"Does Stripe refund fees when I issue a refund?","acceptedAnswer":{"@type":"Answer","text":"No. When you refund a transaction, Stripe returns the original amount to the customer but does not refund the processing fee. The fee is permanently lost on refunded transactions."}},
+    {"@type":"Question","name":"How do Stripe fees compare to Square?","acceptedAnswer":{"@type":"Answer","text":"Both charge 2.9% + $0.30 for online card transactions. Square is generally more competitive for in-person payments (2.6% + $0.10 per swipe). For online-only businesses, fees are essentially identical."}},
+    {"@type":"Question","name":"Can I pass Stripe fees to my customers?","acceptedAnswer":{"@type":"Answer","text":"You can't add a fee at the Stripe level, but you can build it into your pricing. Many SaaS and service businesses add 3% to invoices for card payments, or offer a discount for bank transfer payments."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>Stripe Fee Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">Stripe charges 2.9% + $0.30 per successful card charge. Enter any amount and see the exact fee and what you'll receive instantly.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="stripe" aria-labelledby="stripe-heading">
+          <div class="calc-icon">&#x26A1;</div>
+          <h2 id="stripe-heading" data-i18n="calc_stripe_title">Stripe Fee Calculator</h2>
+          <p data-i18n="calc_stripe_desc">Estimate Stripe processing fees instantly. Includes the standard 2.9% + $0.30 per transaction.</p>
+          <div class="form-group">
+            <label for="st-amount" data-i18n="calc_stripe_amount">Transaction Amount ($)</label>
+            <input type="number" id="st-amount" placeholder="0.00" min="0" step="0.01" aria-label="Transaction Amount" />
+          </div>
+          <div class="calc-result" id="st-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_stripe_fee">Stripe Fee</span>
+              <span class="result-value" id="st-fee">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_stripe_net">You Receive</span>
+              <span class="result-value accent" id="st-net">$0.00</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">How Stripe Fees Work in 2026</h2>
+        <p>Stripe charges <strong>2.9% + $0.30</strong> per successful card charge for US-issued cards. The fee is automatically deducted before your payout — you don't pay a separate invoice. For manually entered cards (keyed-in rather than swiped/tapped), the rate is 3.4% + $0.30. International cards add a 1.5% fee on top of the standard rate.</p>
+        <p>Unlike PayPal, Stripe has no monthly fees, no minimum volume requirements, and no setup costs. You only pay when you process a transaction. Stripe also offers volume discounts for businesses processing over $80,000/month — contact Stripe sales for custom pricing.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Stripe vs PayPal: Which Has Lower Fees?</h2>
+        <p>Both platforms charge <strong>2.9% + $0.30</strong> for standard card transactions, so at identical volumes the fee is the same. The difference appears in edge cases: Stripe charges 1.5% extra for international cards, while PayPal charges a currency conversion spread of 3-4%. For a US business selling primarily to US customers, fees are virtually identical. <a href="article-paypal-stripe.html" style="color:var(--accent);">See the full comparison →</a></p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Stripe's Refund Policy on Fees</h2>
+        <p>When you issue a refund, Stripe returns the original transaction amount to the customer but <strong>does not refund the processing fee</strong>. A $100 refund still costs you $3.20 in lost fees. For businesses with high refund rates, factor this into your pricing model. Stripe charges an additional $15 dispute fee if a chargeback is filed, though this is waived if you win the dispute.</p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is Stripe's fee per transaction?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Stripe's standard rate is 2.9% + $0.30 per successful card charge in the US. Manually entered cards are 3.4% + $0.30. International cards add 1.5%. There are no monthly fees or minimums.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Does Stripe refund fees when I issue a refund?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">No. When you refund a transaction, Stripe returns the original amount to the customer but does not refund the processing fee. The fee is permanently lost on refunded transactions.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How do Stripe fees compare to Square?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Both charge 2.9% + $0.30 for online card transactions. Square is generally more competitive for in-person payments (2.6% + $0.10 per swipe). For online-only businesses, fees are essentially identical.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Can I pass Stripe fees to my customers?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">You can't add a fee at the Stripe level, but you can build it into your pricing. Many SaaS and service businesses add 3% to invoices for card payments, or offer a discount for bank transfer payments.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="paypal-fee-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4B3;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">PayPal Fee Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">2.9% + $0.30 per transaction</div>
+        </a>
+        <a href="fiverr-fee-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F7E2;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Fiverr Fee Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">20% commission on every order</div>
+        </a>
+        <a href="profit-margin-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4CA;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Profit Margin Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Gross margin from cost & price</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

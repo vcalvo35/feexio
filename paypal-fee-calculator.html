@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PayPal Fee Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free PayPal fee calculator. Enter any transaction amount and instantly see the PayPal fee (2.9% + $0.30) and how much you'll receive. No sign-up required." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/paypal-fee-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PayPal Fee Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="Calculate PayPal fees instantly. See exactly how much PayPal deducts and what you'll receive — free, real-time, no sign-up." />
+  <meta property="og:url" content="https://feexio.com/paypal-fee-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PayPal Fee Calculator" />
+  <meta name="twitter:description" content="Calculate PayPal fees instantly. See exactly how much PayPal deducts and what you'll receive — free, real-time, no sign-up." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "PayPal Fee Calculator",
+        "url": "https://feexio.com/paypal-fee-calculator.html",
+        "description": "Calculate the exact PayPal fee and net amount for any transaction amount. Uses the standard 2.9% + $0.30 rate.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"What is the PayPal fee for a $100 payment?","acceptedAnswer":{"@type":"Answer","text":"PayPal charges 2.9% + $0.30 for standard Goods & Services payments. On a $100 payment, the fee is $3.20 (2.9% × $100 = $2.90 + $0.30), leaving you with $96.80."}},
+    {"@type":"Question","name":"How do I avoid PayPal fees?","acceptedAnswer":{"@type":"Answer","text":"You can't eliminate PayPal fees on business payments, but you can offset them by adding 3-4% to your invoice total, using PayPal's invoice tool (which supports automatic fee pass-through), or using alternative payment methods like bank transfer for large transactions."}},
+    {"@type":"Question","name":"Are PayPal fees different for international payments?","acceptedAnswer":{"@type":"Answer","text":"Yes. International payments add a currency conversion fee of 3-4% on top of the standard transaction fee. The total cost for an international payment can reach 6-8% of the transaction amount."}},
+    {"@type":"Question","name":"Does PayPal charge fees for receiving money from friends?","acceptedAnswer":{"@type":"Answer","text":"Friends & Family (F&F) transfers are free within the same country when funded from a PayPal balance or bank account. However, F&F is prohibited for business transactions and provides no buyer or seller protection."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>PayPal Fee Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">Enter any transaction amount and instantly see the PayPal fee and how much you'll receive. Updated for 2026 — no sign-up required.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="paypal" aria-labelledby="paypal-heading">
+          <div class="calc-icon">&#x1F4B3;</div>
+          <h2 id="paypal-heading" data-i18n="calc_paypal_title">PayPal Fee Calculator</h2>
+          <p data-i18n="calc_paypal_desc">Calculate the exact fee PayPal charges and how much you'll receive after processing a payment.</p>
+          <div class="form-group">
+            <label for="pp-amount" data-i18n="calc_paypal_amount">Transaction Amount ($)</label>
+            <input type="number" id="pp-amount" placeholder="0.00" min="0" step="0.01" aria-label="Transaction Amount" />
+          </div>
+          <div class="calc-result" id="pp-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_paypal_fee">PayPal Fee</span>
+              <span class="result-value" id="pp-fee">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_paypal_net">You Receive</span>
+              <span class="result-value accent" id="pp-net">$0.00</span>
+            </div>
+          </div>
+          <div style="margin-top:16px;padding:12px 16px;background:var(--accent-glow);border:1px solid var(--accent);border-radius:var(--radius-sm);font-size:0.875rem;">
+            &#x1F4AC; Ready to share your payment details?
+            <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;margin-left:4px;">Generate a WhatsApp link to send it instantly</a> &#x2192;
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">How PayPal Fees Work in 2026</h2>
+        <p>PayPal charges <strong>2.9% + $0.30</strong> per transaction for standard goods and services payments in the US. The percentage applies to the transaction amount, and the fixed $0.30 fee is added on top. For a $100 payment, you receive $96.80 after fees ($100 × 2.9% = $2.90 + $0.30 = $3.20 total fee).</p>
+        <p>Different PayPal payment types carry different rates. Manually entered payments, international transactions, and PayPal Here (card readers) all use separate fee schedules. The calculator above uses the standard Goods & Services rate that applies to most online payments.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">How to Price Your Work to Cover PayPal Fees</h2>
+        <p>To receive a specific net amount after PayPal fees, divide your target amount by (1 - 0.029), then add $0.30. For example, to receive exactly $100.00: $100 ÷ 0.971 = $102.99, plus $0.30 = <strong>$103.09</strong> gross invoice amount.</p>
+        <p>Many freelancers and sellers add a flat 3–4% to their prices to offset PayPal fees, or include a line item in their invoices that reads "Payment processing fee." Always check PayPal's official rates for your country — rates vary internationally.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">PayPal Friends &amp; Family vs Goods &amp; Services</h2>
+        <p>PayPal Friends &amp; Family (F&amp;F) transfers have no fee for the sender or receiver — but they provide <strong>zero buyer or seller protection</strong>. Using F&amp;F for business transactions violates PayPal's terms of service and can result in account suspension. Always use Goods &amp; Services for business payments, even if it means paying the fee. <a href="article-paypal-gs-vs-ff.html" style="color:var(--accent);">Read the full comparison →</a></p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is the PayPal fee for a $100 payment?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">PayPal charges 2.9% + $0.30 for standard Goods & Services payments. On a $100 payment, the fee is $3.20 (2.9% × $100 = $2.90 + $0.30), leaving you with $96.80.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How do I avoid PayPal fees?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">You can't eliminate PayPal fees on business payments, but you can offset them by adding 3-4% to your invoice total, using PayPal's invoice tool (which supports automatic fee pass-through), or using alternative payment methods like bank transfer for large transactions.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Are PayPal fees different for international payments?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Yes. International payments add a currency conversion fee of 3-4% on top of the standard transaction fee. The total cost for an international payment can reach 6-8% of the transaction amount.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Does PayPal charge fees for receiving money from friends?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Friends & Family (F&F) transfers are free within the same country when funded from a PayPal balance or bank account. However, F&F is prohibited for business transactions and provides no buyer or seller protection.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="stripe-fee-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x26A1;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Stripe Fee Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">2.9% + $0.30 standard rate</div>
+        </a>
+        <a href="fiverr-fee-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F7E2;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Fiverr Fee Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">20% commission on every order</div>
+        </a>
+        <a href="profit-margin-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4CA;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Profit Margin Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Gross margin from cost & price</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

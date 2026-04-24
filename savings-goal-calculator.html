@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savings Goal Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free savings goal calculator. Enter your target, what you've saved, and months remaining to see your required monthly savings amount. Simple and instant." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/savings-goal-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Savings Goal Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="Find out exactly how much to save each month to hit your financial goal. Free, instant, no sign-up." />
+  <meta property="og:url" content="https://feexio.com/savings-goal-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Savings Goal Calculator" />
+  <meta name="twitter:description" content="Find out exactly how much to save each month to hit your financial goal. Free, instant, no sign-up." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Savings Goal Calculator",
+        "url": "https://feexio.com/savings-goal-calculator.html",
+        "description": "Calculate the monthly savings amount needed to reach a financial goal based on current savings and time remaining.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"How do I calculate how much to save each month?","acceptedAnswer":{"@type":"Answer","text":"Subtract what you've already saved from your goal, then divide by the number of months remaining. Example: $10,000 goal, $2,000 saved, 16 months remaining → ($10,000 - $2,000) ÷ 16 = $500/month needed."}},
+    {"@type":"Question","name":"Should I save in a high-yield savings account or invest?","acceptedAnswer":{"@type":"Answer","text":"For goals under 2-3 years away, a high-yield savings account (HYSA) is safer — capital is preserved. For goals 5+ years away, investing in index funds typically outperforms savings rates. For goals 3-5 years out, consider a mix of both."}},
+    {"@type":"Question","name":"How much of my income should I save as a freelancer?","acceptedAnswer":{"@type":"Answer","text":"Aim for 25-30% of gross income as a baseline: 20% tax reserve + 10-15% personal savings. In high-income months, bank the extra rather than increasing lifestyle spending — variable income means the lean months will come."}},
+    {"@type":"Question","name":"What should my emergency fund cover?","acceptedAnswer":{"@type":"Answer","text":"3-6 months of essential expenses (rent/mortgage, food, utilities, minimum debt payments). Freelancers who have variable income should target 6 months rather than 3, because the gap between losing a client and replacing income can be longer than for salaried workers."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>Savings Goal Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">Enter your savings goal, what you've already set aside, and how many months you have — see your required monthly savings instantly.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="savings-goal" aria-labelledby="sg-heading">
+          <div class="calc-icon">&#x1F3AF;</div>
+          <h2 id="sg-heading" data-i18n="calc_savings_title">Savings Goal Calculator</h2>
+          <p data-i18n="calc_savings_desc">Find out how much you need to set aside each month to reach a financial goal.</p>
+          <div class="form-group">
+            <label for="sg-goal" data-i18n="calc_savings_goal">Savings Goal ($)</label>
+            <input type="number" id="sg-goal" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="sg-saved" data-i18n="calc_savings_saved">Already Saved ($)</label>
+            <input type="number" id="sg-saved" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="sg-months" data-i18n="calc_savings_months">Months to Reach Goal</label>
+            <input type="number" id="sg-months" placeholder="12" min="1" step="1" />
+          </div>
+          <div class="calc-result" id="sg-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_savings_remaining">Amount Remaining</span>
+              <span class="result-value" id="sg-remaining">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_savings_monthly">Monthly Amount Needed</span>
+              <span class="result-value accent" id="sg-monthly">$0.00/mo</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">How This Calculator Works</h2>
+        <p>The formula is simple: <strong>Monthly Amount = (Goal − Already Saved) ÷ Months Remaining</strong>. If your goal is $6,000, you've saved $1,000, and you have 12 months: ($6,000 − $1,000) ÷ 12 = <strong>$416.67/month</strong>.</p>
+        <p>This calculator doesn't account for interest earned on savings — it assumes a non-interest-bearing account or zero interest for simplicity. If you're saving in a high-yield account (3–5% APY), your actual required monthly deposit is slightly lower. For investment accounts, use the Compound Interest Calculator alongside this one.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Savings Goals for Freelancers</h2>
+        <p>Freelancers need to think about savings in three buckets: <strong>1) Emergency fund</strong> (3–6 months of expenses, priority one), <strong>2) Tax reserve</strong> (25–30% of gross income set aside for quarterly estimated taxes), and <strong>3) Equipment/investment fund</strong> (for business tools, training, or gear upgrades). Run this calculator separately for each bucket to know your monthly allocation per goal.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Adjusting the Timeline to Make Goals Achievable</h2>
+        <p>If the required monthly amount looks too high, try extending the timeline. Going from 12 months to 18 months on a $6,000 goal (starting from zero) drops the monthly requirement from $500 to $333. Conversely, cutting lifestyle expenses to increase your monthly capacity lets you reach the goal faster. Use this calculator to model both levers until you find a plan that works.</p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How do I calculate how much to save each month?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Subtract what you've already saved from your goal, then divide by the number of months remaining. Example: $10,000 goal, $2,000 saved, 16 months remaining → ($10,000 - $2,000) ÷ 16 = $500/month needed.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">Should I save in a high-yield savings account or invest?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">For goals under 2-3 years away, a high-yield savings account (HYSA) is safer — capital is preserved. For goals 5+ years away, investing in index funds typically outperforms savings rates. For goals 3-5 years out, consider a mix of both.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How much of my income should I save as a freelancer?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Aim for 25-30% of gross income as a baseline: 20% tax reserve + 10-15% personal savings. In high-income months, bank the extra rather than increasing lifestyle spending — variable income means the lean months will come.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What should my emergency fund cover?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">3-6 months of essential expenses (rent/mortgage, food, utilities, minimum debt payments). Freelancers who have variable income should target 6 months rather than 3, because the gap between losing a client and replacing income can be longer than for salaried workers.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="compound-interest-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4C8;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Compound Interest</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Watch your investment grow</div>
+        </a>
+        <a href="freelance-rate-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4BC;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Freelance Rate Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Your minimum hourly rate</div>
+        </a>
+        <a href="project-quote-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F9FE;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Project Quote Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Quote with scope buffer</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

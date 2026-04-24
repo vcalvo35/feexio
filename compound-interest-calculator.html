@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compound Interest Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free compound interest calculator. Enter principal, rate, and years to see how your investment grows with annual and monthly compounding. Free, instant results." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/compound-interest-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Compound Interest Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="See how compound interest grows your investment over time. Annual and monthly compounding compared — free, instant, no sign-up." />
+  <meta property="og:url" content="https://feexio.com/compound-interest-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Compound Interest Calculator" />
+  <meta name="twitter:description" content="See how compound interest grows your investment over time. Annual and monthly compounding compared — free, instant, no sign-up." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Compound Interest Calculator",
+        "url": "https://feexio.com/compound-interest-calculator.html",
+        "description": "Calculate investment growth with annual and monthly compound interest for any principal, rate, and term.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"What is compound interest?","acceptedAnswer":{"@type":"Answer","text":"Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest (calculated only on principal), compound interest accelerates growth over time because each period's interest becomes part of the base for the next."}},
+    {"@type":"Question","name":"What is the difference between annual and monthly compounding?","acceptedAnswer":{"@type":"Answer","text":"Monthly compounding produces more interest because you earn interest on your interest 12 times per year instead of once. On $10,000 at 7% for 10 years: annual compounding = $19,671.51, monthly compounding = $20,096.61. The difference grows larger with higher rates and longer terms."}},
+    {"@type":"Question","name":"What is the Rule of 72?","acceptedAnswer":{"@type":"Answer","text":"The Rule of 72 estimates how long it takes to double an investment: divide 72 by the annual interest rate. At 6%, it takes approximately 12 years (72÷6). At 9%, about 8 years (72÷9). It's a mental math shortcut, not an exact calculation."}},
+    {"@type":"Question","name":"How does compound interest apply to debt?","acceptedAnswer":{"@type":"Answer","text":"Compound interest works against you on debt. Credit card debt compounding at 20% annually doubles in 3.6 years without payments. This is why making minimum payments on high-interest debt barely reduces the balance — interest is compounding faster than you're paying it down."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>Compound Interest Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">Enter your principal, annual rate, and term to see your investment grow with annual and monthly compounding. Free, instant results.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="compound" aria-labelledby="compound-heading">
+          <div class="calc-icon">&#x1F4C8;</div>
+          <h2 id="compound-heading" data-i18n="calc_compound_title">Compound Interest Calculator</h2>
+          <p data-i18n="calc_compound_desc">Calculate how your investment grows over time with compound interest at different compounding frequencies.</p>
+          <div class="form-group">
+            <label for="ci-principal" data-i18n="calc_compound_principal">Principal Amount ($)</label>
+            <input type="number" id="ci-principal" placeholder="1000.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="ci-rate" data-i18n="calc_compound_rate">Annual Interest Rate (%)</label>
+            <input type="number" id="ci-rate" placeholder="5.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="ci-years" data-i18n="calc_compound_years">Term (years)</label>
+            <input type="number" id="ci-years" placeholder="10" min="1" step="1" />
+          </div>
+          <div class="calc-result" id="ci-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_compound_annual">Annual compounding</span>
+              <span class="result-value" id="ci-annual">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_compound_monthly">Monthly compounding</span>
+              <span class="result-value" id="ci-monthly">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_compound_interest">Total Interest Earned</span>
+              <span class="result-value accent" id="ci-interest">$0.00</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">The Compound Interest Formula</h2>
+        <p>Compound interest is calculated as: <strong>A = P(1 + r/n)^(nt)</strong>, where A is the final amount, P is the principal, r is the annual interest rate (as a decimal), n is the number of compounding periods per year, and t is the time in years.</p>
+        <p>For annual compounding (n=1): $10,000 at 7% for 10 years = $10,000 × (1.07)^10 = <strong>$19,671.51</strong>. For monthly compounding (n=12): the same parameters yield $20,096.61 — an extra $425 just from more frequent compounding.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Why Time Is the Most Powerful Variable</h2>
+        <p>The difference between investing $10,000 at age 25 vs age 35 (at 7% annual return) is staggering: starting at 25 gives you ~$149,745 at 65. Starting at 35 gives you ~$76,123. The 10-year head start more than doubles the outcome — not because of extra contributions, but purely because of compound growth over a longer period.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Rule of 72: Mental Math for Doubling Time</h2>
+        <p>The Rule of 72 gives a quick estimate of how long it takes for an investment to double: divide 72 by the annual interest rate. At 6%: 72 ÷ 6 = 12 years to double. At 8%: 72 ÷ 8 = 9 years. At 12%: 72 ÷ 12 = 6 years. It's an approximation, but useful for quick mental calculations without a calculator.</p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is compound interest?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest (calculated only on principal), compound interest accelerates growth over time because each period's interest becomes part of the base for the next.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is the difference between annual and monthly compounding?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Monthly compounding produces more interest because you earn interest on your interest 12 times per year instead of once. On $10,000 at 7% for 10 years: annual compounding = $19,671.51, monthly compounding = $20,096.61. The difference grows larger with higher rates and longer terms.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is the Rule of 72?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">The Rule of 72 estimates how long it takes to double an investment: divide 72 by the annual interest rate. At 6%, it takes approximately 12 years (72÷6). At 9%, about 8 years (72÷9). It's a mental math shortcut, not an exact calculation.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How does compound interest apply to debt?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Compound interest works against you on debt. Credit card debt compounding at 20% annually doubles in 3.6 years without payments. This is why making minimum payments on high-interest debt barely reduces the balance — interest is compounding faster than you're paying it down.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="savings-goal-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F3AF;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Savings Goal Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Monthly savings needed</div>
+        </a>
+        <a href="mortgage-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F3E0;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Mortgage Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Monthly payments & total cost</div>
+        </a>
+        <a href="personal-loan-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4B3;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Personal Loan Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Monthly payments & interest</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

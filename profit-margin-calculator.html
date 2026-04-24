@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLQEN72B5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TLQEN72B5R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profit Margin Calculator | Feexio — Free Financial Calculators</title>
+  <meta name="description" content="Free profit margin calculator. Enter your cost and selling price to instantly calculate gross profit and margin percentage. Essential for pricing any product or service." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://feexio.com/profit-margin-calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Profit Margin Calculator — Free &amp; Instant" />
+  <meta property="og:description" content="Calculate gross profit and margin percentage instantly from cost and selling price. Free, real-time, no sign-up." />
+  <meta property="og:url" content="https://feexio.com/profit-margin-calculator.html" />
+  <meta property="og:site_name" content="Feexio" />
+  <meta property="og:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Profit Margin Calculator" />
+  <meta name="twitter:description" content="Calculate gross profit and margin percentage instantly from cost and selling price. Free, real-time, no sign-up." />
+  <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Profit Margin Calculator",
+        "url": "https://feexio.com/profit-margin-calculator.html",
+        "description": "Calculate gross profit and profit margin percentage from cost price and selling price.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"What is the formula for profit margin?","acceptedAnswer":{"@type":"Answer","text":"Profit Margin % = (Selling Price - Cost) ÷ Selling Price × 100. For example: selling price $150, cost $90 → Profit $60 → Margin = 60 ÷ 150 × 100 = 40%."}},
+    {"@type":"Question","name":"What is the difference between profit margin and markup?","acceptedAnswer":{"@type":"Answer","text":"Margin is profit as a percentage of selling price. Markup is profit as a percentage of cost. A 40% markup does NOT equal a 40% margin. A $60 cost with 40% markup = $84 selling price = 28.6% margin."}},
+    {"@type":"Question","name":"What is a good profit margin for a small business?","acceptedAnswer":{"@type":"Answer","text":"It varies by industry. Retail: 20-50%. Services: 50-70%. SaaS/software: 70-85%. Restaurants: 3-9% net margin. The key is that your margin must cover operating costs, taxes, and still leave a viable net profit."}},
+    {"@type":"Question","name":"How do payment fees affect profit margin?","acceptedAnswer":{"@type":"Answer","text":"Payment fees (PayPal 2.9%, Stripe 2.9%) directly reduce your realized selling price. On a $100 sale with a 40% margin, a 3% payment fee reduces net margin to roughly 37.1%. Always factor payment processing costs into your cost structure."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
+       crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label">⚡ Free Calculator</div>
+      <h1>Profit Margin Calculator</h1>
+      <p style="color:var(--text-muted);max-width:600px;margin:12px auto 0;font-size:1.05rem;line-height:1.7;">Enter your cost and selling price to instantly calculate gross profit and margin percentage. Know your numbers before you price anything.</p>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container" style="max-width:860px;margin:0 auto;">
+
+      <!-- AdSense Top -->
+      <div style="margin-bottom:40px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Calculator -->
+      <div style="max-width:520px;margin:0 auto 48px;">
+        <article class="calc-card" id="profit" aria-labelledby="profit-heading">
+          <div class="calc-icon">&#x1F4CA;</div>
+          <h2 id="profit-heading" data-i18n="calc_profit_title">Profit Margin Calculator</h2>
+          <p data-i18n="calc_profit_desc">Calculate gross profit and margin percentage from your cost and selling price.</p>
+          <div class="form-group">
+            <label for="pm-cost" data-i18n="calc_profit_cost">Cost Price ($)</label>
+            <input type="number" id="pm-cost" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="pm-sell" data-i18n="calc_profit_sell">Selling Price ($)</label>
+            <input type="number" id="pm-sell" placeholder="0.00" min="0" step="0.01" />
+          </div>
+          <div class="calc-result" id="pm-result" role="status" aria-live="polite">
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_profit_profit">Profit</span>
+              <span class="result-value" id="pm-profit">$0.00</span>
+            </div>
+            <div class="result-row">
+              <span class="result-label" data-i18n="calc_profit_margin">Margin %</span>
+              <span class="result-value accent" id="pm-margin">0%</span>
+            </div>
+          </div>
+          <div style="margin-top:16px;padding:12px 16px;background:var(--accent-glow);border:1px solid var(--accent);border-radius:var(--radius-sm);font-size:0.875rem;">
+            &#x1F4AC; Selling online?
+            <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;margin-left:4px;">Generate a WhatsApp link to reach your next buyer</a> &#x2192;
+          </div>
+        </article>
+      </div>
+
+      <!-- AdSense Mid -->
+      <div style="margin:0 0 48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- Content -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">What Is Profit Margin?</h2>
+        <p>Profit margin is the percentage of revenue that remains as profit after subtracting costs. It is calculated as: <strong>Margin % = (Selling Price − Cost) ÷ Selling Price × 100</strong>. A product that costs $60 and sells for $100 has a gross profit of $40 and a margin of 40%.</p>
+        <p>Gross profit margin only accounts for the direct cost of goods (COGS). Net profit margin subtracts all operating expenses, taxes, and interest — giving a more complete picture of profitability. Use this calculator for gross margin; for net margin, you'll need to factor in overheads separately.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Margin vs Markup: What's the Difference?</h2>
+        <p><strong>Margin</strong> is profit as a percentage of <em>selling price</em>. <strong>Markup</strong> is profit as a percentage of <em>cost</em>. For the same $60 cost / $100 selling price example: margin = 40%, markup = 66.7%. Confusing them is one of the most common pricing errors — a 40% markup does NOT produce a 40% margin. <a href="article-markup-vs-margin.html" style="color:var(--accent);">Read the full markup vs margin guide →</a></p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">What Is a Good Profit Margin?</h2>
+        <p>There is no universal answer — it depends heavily on industry. Retail typically runs 20–50% gross margin. SaaS and software can reach 70–80%. Service businesses often target 50–70%. Physical goods with high manufacturing costs may see 10–30%. The right margin is one that covers all your operating costs and leaves sufficient net profit after taxes and overheads.</p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is the formula for profit margin?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Profit Margin % = (Selling Price - Cost) ÷ Selling Price × 100. For example: selling price $150, cost $90 → Profit $60 → Margin = 60 ÷ 150 × 100 = 40%.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is the difference between profit margin and markup?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Margin is profit as a percentage of selling price. Markup is profit as a percentage of cost. A 40% markup does NOT equal a 40% margin. A $60 cost with 40% markup = $84 selling price = 28.6% margin.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">What is a good profit margin for a small business?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">It varies by industry. Retail: 20-50%. Services: 50-70%. SaaS/software: 70-85%. Restaurants: 3-9% net margin. The key is that your margin must cover operating costs, taxes, and still leave a viable net profit.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;">
+          <summary style="font-weight:600;cursor:pointer;font-size:0.95rem;">How do payment fees affect profit margin?</summary>
+          <p style="margin:10px 0 0;color:var(--text-muted);font-size:0.9rem;line-height:1.7;">Payment fees (PayPal 2.9%, Stripe 2.9%) directly reduce your realized selling price. On a $100 sale with a 40% margin, a 3% payment fee reduces net margin to roughly 37.1%. Always factor payment processing costs into your cost structure.</p>
+        </details>
+      </div>
+
+      <!-- Related Calculators -->
+      <div style="margin-top:48px;">
+        <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Related Calculators</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <a href="paypal-fee-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4B3;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">PayPal Fee Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">2.9% + $0.30 per transaction</div>
+        </a>
+        <a href="freelance-rate-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4BC;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Freelance Rate Calculator</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Your minimum hourly rate</div>
+        </a>
+        <a href="compound-interest-calculator.html" class="calc-related-card" style="display:block;padding:16px 20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="font-size:1.5rem;margin-bottom:6px;">&#x1F4C8;</div>
+          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">Compound Interest</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);">Watch your investment grow</div>
+        </a>
+        </div>
+      </div>
+
+      <!-- AdSense Bottom -->
+      <div style="margin-top:48px;text-align:center;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6069037516718532" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
