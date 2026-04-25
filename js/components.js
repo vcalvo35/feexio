@@ -15,16 +15,16 @@ const NAV_HTML = `
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Feexio Home">
+      <a href="/" class="nav-logo" aria-label="Feexio Home">
         <img class="logo-img logo-img--light" src="assets/brand/feexio-logo-light.svg" alt="Feexio" width="188" height="32">
         <img class="logo-img logo-img--dark"  src="assets/brand/feexio-logo-dark.svg"  alt="Feexio" width="188" height="32">
       </a>
       <div class="nav-links">
-        <a href="index.html" data-i18n="nav_home">Home</a>
-        <a href="index.html#calculators" data-i18n="nav_calculators">Calculators</a>
-        <a href="blog.html" data-i18n="nav_blog">Blog</a>
-        <a href="about.html" data-i18n="nav_about">About</a>
-        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <a href="/" data-i18n="nav_home">Home</a>
+        <a href="/#calculators" data-i18n="nav_calculators">Calculators</a>
+        <a href="/blog/" data-i18n="nav_blog">Blog</a>
+        <a href="/about.html" data-i18n="nav_about">About</a>
+        <a href="/contact.html" data-i18n="nav_contact">Contact</a>
       </div>
       <div class="nav-controls">
         <button class="btn-icon" id="theme-toggle" aria-label="Toggle dark mode">
@@ -38,11 +38,11 @@ const NAV_HTML = `
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html" data-i18n="nav_home">Home</a>
-    <a href="index.html#calculators" data-i18n="nav_calculators">Calculators</a>
-    <a href="blog.html" data-i18n="nav_blog">Blog</a>
-    <a href="about.html" data-i18n="nav_about">About</a>
-    <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    <a href="/" data-i18n="nav_home">Home</a>
+    <a href="/#calculators" data-i18n="nav_calculators">Calculators</a>
+    <a href="/blog/" data-i18n="nav_blog">Blog</a>
+    <a href="/about.html" data-i18n="nav_about">About</a>
+    <a href="/contact.html" data-i18n="nav_contact">Contact</a>
   </div>
 </nav>`;
 
@@ -51,7 +51,7 @@ const FOOTER_HTML = `
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="index.html" aria-label="Feexio Home" style="display:inline-block;margin-bottom:10px;">
+        <a href="/" aria-label="Feexio Home" style="display:inline-block;margin-bottom:10px;">
           <img class="logo-img logo-img--light" src="assets/brand/feexio-logo-light.svg" alt="Feexio" width="152" height="26">
           <img class="logo-img logo-img--dark"  src="assets/brand/feexio-logo-dark.svg"  alt="Feexio" width="152" height="26">
         </a>
@@ -59,23 +59,23 @@ const FOOTER_HTML = `
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer_tools">Tools</h4>
-        <a href="paypal-fee-calculator.html">PayPal Calculator</a>
-        <a href="stripe-fee-calculator.html">Stripe Calculator</a>
-        <a href="fiverr-fee-calculator.html">Fiverr Calculator</a>
-        <a href="profit-margin-calculator.html">Profit Margin</a>
-        <a href="freelance-rate-calculator.html">Freelance Rate</a>
+        <a href="/paypal-fee-calculator.html">PayPal Calculator</a>
+        <a href="/stripe-fee-calculator.html">Stripe Calculator</a>
+        <a href="/fiverr-fee-calculator.html">Fiverr Calculator</a>
+        <a href="/profit-margin-calculator.html">Profit Margin</a>
+        <a href="/freelance-rate-calculator.html">Freelance Rate</a>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer_company">Company</h4>
-        <a href="about.html" data-i18n="nav_about">About</a>
-        <a href="blog.html" data-i18n="nav_blog">Blog</a>
-        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <a href="/about.html" data-i18n="nav_about">About</a>
+        <a href="/blog/" data-i18n="nav_blog">Blog</a>
+        <a href="/contact.html" data-i18n="nav_contact">Contact</a>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer_legal">Legal</h4>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-        <a href="disclaimer.html">Disclaimer</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Use</a>
+        <a href="/disclaimer.html">Disclaimer</a>
       </div>
     </div>
     <div class="footer-social" style="display:flex;gap:12px;margin-top:12px;align-items:center;">

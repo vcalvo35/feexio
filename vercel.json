@@ -2,14 +2,192 @@
   "headers": [
     {
       "source": "/(.*)\\.html",
-      "headers": [{"key": "Cache-Control", "value": "public, max-age=0, must-revalidate"}]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     },
     {
       "source": "/ads\\.txt",
       "headers": [
-        {"key": "Cache-Control", "value": "public, max-age=3600"},
-        {"key": "Content-Type", "value": "text/plain; charset=utf-8"}
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/blog.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/article-break-even-analysis.html",
+      "destination": "/blog/article-break-even-analysis.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-compound-interest-guide.html",
+      "destination": "/blog/article-compound-interest-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-cost-per-unit-guide.html",
+      "destination": "/blog/article-cost-per-unit-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-credit-card-processing-fees.html",
+      "destination": "/blog/article-credit-card-processing-fees.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-digital-menus-qr-profitability.html",
+      "destination": "/blog/article-digital-menus-qr-profitability.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-etsy-fees.html",
+      "destination": "/blog/article-etsy-fees.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-fiverr-fees-explained.html",
+      "destination": "/blog/article-fiverr-fees-explained.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-fiverr-net-earnings-to-delivery.html",
+      "destination": "/blog/article-fiverr-net-earnings-to-delivery.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-freelance-rate.html",
+      "destination": "/blog/article-freelance-rate.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-freelance-taxes.html",
+      "destination": "/blog/article-freelance-taxes.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-freelancer-rate-to-sales.html",
+      "destination": "/blog/article-freelancer-rate-to-sales.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-good-profit-margin.html",
+      "destination": "/blog/article-good-profit-margin.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-hidden-payment-fees.html",
+      "destination": "/blog/article-hidden-payment-fees.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-how-to-price-freelance-project.html",
+      "destination": "/blog/article-how-to-price-freelance-project.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-international-payment-fees.html",
+      "destination": "/blog/article-international-payment-fees.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-loan-amortization-explained.html",
+      "destination": "/blog/article-loan-amortization-explained.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-markup-vs-margin.html",
+      "destination": "/blog/article-markup-vs-margin.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-mortgage-calculator-guide.html",
+      "destination": "/blog/article-mortgage-calculator-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-mortgage-vs-personal-loan.html",
+      "destination": "/blog/article-mortgage-vs-personal-loan.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-paypal-business-vs-personal.html",
+      "destination": "/blog/article-paypal-business-vs-personal.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-paypal-gs-vs-ff.html",
+      "destination": "/blog/article-paypal-gs-vs-ff.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-paypal-stripe.html",
+      "destination": "/blog/article-paypal-stripe.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-personal-loan-guide.html",
+      "destination": "/blog/article-personal-loan-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-profit-margin.html",
+      "destination": "/blog/article-profit-margin.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-project-quote-guide.html",
+      "destination": "/blog/article-project-quote-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-raise-freelance-rates.html",
+      "destination": "/blog/article-raise-freelance-rates.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-real-estate-financial-transparency.html",
+      "destination": "/blog/article-real-estate-financial-transparency.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-savings-goals-guide.html",
+      "destination": "/blog/article-savings-goals-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-shopify-fees.html",
+      "destination": "/blog/article-shopify-fees.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-stripe-square-paypal.html",
+      "destination": "/blog/article-stripe-square-paypal.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-upwork-fees.html",
+      "destination": "/blog/article-upwork-fees.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-wholesale-purchasing-logistics.html",
+      "destination": "/blog/article-wholesale-purchasing-logistics.html",
+      "permanent": true
     }
   ]
 }
