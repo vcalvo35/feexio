@@ -12,7 +12,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PayPal Fee Calculator | Feexio — Free Financial Calculators</title>
-  <meta name="description" content="Free PayPal fee calculator. Enter any transaction amount and instantly see the PayPal fee (2.9% + $0.30) and how much you'll receive. No sign-up required." />
+  <meta name="description" content="Free PayPal fee calculator. See the exact fee for Checkout (2.9% + $0.30) or invoices (3.49% + $0.49) and how much you'll receive. No sign-up required." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://feexio.com/paypal-fee-calculator.html" />
   <meta property="og:type" content="website" />
@@ -35,7 +35,7 @@
         "@type": "SoftwareApplication",
         "name": "PayPal Fee Calculator",
         "url": "https://feexio.com/paypal-fee-calculator.html",
-        "description": "Calculate the exact PayPal fee and net amount for any transaction amount. Uses the standard 2.9% + $0.30 rate.",
+        "description": "Calculate the exact PayPal fee and net amount for any transaction amount. Covers both the 2.9% + $0.30 Checkout rate and the 3.49% + $0.49 invoice rate.",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "Any",
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
@@ -43,7 +43,7 @@
       {
         "@type": "FAQPage",
         "mainEntity": [
-          {"@type":"Question","name":"What is the PayPal fee for a $100 payment?","acceptedAnswer":{"@type":"Answer","text":"PayPal charges 2.9% + $0.30 for standard Goods & Services payments. On a $100 payment, the fee is $3.20 (2.9% × $100 = $2.90 + $0.30), leaving you with $96.80."}},
+          {"@type":"Question","name":"What is the PayPal fee for a $100 payment?","acceptedAnswer":{"@type":"Answer","text":"PayPal's fee depends on the payment type. For PayPal Checkout (website integration), the fee on a $100 payment is $3.20 (2.9% × $100 = $2.90 + $0.30), leaving you with $96.80. For a standard invoice or payment link, the fee is $3.98 (3.49% × $100 = $3.49 + $0.49), leaving you with $96.02. Last verified: April 2026."}},
     {"@type":"Question","name":"How do I avoid PayPal fees?","acceptedAnswer":{"@type":"Answer","text":"You can't eliminate PayPal fees on business payments, but you can offset them by adding 3-4% to your invoice total, using PayPal's invoice tool (which supports automatic fee pass-through), or using alternative payment methods like bank transfer for large transactions."}},
     {"@type":"Question","name":"Are PayPal fees different for international payments?","acceptedAnswer":{"@type":"Answer","text":"Yes. International payments add a currency conversion fee of 3-4% on top of the standard transaction fee. The total cost for an international payment can reach 6-8% of the transaction amount."}},
     {"@type":"Question","name":"Does PayPal charge fees for receiving money from friends?","acceptedAnswer":{"@type":"Answer","text":"Friends & Family (F&F) transfers are free within the same country when funded from a PayPal balance or bank account. However, F&F is prohibited for business transactions and provides no buyer or seller protection."}}
@@ -119,8 +119,35 @@
       <!-- Content -->
       <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);">
         <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:0 0 12px;">How PayPal Fees Work in 2026</h2>
-        <p>PayPal charges <strong>2.9% + $0.30</strong> per transaction for standard goods and services payments in the US. The percentage applies to the transaction amount, and the fixed $0.30 fee is added on top. For a $100 payment, you receive $96.80 after fees ($100 × 2.9% = $2.90 + $0.30 = $3.20 total fee).</p>
-        <p>Different PayPal payment types carry different rates. Manually entered payments, international transactions, and PayPal Here (card readers) all use separate fee schedules. The calculator above uses the standard Goods & Services rate that applies to most online payments.</p>
+        <p>PayPal does not have a single "standard" fee — the rate depends on how the payment is sent. The two most common rates for US businesses and freelancers are <strong>2.9% + $0.30</strong> for PayPal Checkout (website integration) and <strong>3.49% + $0.49</strong> for standard invoices and payment links. The calculator above uses the Checkout rate (2.9% + $0.30); use the table below to identify which rate applies to your transaction.</p>
+        <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:0.88rem;">
+          <thead>
+            <tr style="background:var(--bg);border-bottom:2px solid var(--border);">
+              <th style="text-align:left;padding:8px 12px;font-weight:700;">Payment Type</th>
+              <th style="text-align:right;padding:8px 12px;font-weight:700;">Rate (US)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:8px 12px;">PayPal Checkout (website / API integration)</td>
+              <td style="text-align:right;padding:8px 12px;font-weight:600;">2.9% + $0.30</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:8px 12px;">Standard invoice &amp; payment links</td>
+              <td style="text-align:right;padding:8px 12px;font-weight:600;">3.49% + $0.49</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:8px 12px;">International (cross-border)</td>
+              <td style="text-align:right;padding:8px 12px;font-weight:600;">+ 1.5% additional</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;">Currency conversion</td>
+              <td style="text-align:right;padding:8px 12px;font-weight:600;">+ 3–4% spread</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin:0 0 16px;"><em>Last verified: April 2026 — Always confirm at <a href="https://www.paypal.com/us/webapps/mpp/merchant-fees" target="_blank" rel="noopener" style="color:var(--accent);">paypal.com/merchant-fees</a></em></p>
+        <p>For a $100 PayPal Checkout transaction: $100 × 2.9% = $2.90 + $0.30 = <strong>$3.20 fee</strong>, netting $96.80. For a $100 invoice: $100 × 3.49% = $3.49 + $0.49 = <strong>$3.98 fee</strong>, netting $96.02. The difference adds up significantly on high-volume invoicing.</p>
         <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">How to Price Your Work to Cover PayPal Fees</h2>
         <p>To receive a specific net amount after PayPal fees, divide your target amount by (1 - 0.029), then add $0.30. For example, to receive exactly $100.00: $100 ÷ 0.971 = $102.99, plus $0.30 = <strong>$103.09</strong> gross invoice amount.</p>
         <p>Many freelancers and sellers add a flat 3–4% to their prices to offset PayPal fees, or include a line item in their invoices that reads "Payment processing fee." Always check PayPal's official rates for your country — rates vary internationally.</p>
