@@ -1,0 +1,7 @@
+Migrate blog to /blog/ subfolder - ILH-style URL structure 
+ 
+- 32 articles moved from /article-*.html to /blog/article-*.html 
+- blog.html replicated as /blog/index.html with updated paths 
+- js/components.js: all nav and footer links changed to absolute paths 
+- 9 calculator pages: article links updated to /blog/article-*.html 
+- sitemap.xml: all 32 article URLs + blog URL updated to /blog/ 

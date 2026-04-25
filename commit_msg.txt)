@@ -1,0 +1,3 @@
+- paypal-fee-calculator.html: add PayPal fee breakdown table (4 payment types
+- Add example calculations for both rates ($100 Checkout vs $100 Invoice
+- vercel.json: 33 permanent 301 redirects (blog.html + 32 articles
