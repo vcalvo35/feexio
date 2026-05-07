@@ -49,6 +49,39 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
        crossorigin="anonymous"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the most commonly missed payment fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sellers most often miss: refund transaction fees (Stripe keeps the processing fee on refunds; PayPal returns the fixed fee but not the percentage), instant payout fees (Stripe charges 1.5% for same-day transfers), international currency conversion spreads (3–4% on PayPal, 1% on Stripe), and chargeback fees ($15–$25 per dispute regardless of outcome). These can easily add 0.5–2% to your effective rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does PayPal keep fees when a customer asks for a refund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PayPal's policy as of April 2026 (last verified): for standard transactions, PayPal returns the fixed fee ($0.30) but keeps the percentage fee when you issue a refund. On a $100 refund where you paid $3.20 in fees, you get back $0.30 but lose $2.90. Stripe's policy is similar — they return the fixed portion but not the percentage. Always factor potential refunds into your pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there lower-fee alternatives to PayPal and Stripe for freelancers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For bank-to-bank US transfers, Stripe ACH costs 0.8% (capped at $5) vs card rates of 2.9%+ — a massive saving on invoices above $500. Wise (formerly TransferWise) often beats PayPal on international transfers. For invoicing-only workflows, some freelancers use Zelle or bank ACH for domestic clients to avoid card fees entirely. Each option has trade-offs in speed, buyer protection, and setup complexity."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <div id="nav-placeholder"></div>

@@ -49,6 +49,39 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069037516718532"
        crossorigin="anonymous"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an interchange fee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Interchange is the fee that card networks (Visa, Mastercard) collect on every transaction — typically 1.5–2.5% for consumer cards, higher for premium rewards cards. This fee goes to the card-issuing bank, not to your payment processor. PayPal and Stripe build interchange into their flat rates, which is why their simple pricing model (2.9% + $0.30) is popular — you don't need to track interchange separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I reduce credit card processing fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most impactful changes are: encouraging ACH/bank transfers for large invoices (Stripe charges 0.8% capped at $5), using PayPal's lower-rate options for international payments where applicable, and passing fees to customers through surcharging (legal in most US states). Volume discounts become available on Stripe above $80K/month. Switching card readers can also help if you take in-person payments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are chargeback fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A chargeback happens when a customer disputes a charge with their bank. Beyond losing the transaction amount, you also pay a chargeback fee — typically $15–$25 on Stripe, and similar on PayPal. These add up fast if you have dispute-prone clients. Maintain clear invoices, delivery confirmations, and communication records to defend chargebacks successfully."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <div id="nav-placeholder"></div>
