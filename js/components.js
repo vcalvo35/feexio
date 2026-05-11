@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    Feexio — Shared Components (Nav + Footer)
    Injected into every page
    ============================================================ */
@@ -8,7 +8,7 @@ const NETWORK_BAR_HTML = `
   More free tools:&nbsp;
   <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">InstantLinkHub</a>·
   <a href="https://swiftconverthub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">SwiftConvertHub</a>·
-  <a href="https://feexio.com" target="_blank" rel="noopener" style="color:#c8d0e8;text-decoration:none;margin:0 6px;font-weight:600;">Feexio</a>
+  <a href="https://www.feexio.com" target="_blank" rel="noopener" style="color:#c8d0e8;text-decoration:none;margin:0 6px;font-weight:600;">Feexio</a>
 </div>`;
 
 const NAV_HTML = `

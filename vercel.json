@@ -39,6 +39,11 @@
   ],
   "redirects": [
     {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/blog.html",
       "destination": "/blog/",
       "permanent": true

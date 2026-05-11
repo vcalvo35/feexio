@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://feexio.com/sitemap.xml
+Sitemap: https://www.feexio.com/sitemap.xml
