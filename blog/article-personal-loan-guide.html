@@ -84,7 +84,46 @@
 </script>
 </head>
 <body>
-  <div id="nav-placeholder"></div>
+  <!-- Network Bar -->
+<div style="background:#1a1a2e;color:#a0a8c8;font-size:12px;text-align:center;padding:6px 16px;letter-spacing:0.02em;">
+  More free tools:&nbsp;
+  <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">InstantLinkHub</a>&middot;
+  <a href="https://swiftconverthub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">SwiftConvertHub</a>&middot;
+  <a href="https://www.feexio.com" style="color:#c8d0e8;text-decoration:none;margin:0 6px;font-weight:600;">Feexio</a>
+</div>
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Feexio Home">
+        <img class="logo-img logo-img--light" src="/assets/brand/feexio-logo-light.svg" alt="Feexio" width="188" height="32">
+        <img class="logo-img logo-img--dark"  src="/assets/brand/feexio-logo-dark.svg"  alt="Feexio" width="188" height="32">
+      </a>
+      <div class="nav-links">
+        <a href="/" data-i18n="nav_home">Home</a>
+        <a href="/#calculators" data-i18n="nav_calculators">Calculators</a>
+        <a href="/blog/" data-i18n="nav_blog">Blog</a>
+        <a href="/about.html" data-i18n="nav_about">About</a>
+        <a href="/contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="nav-controls">
+        <button class="btn-icon" id="theme-toggle" aria-label="Toggle dark mode">
+          <span id="theme-icon">&#127769;</span>
+        </button>
+        <button class="lang-btn" id="lang-btn" aria-label="Switch language">ES</button>
+        <div class="nav-hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/" data-i18n="nav_home">Home</a>
+    <a href="/#calculators" data-i18n="nav_calculators">Calculators</a>
+    <a href="/blog/" data-i18n="nav_blog">Blog</a>
+    <a href="/about.html" data-i18n="nav_about">About</a>
+    <a href="/contact.html" data-i18n="nav_contact">Contact</a>
+  </div>
+</nav>
   <div class="article-header">
     <div class="container">
       <div class="breadcrumbs">
