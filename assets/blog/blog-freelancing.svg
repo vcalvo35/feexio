@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#12102a"/>
+      <stop offset="100%" style="stop-color:#1a1040"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <line x1="0" y1="225" x2="800" y2="225" stroke="#6366f1" stroke-width="0.5" stroke-opacity="0.15"/>
+  <line x1="400" y1="0" x2="400" y2="450" stroke="#6366f1" stroke-width="0.5" stroke-opacity="0.15"/>
+  <circle cx="400" cy="185" r="80" fill="#6366f1" fill-opacity="0.08"/>
+  <!-- Laptop icon -->
+  <g transform="translate(310, 115)" filter="url(#glow)">
+    <!-- Screen -->
+    <rect x="10" y="0" width="160" height="100" rx="8" fill="none" stroke="#6366f1" stroke-width="3"/>
+    <!-- Screen content - code lines -->
+    <rect x="22" y="14" width="60" height="5" rx="2" fill="#818cf8" fill-opacity="0.7"/>
+    <rect x="22" y="26" width="100" height="5" rx="2" fill="#6366f1" fill-opacity="0.5"/>
+    <rect x="22" y="38" width="80" height="5" rx="2" fill="#818cf8" fill-opacity="0.4"/>
+    <rect x="22" y="50" width="110" height="5" rx="2" fill="#6366f1" fill-opacity="0.6"/>
+    <rect x="22" y="62" width="50" height="5" rx="2" fill="#818cf8" fill-opacity="0.5"/>
+    <rect x="22" y="74" width="90" height="5" rx="2" fill="#6366f1" fill-opacity="0.3"/>
+    <!-- Keyboard base -->
+    <rect x="0" y="104" width="180" height="12" rx="4" fill="none" stroke="#6366f1" stroke-width="2.5"/>
+    <rect x="60" y="108" width="60" height="4" rx="2" fill="#6366f1" fill-opacity="0.4"/>
+  </g>
+  <text x="400" y="268" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#6366f1" letter-spacing="3" opacity="0.9">FREELANCING</text>
+  <text x="400" y="306" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#eeeeff" letter-spacing="-0.5">Rates · Quotes · Taxes</text>
+  <text x="400" y="338" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#9b9cd4" letter-spacing="0.3">Set rates that cover your life and grow your business</text>
+  <rect x="0" y="440" width="800" height="10" fill="#6366f1" fill-opacity="0.6"/>
+  <text x="780" y="430" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#6366f1" opacity="0.4">feexio.com</text>
+</svg>

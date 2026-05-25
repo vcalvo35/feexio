@@ -113,7 +113,7 @@
       </a>
       <div class="nav-links">
         <a href="/" data-i18n="nav_home">Home</a>
-        <a href="/#calculators" data-i18n="nav_calculators">Calculators</a>
+        <a href="/calculators.html" data-i18n="nav_calculators">Calculators</a>
         <a href="/blog/" data-i18n="nav_blog">Blog</a>
         <a href="/about.html" data-i18n="nav_about">About</a>
         <a href="/contact.html" data-i18n="nav_contact">Contact</a>
@@ -131,7 +131,7 @@
   </div>
   <div class="mobile-menu" id="mobile-menu">
     <a href="/" data-i18n="nav_home">Home</a>
-    <a href="/#calculators" data-i18n="nav_calculators">Calculators</a>
+    <a href="/calculators.html" data-i18n="nav_calculators">Calculators</a>
     <a href="/blog/" data-i18n="nav_blog">Blog</a>
     <a href="/about.html" data-i18n="nav_about">About</a>
     <a href="/contact.html" data-i18n="nav_contact">Contact</a>
@@ -602,7 +602,7 @@
         "name": "How does PayPal calculate its fees in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "PayPal charges 3.49% + $0.49 per transaction for standard goods and services payments in the US (last verified April 2026). For PayPal Checkout integrations, the rate is 2.9% + $0.30. International transactions add 1.5-2% plus a 3-4% currency conversion spread."
+          "text": "PayPal charges 3.49% + $0.49 per transaction for standard goods and services payments in the US as of April 2026 (last verified). For PayPal Checkout integrations, the rate is 2.9% + $0.30. International transactions carry an additional 1.5–2% cross-border fee, and currency conversion adds a 3–4% spread. Always check PayPal's official fee schedule for your account type and country, as rates vary significantly."
         }
       },
       {
@@ -610,7 +610,7 @@
         "name": "What is the difference between profit margin and markup?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Profit margin = (Profit / Selling Price) x 100. Markup = (Profit / Cost Price) x 100. Margin is always lower than markup for the same transaction. A product costing $10 sold for $15 has a 33.3% margin but a 50% markup."
+          "text": "Profit margin = (Profit divided by Selling Price) x 100. Markup = (Profit divided by Cost Price) x 100. For the same transaction, margin is always a lower percentage than markup. Example: a product costing $10 sold for $15 has a 33.3% margin but a 50% markup. Confusing them leads to systematic underpricing — if you need a 40% margin and accidentally calculate 40% markup, your actual margin is only 28.6%."
         }
       },
       {
@@ -618,7 +618,7 @@
         "name": "How much does Fiverr take from sellers in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Fiverr charges sellers a flat 20% service fee on every completed order (last verified April 2026). This applies to all seller levels, tips, and gig extras. There is no volume discount tier."
+          "text": "Fiverr charges sellers a flat 20% service fee on every completed order as of April 2026 (last verified). This applies equally to all seller levels — new sellers, Level 1, Level 2, and Top Rated Sellers all pay 20%. The fee also applies to tips and order extras. There is no volume-based discount tier. Use the Fiverr Fee Calculator to see your exact net earnings for any gig price."
         }
       },
       {
@@ -626,7 +626,7 @@
         "name": "How do I calculate a fair freelance hourly rate?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Formula: (Desired Monthly Income + Monthly Business Expenses) divided by Billable Hours per Month = Minimum Hourly Rate. Example: $4,000 income + $600 expenses divided by 80 hours = $57.50/hr minimum. Add 20-30% above this for profit margin."
+          "text": "The formula: (Desired Monthly Income + Monthly Business Expenses) divided by Billable Hours per Month = Minimum Hourly Rate. Example: $4,000 income + $600 expenses divided by 80 hours = $57.50/hr minimum. Add 20–30% above this minimum to build in profit margin and cover slow months. Most freelancers working full-time bill 15–25 hours per week, not 40 — use a realistic billable hours estimate, not a theoretical maximum."
         }
       },
       {
@@ -634,7 +634,7 @@
         "name": "What is Stripe's processing fee and how is it applied?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Stripe charges 2.9% + $0.30 per card transaction in the US (last verified April 2026). ACH bank transfers cost 0.8% capped at $5. No monthly fees. The fee is deducted before deposit."
+          "text": "Stripe's standard fee is 2.9% + $0.30 per card charge in the US (last verified: April 2026). No monthly fees or setup costs. The fee is deducted automatically before the payout. For US bank transfers (ACH), Stripe charges 0.8% capped at $5.00 — a major saving on large invoices. International cards add 1.5%, and currency conversion adds 1%. Stripe's pricing is transparent and well-documented."
         }
       },
       {
@@ -642,7 +642,23 @@
         "name": "How much does PayPal charge for international payments?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "PayPal adds 1.5-2% cross-border fee plus a 3-4% currency conversion spread for international transactions. Total effective rate can reach 6-7%. Stripe charges 1.5% for international cards and 1% for currency conversion, making it cheaper for cross-border payments."
+          "text": "For cross-border transactions, PayPal adds a 1.5% international fee on top of the standard rate, plus a 3–4% currency conversion spread if payment is in a different currency. Total effective rate for an international payment can reach 6–7%. By comparison, Stripe adds 1.5% for international cards and only 1% for currency conversion, making Stripe cheaper for cross-border work. Last verified: April 2026."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What percentage does Upwork take from freelancers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Upwork uses a tiered service fee structure. As of April 2026 (last verified): 20% on the first $500 billed to a client, 10% on earnings $500.01–$10,000 with the same client, and 5% on earnings above $10,000 with that client. Fees reset per client, not overall. A new client relationship always starts at 20%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate profit margin in Excel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Excel, the profit margin formula is =(B1-A1)/B1*100, where A1 is your cost and B1 is your selling price. This gives you gross margin as a percentage. For net margin, subtract all additional costs (platform fees, shipping, overhead allocation) from B1 before dividing. Alternatively, use Feexio's Profit Margin Calculator to get the answer instantly without any formulas — just enter cost and selling price."
         }
       },
       {
@@ -650,15 +666,55 @@
         "name": "What is a good profit margin for a small business?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Retail typically runs 2-10% net margin. Professional services and consulting aim for 20-40%. SaaS and software can reach 60-80%. For freelancers, a gross margin of 40-60% is sustainable after accounting for platform fees, tools, and direct costs."
+          "text": "Benchmarks vary by industry: retail typically runs 2–10% net margin; professional services and consulting aim for 20–40%; software and SaaS can reach 60–80%. For freelancers and solo operators, a gross margin of 40–60% is sustainable once all direct costs (platform fees, tools, subcontractors) are included. The most important metric is your trend — a steadily rising margin means your business is getting more efficient."
         }
       },
       {
         "@type": "Question",
-        "name": "What is the difference between PayPal Goods and Services vs Friends and Family?",
+        "name": "How do I set a freelance rate as a beginner?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "PayPal Goods and Services charges 3.49% + $0.49 but includes buyer and seller protection. Friends and Family has no fee from a bank account but offers zero buyer/seller protection and is prohibited for business transactions under PayPal terms of service."
+          "text": "Start with the income formula: (Monthly Expenses + Desired Income) divided by Realistic Billable Hours = Minimum Rate. Research market rates for your skill on platforms like LinkedIn, Upwork, and industry salary surveys — your rate should be within range of the market. Being 20–30% below market is acceptable for your first 3–6 months while building your portfolio, but you should have a clear plan to reach market rates after that. Never price below your cost-of-living floor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is compound interest and why does starting early matter so much?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Compound interest means you earn interest on your interest — your balance grows exponentially, not linearly. Starting at 25 vs 35 with $200/month at 7% annual return produces $525,000 vs $243,000 by retirement. The extra decade costs only $24,000 in additional contributions but generates $282,000 more in final wealth. Even small, consistent savings started early dramatically outperform larger savings started later."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between PayPal Goods and Services and Friends and Family fees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PayPal Goods and Services (G&S) charges 3.49% + $0.49 per transaction but includes buyer and seller protection — use this for all commercial transactions. Friends and Family (F&F) has no fee when funded from a bank account or PayPal balance, but offers zero buyer or seller protection and is explicitly prohibited for business payments under PayPal's terms of service. Using F&F for client payments risks account suspension. Always use G&S for invoicing. Last verified: April 2026."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much should I save each month as a freelancer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use percentage-based savings rather than fixed amounts: set aside 25–30% of every payment for taxes, 15–20% for an emergency fund (target 3–6 months of expenses), and at least 5–10% for retirement. This approach scales automatically with your income — in good months you save more; in slow months the obligation is proportionally smaller. Keep these in separate accounts so tax reserves don't get spent on living expenses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do loan amortization schedules work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An amortization schedule shows how every loan payment splits between interest and principal repayment. In the early months, most of your payment covers interest because the outstanding balance is at its highest. As you pay down principal, the interest portion shrinks and more of each payment reduces the balance. This is why making extra principal payments early in a loan saves disproportionately more interest. Use the Amortization Schedule Calculator to see the full breakdown for any loan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I compare personal loan offers side by side?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Always compare APR (Annual Percentage Rate), not just the advertised interest rate. APR includes origination fees, which can add 1–6% to the effective cost. Also check: total repayment amount (not just monthly payment), whether the rate is fixed or variable, and whether there are prepayment penalties. A 9% APR loan with no origination fee can cost less than an 8% rate loan with a 3% origination fee on a short-term borrowing. Use the Personal Loan Calculator to compare any two scenarios in seconds."
         }
       }
     ]
