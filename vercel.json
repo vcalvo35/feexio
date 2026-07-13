@@ -39,6 +39,12 @@
   ],
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "feexio.com" }],
+      "destination": "https://www.feexio.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
