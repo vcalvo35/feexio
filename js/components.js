@@ -76,6 +76,7 @@ const FOOTER_HTML = `
         <a href="/privacy.html">Privacy Policy</a>
         <a href="/terms.html">Terms of Use</a>
         <a href="/disclaimer.html">Disclaimer</a>
+        <a href="/cookies.html">Cookie Policy</a>
       </div>
     </div>
     <div class="footer-social" style="display:flex;gap:12px;margin-top:12px;align-items:center;">

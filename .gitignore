@@ -1,0 +1,4 @@
+# Local automation / one-off scripts — never deploy these
+*.ps1
+commit_msg*.txt
+.DS_Store
