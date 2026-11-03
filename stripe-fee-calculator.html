@@ -153,6 +153,22 @@
         <p>When you issue a refund, Stripe returns the original transaction amount to the customer but <strong>does not refund the processing fee</strong>. A $100 refund still costs you $3.20 in lost fees. For businesses with high refund rates, factor this into your pricing model. Stripe charges an additional $15 dispute fee if a chargeback is filed, though this is waived if you win the dispute.</p>
       </div>
 
+      <!-- Worked examples -->
+      <div style="font-size:0.97rem;line-height:1.8;color:var(--text-muted);margin-top:8px;">
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">Worked Examples at 2.9% + $0.30</h2>
+        <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:0.88rem;"><thead><tr><th style="text-align:left;padding:8px 12px;font-weight:700;border-bottom:2px solid var(--border);">Payment</th><th style="text-align:left;padding:8px 12px;font-weight:700;border-bottom:2px solid var(--border);">Stripe fee</th><th style="text-align:left;padding:8px 12px;font-weight:700;border-bottom:2px solid var(--border);">You receive</th><th style="text-align:left;padding:8px 12px;font-weight:700;border-bottom:2px solid var(--border);">Effective rate</th></tr></thead><tbody><tr><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$100</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$3.20</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$96.80</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">3.20%</td></tr><tr><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$450</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$13.35</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$436.65</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">2.97%</td></tr><tr><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$1,000</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$29.30</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$970.70</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">2.93%</td></tr></tbody></table>
+        <p>These figures use Stripe's standard US rate for domestic online card payments. If the card was issued outside the US, Stripe adds 1.5%, so a $1,000 international payment costs $44.30, and currency conversion adds another 1%.</p>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:var(--text);margin:24px 0 12px;">How Much to Charge to Receive an Exact Amount</h2>
+        <p>Use the formula <strong>(target + $0.30) ÷ (1 − 0.029)</strong>. To receive exactly $500: ($500 + $0.30) ÷ 0.971 = <strong>$515.24</strong>. Check it: $515.24 × 2.9% + $0.30 = $15.24 in fees, leaving $500.00.</p>
+        <p>Compared with PayPal Checkout at 3.49% + $0.49, Stripe costs less on every amount: on a $1,000 payment the difference is about $6. If your clients are in the US and pay by card, that adds up quickly. Compare both with the <a href="/paypal-fee-calculator.html" style="color:var(--accent);">PayPal fee calculator</a>.</p>
+        <h3 style="font-size:1rem;font-weight:700;color:var(--text);margin:20px 0 8px;">Common mistakes</h3>
+        <ul>
+        <li>Forgetting the international card and currency conversion fees when clients are abroad.</li>
+        <li>Expecting Stripe to refund its processing fee when you refund a customer – it does not return the fee.</li>
+        <li>Adding a surcharge to card payments without checking the rules in your state or country.</li>
+        </ul>
+      </div>
+
       <!-- FAQ -->
       <div style="margin-top:48px;">
         <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:800;margin-bottom:20px;">Frequently Asked Questions</h2>

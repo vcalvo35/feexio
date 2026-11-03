@@ -446,7 +446,7 @@ function fmt(n) { return '$' + parseFloat(n).toFixed(2); }
 function calcPaypal() {
   const amount = parseFloat(document.getElementById('pp-amount').value) || 0;
   if (amount <= 0) return;
-  const fee = (amount * 0.029) + 0.30;
+  const fee = (amount * 0.0349) + 0.49;
   document.getElementById('pp-fee').textContent = fmt(fee);
   document.getElementById('pp-net').textContent = fmt(amount - fee);
   document.getElementById('pp-result').classList.add('visible');
