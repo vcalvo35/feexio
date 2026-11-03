@@ -37,7 +37,7 @@
     "author": { "@type": "Person", "name": "Victor A. Calvo S.", "url": "https://feexio.com/about.html" },
     "publisher": { "@type": "Organization", "name": "Feexio", "url": "https://feexio.com" },
     "datePublished": "2025-01-15",
-    "dateModified": "2026-08-10",
+    "dateModified": "2026-11-03",
     "image": {"@type": "ImageObject", "url": "https://feexio.com/assets/brand/og-image.png", "width": 1200, "height": 630}
   }
   </script>
@@ -61,7 +61,7 @@
       "name": "Are PayPal and Stripe fees the same?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For standard US card transactions, both charge 2.9% + $0.30 per transaction, so the base rate is identical. The differences emerge with international payments, alternative payment methods, and ACH transfers. Stripe charges 1% for currency conversion vs PayPal's 3–4% spread, making Stripe significantly cheaper for cross-border transactions."
+        "text": "No. For standard US online card payments, Stripe charges 2.9% + $0.30 while PayPal Checkout and PayPal invoices charge 3.49% + $0.49. On a $100 payment that is $3.20 with Stripe and $3.98 with PayPal. The gap is larger for cross-border payments, because Stripe charges about 1% for currency conversion while PayPal's conversion spread is typically 3–4%."
       }
     },
     {
@@ -85,7 +85,7 @@
       "name": "Have PayPal or Stripe changed their base rates in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of August 2026 (last verified), the standard US rate for both — 2.9% + $0.30 per transaction — has held steady. Payment processors do adjust pricing occasionally, sometimes with little advance notice, so treat published rates as a snapshot rather than a permanent fact. Before finalizing pricing on a high-volume product or subscription, check each provider's current published rate directly from their dashboard."
+        "text": "As of November 2026 (last verified), Stripe's standard US card rate is 2.9% + $0.30 and PayPal's Checkout and invoicing rate is 3.49% + $0.49. Payment processors do adjust pricing occasionally, sometimes with little advance notice, so treat published rates as a snapshot rather than a permanent fact. Before finalizing pricing on a high-volume product or subscription, check each provider's current published rate directly from their dashboard."
       }
     }
   ]
@@ -159,7 +159,7 @@
         <span>⏱️ 5 min read</span>
         <span>✍️ <a href="../about.html" style="color:inherit;text-decoration:none;">Victor A. Calvo S.</a></span>
       </div>
-      <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;padding:0 0 0;">Last updated: August 2026 &nbsp;|&nbsp; <a href="../disclaimer.html" style="color:var(--text-muted);">Disclaimer</a></div>
+      <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;padding:0 0 0;">Last updated: November 2026 &nbsp;|&nbsp; <a href="../disclaimer.html" style="color:var(--text-muted);">Disclaimer</a></div>
     </div>
   </div>
 
@@ -169,22 +169,23 @@
       <p>If you accept payments online, you're paying fees to somebody. PayPal and Stripe are the two most popular payment processors for freelancers and small businesses — and understanding their fee structures can save you hundreds of dollars per year.</p>
 
       <h2>The Standard Fee Structure</h2>
-      <p>Both PayPal and Stripe share the same base rate for standard transactions in the United States:</p>
+      <p>For a standard online card payment from a customer in the United States, the two platforms no longer charge the same rate:</p>
       <ul>
-        <li><strong>2.9% + $0.30</strong> per transaction</li>
+        <li><strong>Stripe:</strong> 2.9% + $0.30 per successful card charge</li>
+        <li><strong>PayPal Checkout and PayPal invoices:</strong> 3.49% + $0.49 per transaction</li>
       </ul>
-      <p>On the surface this looks identical. But the devil is in the details — the conditions under which these fees apply differ significantly between the two platforms.</p>
+      <p>The gap looks small in percentage terms, but because both the percentage and the fixed fee are higher at PayPal, it shows up on every single payment. The conditions for international payments and currency conversion widen it further.</p>
 
       <h2>PayPal Fees Explained</h2>
       <p>PayPal's fee structure has several layers depending on how you receive payments:</p>
       <ul>
-        <li><strong>Standard checkout (2.9% + $0.30):</strong> Applied when buyers use PayPal Checkout on your website.</li>
+        <li><strong>PayPal Checkout (3.49% + $0.49):</strong> Applied when buyers pay through the PayPal button on your website.</li>
         <li><strong>Friends & Family transfers:</strong> No fee for the sender if funded by bank/balance, but these cannot be used for commercial transactions.</li>
         <li><strong>International transactions:</strong> Additional fee of 1.5%–2% on top of the standard rate.</li>
         <li><strong>Currency conversion:</strong> 3–4% spread applied when currency conversion is involved.</li>
-        <li><strong>PayPal Invoicing:</strong> Same 2.9% + $0.30 standard rate.</li>
+        <li><strong>PayPal Invoicing:</strong> 3.49% + $0.49, the same as Checkout.</li>
       </ul>
-      <p>One important caveat: PayPal recently updated their fee schedule to include a <strong>fixed fee that varies by currency</strong>. The $0.30 applies only to USD transactions. For other currencies, the fixed portion changes.</p>
+      <p>One important caveat: PayPal recently updated their fee schedule to include a <strong>fixed fee that varies by currency</strong>. The $0.49 applies to USD transactions. For other currencies, the fixed portion changes.</p>
 
       <h2>Stripe Fees Explained</h2>
       <p>Stripe's pricing is known for its transparency and simplicity:</p>
@@ -198,14 +199,17 @@
       <p>Stripe also offers <strong>volume discounts</strong> and custom pricing for businesses processing over $80,000/month — something PayPal does not advertise as transparently.</p>
 
       <h2>Side-by-Side Comparison</h2>
-      <p>Let's break down the real cost on different transaction amounts using the standard 2.9% + $0.30 formula:</p>
-      <ul>
-        <li><strong>$10 transaction:</strong> Fee = $0.59 → You receive $9.41</li>
-        <li><strong>$100 transaction:</strong> Fee = $3.20 → You receive $96.80</li>
-        <li><strong>$500 transaction:</strong> Fee = $14.80 → You receive $485.20</li>
-        <li><strong>$1,000 transaction:</strong> Fee = $29.30 → You receive $970.70</li>
-      </ul>
-      <p>On a pure percentage basis, both platforms cost you the same for USD card transactions. The difference emerges with <strong>international payments, alternative payment methods, and large transaction volumes</strong>.</p>
+      <p>Here is the real cost of a domestic US payment on each platform:</p>
+      <table style="width:100%;border-collapse:collapse;margin:16px 0 20px;font-size:0.92rem;">
+        <thead><tr><th style="text-align:left;padding:8px 12px;border-bottom:2px solid var(--border);">Payment</th><th style="text-align:left;padding:8px 12px;border-bottom:2px solid var(--border);">Stripe fee (you receive)</th><th style="text-align:left;padding:8px 12px;border-bottom:2px solid var(--border);">PayPal fee (you receive)</th><th style="text-align:left;padding:8px 12px;border-bottom:2px solid var(--border);">Difference</th></tr></thead>
+        <tbody>
+          <tr><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$10</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$0.59 ($9.41)</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$0.84 ($9.16)</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$0.25</td></tr>
+          <tr><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$100</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$3.20 ($96.80)</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$3.98 ($96.02)</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$0.78</td></tr>
+          <tr><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$500</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$14.80 ($485.20)</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$17.94 ($482.06)</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$3.14</td></tr>
+          <tr><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$1,000</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$29.30 ($970.70)</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$35.39 ($964.61)</td><td style="padding:8px 12px;border-bottom:1px solid var(--border);">$6.09</td></tr>
+        </tbody>
+      </table>
+      <p>For domestic card payments Stripe is cheaper at every amount. A freelancer invoicing $5,000 a month in $1,000 payments would pay about $30 more per month – roughly $365 a year – by collecting through PayPal instead. The gap grows with <strong>international payments and currency conversion</strong>, where PayPal's surcharges are higher.</p>
 
       <h2>When to Choose PayPal</h2>
       <ul>
@@ -225,7 +229,7 @@
       </ul>
 
       <h2>The Bottom Line</h2>
-      <p>For simple freelance invoices and small transactions, <strong>both platforms are effectively equal</strong>. The real differentiation comes at scale, with international payments, or when you need advanced payment infrastructure. Stripe wins on developer experience and large ACH transfers; PayPal wins on brand recognition and consumer trust.</p>
+      <p>On fees alone, <strong>Stripe costs less</strong> for domestic card payments and considerably less for international ones and large ACH transfers. PayPal's advantage is not price but familiarity: some clients and buyers simply prefer to pay with their PayPal account, and that can be worth the extra cost if it closes the sale. Many freelancers offer both and let the client choose, building the higher PayPal fee into the price.</p>
       <p>Want to run the numbers yourself? Use our free <a href="../paypal-fee-calculator.html"><strong>PayPal Fee Calculator</strong></a> and <a href="../stripe-fee-calculator.html"><strong>Stripe Fee Calculator</strong></a> to see exactly how much any transaction will cost you.</p>
 
     
@@ -234,7 +238,7 @@
       <h2 style="font-family:var(--font-display);font-weight:800;font-size:1.3rem;color:var(--text);margin-bottom:24px;">Frequently Asked Questions</h2>
       <div style="margin-bottom:24px;">
         <h3 style="font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--text);margin-bottom:8px;">Are PayPal and Stripe fees the same?</h3>
-        <p style="color:var(--text-muted);line-height:1.7;margin:0;">For standard US card transactions, both charge 2.9% + $0.30 per transaction, so the base rate is identical. The differences emerge with international payments, alternative payment methods, and ACH transfers. Stripe charges 1% for currency conversion vs PayPal's 3–4% spread, making Stripe significantly cheaper for cross-border transactions.</p>
+        <p style="color:var(--text-muted);line-height:1.7;margin:0;">No. For standard US online card payments, Stripe charges 2.9% + $0.30 while PayPal Checkout and PayPal invoices charge 3.49% + $0.49. On a $100 payment that is $3.20 with Stripe and $3.98 with PayPal. The gap is larger for cross-border payments, because Stripe charges about 1% for currency conversion while PayPal's conversion spread is typically 3–4%.</p>
       </div>
       <div style="margin-bottom:24px;">
         <h3 style="font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--text);margin-bottom:8px;">Can I avoid PayPal fees by using Friends & Family?</h3>
@@ -246,7 +250,7 @@
       </div>
       <div style="margin-bottom:24px;">
         <h3 style="font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--text);margin-bottom:8px;">Have PayPal or Stripe changed their base rates in 2026?</h3>
-        <p style="color:var(--text-muted);line-height:1.7;margin:0;">As of August 2026 (last verified), the standard US rate for both — 2.9% + $0.30 per transaction — has held steady. Payment processors do adjust pricing occasionally, sometimes with little advance notice, so treat published rates as a snapshot rather than a permanent fact. Before finalizing pricing on a high-volume product or subscription, check each provider's current published rate directly from their dashboard.</p>
+        <p style="color:var(--text-muted);line-height:1.7;margin:0;">As of November 2026 (last verified), Stripe's standard US card rate is 2.9% + $0.30 and PayPal's Checkout and invoicing rate is 3.49% + $0.49. Payment processors do adjust pricing occasionally, sometimes with little advance notice, so treat published rates as a snapshot rather than a permanent fact. Before finalizing pricing on a high-volume product or subscription, check each provider's current published rate directly from their dashboard.</p>
       </div>
     </div>
   </div>
