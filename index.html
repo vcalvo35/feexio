@@ -95,20 +95,16 @@
   <meta name="twitter:image" content="https://feexio.com/assets/brand/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" /></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" /></noscript>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="/css/redesign.css" />
 </head>
 <body>
 
   <!-- Nav injected by components.js -->
   <!-- Network Bar -->
-<div style="background:#1a1a2e;color:#a0a8c8;font-size:12px;text-align:center;padding:6px 16px;letter-spacing:0.02em;">
-  More free tools:&nbsp;
-  <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">InstantLinkHub</a>&middot;
-  <a href="https://swiftconverthub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">SwiftConvertHub</a>&middot;
-  <a href="https://feexio.com" style="color:#c8d0e8;text-decoration:none;margin:0 6px;font-weight:600;">Feexio</a>
-</div>
+<div class="tsl-bar"><div class="container"><span>Free tools by ToolSynergyLab:</span><a href="https://instantlinkhub.com" target="_blank" rel="noopener">InstantLinkHub</a><a href="https://feexio.com" aria-current="true">Feexio</a><a href="https://swiftconverthub.com" target="_blank" rel="noopener">SwiftConvertHub</a></div></div>
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="container">
     <div class="nav-inner">
@@ -125,7 +121,7 @@
       </div>
       <div class="nav-controls">
         <button class="btn-icon" id="theme-toggle" aria-label="Toggle dark mode">
-          <span id="theme-icon">&#127769;</span>
+          <span id="theme-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg></span>
         </button>
         <button class="lang-btn" id="lang-btn" aria-label="Switch language">ES</button>
         <div class="nav-hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
@@ -143,50 +139,28 @@
   </div>
 </nav>
 
-  <!-- ── Hero ───────────────────────────────────────────────── -->
-  <header class="hero" role="banner">
-<div class="container">
-      <div class="hero-badge fade-up">
-        <span>⚡</span>
-        <span data-i18n="hero_badge">12 Free Calculators</span>
+  <!-- Hero: the receipt (2026 redesign) -->
+  <section class="fx-hero" aria-labelledby="fx-h1">
+    <div class="container">
+      <div class="fx-hero-copy">
+        <h1 id="fx-h1" data-i18n="fxh_h1">See what you keep after PayPal, Stripe and Fiverr take their fee</h1>
+        <p class="fx-hero-sub" data-i18n="fxh_sub">Enter the amount on your invoice. Every result uses the platform’s published rate, and each calculator shows the math line by line.</p>
+        <label class="fx-amount" for="fx-amount">
+          <span data-i18n="fxh_amount">Invoice amount (USD)</span>
+          <span class="fx-amount-field"><span aria-hidden="true">$</span><input id="fx-amount" type="number" min="0" step="0.01" value="1000" inputmode="decimal"></span>
+        </label>
+        <p class="fx-hero-links"><span data-i18n="fxh_more">Need more detail? Open the full calculator:</span> <a href="/paypal-fee-calculator.html">PayPal</a>, <a href="/stripe-fee-calculator.html">Stripe</a>, <a href="/fiverr-fee-calculator.html">Fiverr</a>.</p>
       </div>
-      <h1 class="fade-up fade-up-d1">
-        <span data-i18n="hero_h1_a">Calculate Fees,</span><br>
-        <span class="accent" data-i18n="hero_h1_b">Profit &amp; Rates</span><br>
-        <span data-i18n="hero_h1_c">Instantly</span>
-      </h1>
-      <p class="fade-up fade-up-d2" data-i18n="hero_sub">
-        Free tools for freelancers, sellers &amp; entrepreneurs. No sign-up, no fluff — just fast, accurate results.
-      </p>
-      <div class="hero-btns fade-up fade-up-d3">
-        <button class="btn-primary" onclick="scrollToCalcs()">
-          ⚡ <span data-i18n="hero_cta">Start Calculating</span>
-        </button>
-        <a href="about.html" class="btn-secondary" data-i18n="hero_cta2">Learn More</a>
-      </div>
-      <div class="hero-stats fade-up fade-up-d3">
-        <div class="stat">
-          <div class="stat-num">12</div>
-          <div class="stat-label" data-i18n="stat1">Calculators</div>
+      <div class="fx-receipt-wrap">
+        <div class="fx-receipt" aria-live="polite">
+          <div class="fx-receipt-head"><span data-i18n="fxh_invoice">Invoice</span><strong id="fx-total">$1,000.00</strong></div>
+          <div id="fx-lines"></div>
+          <p class="fx-receipt-note" data-i18n="fxh_note">US domestic rates. International payments and currency conversion cost more.</p>
         </div>
-        <div class="stat">
-          <div class="stat-num">100%</div>
-          <div class="stat-label" data-i18n="stat2">Free Forever</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">0</div>
-          <div class="stat-label" data-i18n="stat3">No Login</div>
-        </div>
+        <div class="fx-receipt-edge" aria-hidden="true"></div>
       </div>
     </div>
-  </header>
-
-  <!-- Ad: Top -->
-  <div style="padding:24px 0;">
-  </div>
-
-    </div>
-  </div>
+  </section>
 
   <!-- ── Calculators ────────────────────────────────────────── -->
   <main id="calculators">
@@ -361,6 +335,28 @@
     </section>
   </main>
 
+
+  <!-- Rates we track (2026 redesign) -->
+  <section class="fx-rates" aria-labelledby="rates-h2">
+    <div class="container">
+      <div class="fx-rates-intro">
+        <h2 id="rates-h2" data-i18n="rates_h2">Rates we track</h2>
+        <p data-i18n="rates_p">Platforms change their fees. We recheck these rates against each platform’s own fee page and date every check.</p>
+      </div>
+      <div class="fx-rates-table">
+        <table>
+          <thead><tr><th scope="col" data-i18n="rates_th1">Platform and payment type</th><th scope="col" data-i18n="rates_th2">Fee</th><th scope="col" data-i18n="rates_th3">Last checked</th></tr></thead>
+          <tbody>
+            <tr><td data-i18n="rates_r1">PayPal Checkout and invoices, US</td><td>3.49% + $0.49</td><td>Nov 2026</td></tr>
+            <tr><td data-i18n="rates_r2">PayPal international surcharge</td><td>+1.5%</td><td>Nov 2026</td></tr>
+            <tr><td data-i18n="rates_r3">Stripe online card payment, US</td><td>2.9% + $0.30</td><td>Apr 2026</td></tr>
+            <tr><td data-i18n="rates_r4">Stripe international card</td><td>+1.5%</td><td>Apr 2026</td></tr>
+            <tr><td data-i18n="rates_r5">Fiverr seller fee</td><td>20%</td><td>Apr 2026</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
   <!-- ── Calculator Descriptions (SEO) ──────────────────────── -->
   <section class="section seo-section" aria-label="About Our Calculators" style="background:var(--bg-card);border-top:1px solid var(--border);">
@@ -700,5 +696,6 @@
   <div id="footer-placeholder"></div>
   <script src="js/components.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/hero.js"></script>
 </body>
 </html>

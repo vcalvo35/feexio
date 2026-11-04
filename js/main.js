@@ -16,6 +16,22 @@ const i18n = {
     hero_h1_b: 'Profit & Rates',
     hero_h1_c: 'Instantly',
     hero_sub: 'Free tools for freelancers, sellers & entrepreneurs. No sign-up, no fluff — just fast, accurate results.',
+    fxh_h1: 'See what you keep after PayPal, Stripe and Fiverr take their fee',
+    fxh_sub: 'Enter the amount on your invoice. Every result uses the platform’s published rate, and each calculator shows the math line by line.',
+    fxh_amount: 'Invoice amount (USD)',
+    fxh_more: 'Need more detail? Open the full calculator:',
+    fxh_invoice: 'Invoice',
+    fxh_note: 'US domestic rates. International payments and currency conversion cost more.',
+    rates_h2: 'Rates we track',
+    rates_p: 'Platforms change their fees. We recheck these rates against each platform’s own fee page and date every check.',
+    rates_th1: 'Platform and payment type',
+    rates_th2: 'Fee',
+    rates_th3: 'Last checked',
+    rates_r1: 'PayPal Checkout and invoices, US',
+    rates_r2: 'PayPal international surcharge',
+    rates_r3: 'Stripe online card payment, US',
+    rates_r4: 'Stripe international card',
+    rates_r5: 'Fiverr seller fee',
     hero_cta: 'Start Calculating',
     hero_cta2: 'Learn More',
     stat1: 'Calculators',
@@ -222,6 +238,22 @@ const i18n = {
     hero_h1_b: 'Ganancias y Tarifas',
     hero_h1_c: 'Al Instante',
     hero_sub: 'Herramientas gratis para freelancers, vendedores y emprendedores. Sin registro, sin rodeos — solo resultados r\u00e1pidos y precisos.',
+    fxh_h1: 'Mira cuánto te queda después de la comisión de PayPal, Stripe y Fiverr',
+    fxh_sub: 'Escribe el monto de tu factura. Cada resultado usa la tarifa publicada por la plataforma y cada calculadora muestra el cálculo paso a paso.',
+    fxh_amount: 'Monto de la factura (USD)',
+    fxh_more: '¿Necesitas más detalle? Abre la calculadora completa:',
+    fxh_invoice: 'Factura',
+    fxh_note: 'Tarifas para pagos dentro de EE. UU. Los pagos internacionales y la conversión de moneda cuestan más.',
+    rates_h2: 'Tarifas que revisamos',
+    rates_p: 'Las plataformas cambian sus comisiones. Revisamos estas tarifas contra la página oficial de cada plataforma y fechamos cada revisión.',
+    rates_th1: 'Plataforma y tipo de pago',
+    rates_th2: 'Comisión',
+    rates_th3: 'Última revisión',
+    rates_r1: 'PayPal Checkout y facturas, EE. UU.',
+    rates_r2: 'Recargo internacional de PayPal',
+    rates_r3: 'Pago con tarjeta en línea en Stripe, EE. UU.',
+    rates_r4: 'Tarjeta internacional en Stripe',
+    rates_r5: 'Comisión de Fiverr al vendedor',
     hero_cta: 'Empezar a Calcular',
     hero_cta2: 'Saber M\u00e1s',
     stat1: 'Calculadoras',
@@ -406,13 +438,18 @@ const i18n = {
 let currentLang = localStorage.getItem('feexio_lang') || 'en';
 let currentTheme = localStorage.getItem('feexio_theme') || 'light';
 
+const SUN_SVG = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>';
+const MOON_SVG = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>';
+
 // ── Apply Theme ────────────────────────────────────────────────
 function applyTheme(theme) {
   currentTheme = theme;
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('feexio_theme', theme);
   const icon = document.getElementById('theme-icon');
-  if (icon) icon.textContent = theme === 'dark' ? '\ud83c\udf19' : '\u2600\ufe0f';
+  if (icon) icon.innerHTML = theme === 'dark' ? SUN_SVG : MOON_SVG;
+  const tbtn = document.getElementById('theme-toggle');
+  if (tbtn) tbtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
 }
 
 // ── Apply Language ─────────────────────────────────────────────

@@ -4,12 +4,8 @@
    ============================================================ */
 
 const NETWORK_BAR_HTML = `
-<div style="background:#1a1a2e;color:#a0a8c8;font-size:12px;text-align:center;padding:6px 16px;letter-spacing:0.02em;">
-  More free tools:&nbsp;
-  <a href="https://instantlinkhub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">InstantLinkHub</a>·
-  <a href="https://swiftconverthub.com" target="_blank" rel="noopener" style="color:#7eb8f7;text-decoration:none;margin:0 6px;">SwiftConvertHub</a>·
-  <a href="https://feexio.com" target="_blank" rel="noopener" style="color:#c8d0e8;text-decoration:none;margin:0 6px;font-weight:600;">Feexio</a>
-</div>`;
+<div class="tsl-bar"><div class="container"><span>Free tools by ToolSynergyLab:</span><a href="https://instantlinkhub.com" target="_blank" rel="noopener">InstantLinkHub</a><a href="https://feexio.com" aria-current="true">Feexio</a><a href="https://swiftconverthub.com" target="_blank" rel="noopener">SwiftConvertHub</a></div></div>
+`;
 
 const NAV_HTML = `
 <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -28,7 +24,7 @@ const NAV_HTML = `
       </div>
       <div class="nav-controls">
         <button class="btn-icon" id="theme-toggle" aria-label="Toggle dark mode">
-          <span id="theme-icon">🌙</span>
+          <span id="theme-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg></span>
         </button>
         <button class="lang-btn" id="lang-btn" aria-label="Switch language">ES</button>
         <div class="nav-hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">

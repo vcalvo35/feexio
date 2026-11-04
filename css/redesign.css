@@ -1,0 +1,134 @@
+/* =========================================================
+   Feexio — 2026 redesign layer ("the receipt")
+   Loaded after styles.css. Remove this file's <link> to revert.
+   ========================================================= */
+
+:root {
+  --accent:       #1F6B4F;
+  --accent-dark:  #17543E;
+  --accent-glow:  #E7F3EC;
+  --ink:          #0F3D2E;
+  --deduct:       #B42318;
+  --bg:           #F3F5F4;
+  --bg-card:      #FFFFFF;
+  --bg-nav:       #FFFFFF;
+  --text:         #0F3D2E;
+  --text-muted:   #56625C;
+  --border:       #DDE3E0;
+  --border-strong:#A9B7B0;
+  --rule:         #C5D0CA;
+  --shadow:       none;
+  --shadow-hover: none;
+  --font-display: 'Instrument Sans', system-ui, sans-serif;
+  --font-body:    'Instrument Sans', system-ui, sans-serif;
+  --radius:    6px;
+  --radius-sm: 4px;
+  --radius-lg: 8px;
+}
+
+[data-theme="dark"] {
+  --accent:       #6FD3A5;
+  --accent-dark:  #52BE8D;
+  --accent-glow:  #1B3A2D;
+  --ink:          #E4EFE9;
+  --deduct:       #FF8A7A;
+  --bg:           #0C1512;
+  --bg-card:      #13201B;
+  --bg-nav:       #13201B;
+  --text:         #E4EFE9;
+  --text-muted:   #A3B2AA;
+  --border:       #24352D;
+  --border-strong:#3D5148;
+  --rule:         #2E4238;
+}
+
+body { font-family: var(--font-body); font-size: 17px; font-variant-numeric: tabular-nums; }
+h1, h2, h3, h4 { font-family: var(--font-display); }
+
+/* ---- Network bar + nav ---- */
+.tsl-bar { background: #0F3D2E; color: #CFE0D7; font-size: 13px; }
+.tsl-bar .container { display: flex; flex-wrap: wrap; gap: 6px 20px; padding-top: 8px; padding-bottom: 8px; }
+.tsl-bar a { color: #CFE0D7; text-decoration: none; }
+.tsl-bar a:hover { color: #FFFFFF; text-decoration: underline; }
+.tsl-bar a[aria-current="true"] { color: #FFFFFF; font-weight: 600; }
+.nav { background: var(--bg-nav); border-bottom: 1px solid var(--border); backdrop-filter: none; box-shadow: none; }
+.nav-links a { color: var(--text); font-weight: 500; border-radius: 4px; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent); background: none; }
+.btn-icon { border-radius: 50%; width: 44px; height: 44px; border: 1px solid var(--border); background: transparent; color: var(--text); }
+.btn-icon:hover { transform: none; border-color: var(--text); color: var(--text); }
+#theme-icon { display: inline-flex; }
+#theme-icon svg { width: 20px; height: 20px; }
+.lang-btn { border-radius: 4px; min-height: 44px; }
+
+/* ---- Old template decoration off ---- */
+.hero::before { display: none; }
+.fade-up { animation: none; }
+.section-label { display: none; }
+.calc-icon { display: none; }
+
+/* ---- Hero: the receipt ---- */
+.fx-hero { padding: 64px 0 80px; }
+.fx-hero .container { display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start; }
+.fx-hero-copy { flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+.fx-hero h1 { margin: 0; font-size: clamp(2.3rem, 4.6vw, 3.4rem); line-height: 1.04; font-weight: 700; font-stretch: 80%; letter-spacing: -0.02em; color: var(--text); max-width: 13em; }
+.fx-hero-sub { margin: 0; color: var(--text-muted); font-size: 1.15rem; max-width: 32em; }
+.fx-amount { display: flex; flex-direction: column; gap: 8px; max-width: 360px; font-weight: 600; font-size: 15px; color: var(--text); }
+.fx-amount-field { display: flex; align-items: center; background: var(--bg-card); border: 1px solid var(--border-strong); border-radius: 6px; padding: 0 16px; min-height: 64px; }
+.fx-amount-field:focus-within { outline: 3px solid var(--accent); outline-offset: 2px; }
+.fx-amount-field span { font-size: 30px; font-weight: 600; color: var(--text-muted); }
+.fx-amount-field input { border: 0; outline: none; width: 100%; min-width: 0; background: transparent; color: var(--text); font: 600 30px var(--font-body); padding: 8px; font-variant-numeric: tabular-nums; }
+.fx-hero-links { margin: 0; font-size: 15px; color: var(--text-muted); }
+.fx-receipt-wrap { flex: 0 1 420px; min-width: 290px; margin: 0 auto; }
+.fx-receipt { background: var(--bg-card); padding: 30px 30px 22px; box-shadow: 0 1px 0 var(--border), 0 18px 40px -24px rgba(15, 61, 46, .35); }
+.fx-receipt-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-bottom: 2px solid var(--text); padding-bottom: 14px; font-weight: 600; }
+.fx-receipt-head strong { font-size: 30px; font-weight: 700; }
+.fx-line { padding: 16px 0; border-bottom: 1px dashed var(--rule); display: flex; flex-direction: column; gap: 6px; }
+.fx-line-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.fx-line-name { font-weight: 600; }
+.fx-line-rate, .fx-line-label { color: var(--text-muted); font-size: 15px; }
+.fx-line-rate { white-space: nowrap; }
+.fx-line-fee { color: var(--deduct); font-weight: 600; }
+.fx-line-net { font-size: 24px; font-weight: 700; }
+.fx-best { font-size: 13px; font-weight: 600; background: var(--accent-glow); color: var(--accent); padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+.fx-receipt-note { margin: 14px 0 0; font-size: 13px; color: var(--text-muted); }
+.fx-receipt-edge { height: 14px; background: linear-gradient(135deg, var(--bg-card) 7px, transparent 0) 0 0 / 14px 14px repeat-x, linear-gradient(225deg, var(--bg-card) 7px, transparent 0) 0 0 / 14px 14px repeat-x; }
+
+/* ---- Calculator cards: flat ---- */
+.section-header h2 { font-weight: 700; font-stretch: 80%; letter-spacing: -0.01em; font-size: clamp(1.9rem, 3.4vw, 2.4rem); color: var(--text); }
+.calc-card { border-radius: 6px; box-shadow: none; border: 1px solid var(--border); background: var(--bg-card); }
+.calc-card:hover { box-shadow: none; transform: none; border-color: var(--border-strong); }
+.calc-card h2 { font-weight: 700; }
+.form-group label { color: var(--text); font-weight: 600; text-transform: none; letter-spacing: 0; font-size: .9rem; }
+.form-group input, .form-group select, .form-group textarea { border: 1px solid var(--border-strong); border-radius: 4px; background: var(--bg-card); color: var(--text); min-height: 48px; font-family: var(--font-body); font-variant-numeric: tabular-nums; }
+.form-group input:focus { box-shadow: none; outline: 3px solid var(--accent); outline-offset: 1px; }
+.calc-result { border-radius: 4px; border: 1px solid var(--border); background: var(--bg); }
+.result-value { font-family: var(--font-body); }
+.btn-primary { background: var(--ink); color: var(--bg-card); border-radius: 4px; box-shadow: none; }
+.btn-primary:hover { background: var(--accent); color: #FFFFFF; transform: none; box-shadow: none; }
+.btn-secondary { border-radius: 4px; }
+
+/* ---- Rates we track ---- */
+.fx-rates { padding: 64px 0; }
+.fx-rates .container { display: flex; flex-wrap: wrap; gap: 32px 48px; }
+.fx-rates-intro { flex: 1 1 280px; }
+.fx-rates h2 { margin: 0 0 10px; font-size: clamp(1.9rem, 3.4vw, 2.4rem); font-weight: 700; font-stretch: 80%; color: var(--text); }
+.fx-rates-intro p { margin: 0; color: var(--text-muted); max-width: 26em; }
+.fx-rates-table { flex: 2 1 560px; overflow-x: auto; }
+.fx-rates table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 16px; }
+.fx-rates th { text-align: left; padding: 12px 0; border-bottom: 2px solid var(--text); }
+.fx-rates td { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.fx-rates th:not(:first-child), .fx-rates td:not(:first-child) { text-align: right; }
+.fx-rates td:nth-child(2) { font-weight: 600; }
+.fx-rates td:last-child { color: var(--text-muted); }
+
+/* ---- Blog / article / SEO: flat ---- */
+.blog-card, .value-item, .contact-form, .about-num-card { border-radius: 6px; box-shadow: none; }
+.blog-card:hover { transform: none; box-shadow: none; border-color: var(--border-strong); }
+.article-header h1 { font-weight: 700; font-stretch: 80%; }
+.article-body p, .article-body li { color: var(--text); }
+.article-body h2 { font-weight: 700; font-stretch: 85%; }
+
+@media (max-width: 640px) {
+  .fx-hero { padding: 40px 0 56px; }
+  .fx-receipt { padding: 24px 20px 18px; }
+}
