@@ -66,6 +66,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); }
 .hero h1 { font-weight: 700; font-stretch: 80%; letter-spacing: -0.02em; }
 .hero p { margin-left: 0; margin-right: 0; }
 .hero-btns { justify-content: flex-start; }
+.page-hero, .page-hero .container { text-align: left; }
+.page-hero h1 { font-weight: 700; font-stretch: 80%; letter-spacing: -0.02em; }
+.page-hero p { margin-left: 0 !important; margin-right: 0 !important; }
 .fade-up { animation: none; }
 .section-label { display: none; }
 .calc-icon { display: none; }
